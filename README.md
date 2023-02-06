@@ -5,6 +5,7 @@
 Patricia 
 Glenda
 Anika
+
 # Description 
 
 Traffic Crisis App. An interactive mobile app that connects users who can provide ncessities with users who are stuck in traffic crisis (ex. being stuck on a highway during a snowstorm) and are in need of necessities: like food, water, insulin, etc. 
