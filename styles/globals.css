@@ -1,14 +1,16 @@
 :root {
-
-  /*Colours*/
+  
+  /* PRIMARY */
   --primary-black: #000;
   --primary-white: #fff;
   --primary-grey: #ada8b6;
   --offWhite: #ffeedb;
+  --primary-darkBlue: #1414b7;
+  --primary-yellow: #e8cd82;
+
+  /* SECONDARY */
   --secondary-darkPurple: #4c3b4d;
   --secondary-maroon: #a53860;
   --secondary-ocean: #61c9a8;
-  --primary-darkBlue: #0000E7;
-  --primary-yellow: #e8cd82;
 }
 
