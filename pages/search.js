@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import { Inter } from 'next/font/google'
+import styles from '@/styles/Search.module.css'
+import Link from 'next/link'
 
-export default function Rewards() {
+const inter = Inter({ subsets: ['latin'] })
+
+export default function Search() {
   return (
     <>
       <Head>
@@ -13,7 +16,11 @@ export default function Rewards() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-REWARDS
+        SEARCH PAGE
+      <Link href="/requests">Requests</Link>
+      <Link href="/about">About</Link>
+      <Link href="/settings">Settings</Link>
+      <Link href="/rewards">Rewards</Link>
       </main>
     </>
   )

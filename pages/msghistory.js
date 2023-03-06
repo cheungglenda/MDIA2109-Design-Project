@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function MessageHistory() {
   return (
     <>
       <Head>
@@ -16,20 +16,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        LANDING PAGE
-      <Link href="/home">Home Page</Link>
-      <Link href="/login">Login</Link>
-      <Link href="/signup">Sign Up</Link>
-      <Link href="/subform">Submission Form</Link>
-      <Link href="/tips">Tips</Link>
+        MESSAGE HISTORY
       <Link href="/requests">Requests</Link>
-      <Link href="/profile">Profile</Link>
-      <Link href="/search">Search</Link>
-      <Link href="/editpost">Edit Post</Link>
-      <Link href="/editprofile">Edit Profile</Link>
+      <Link href="/about">About</Link>
       <Link href="/settings">Settings</Link>
-      <Link href="/messages">Messages</Link>
-      <Link href="/msghistory">Message History</Link>
+      <Link href="/rewards">Rewards</Link>
       </main>
     </>
   )
