@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
-export default function Requests() {
+const inter = Inter({ subsets: ['latin'] })
+
+export default function Signup() {
   return (
     <>
       <Head>
@@ -13,7 +16,7 @@ export default function Requests() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-CREATE A REQUEST
+SIGN UP PAGE
       </main>
     </>
   )

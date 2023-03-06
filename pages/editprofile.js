@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 
-export default function Requests() {
+export default function EditProfile() {
   return (
     <>
       <Head>
@@ -13,7 +13,7 @@ export default function Requests() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-CREATE A REQUEST
+EDIT PROFILE
       </main>
     </>
   )
