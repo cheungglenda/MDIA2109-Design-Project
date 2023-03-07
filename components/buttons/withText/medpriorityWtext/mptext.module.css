@@ -1,0 +1,9 @@
+.buttonContainer{
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
