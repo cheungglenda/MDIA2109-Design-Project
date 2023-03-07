@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/Messages.module.css'
 
 export default function Messages() {
