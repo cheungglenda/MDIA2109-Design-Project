@@ -3,14 +3,96 @@
   /* PRIMARY */
   --primary-black: #000;
   --primary-white: #fff;
-  --primary-grey: #ada8b6;
-  --offWhite: #ffeedb;
-  --primary-darkBlue: #1414b7;
-  --primary-yellow: #e8cd82;
+  --primary-pumpkin: #FF8C42;
+  --primary-beige: #FDFAE3;
+  --primary-silverLakeBlue: #6C91C2;
+  --primary-charcoal: #373F47;
+  
+
+  --max-width: 1100px;
+  --border-radius: 10px;
+  
+  
+  --primary-regular-font: 16px;
+  --primary-h1-font: 24px;
+  --primary-h2-font: 22px;
+  --primary-h3-font: 20px;
+  --primary-h4-font: 18px;
+ 
+
+
+
+
+  
+
+
+
+  
+
 
   /* SECONDARY */
   --secondary-darkPurple: #4c3b4d;
   --secondary-maroon: #a53860;
   --secondary-ocean: #61c9a8;
+
+
 }
 
+
+
+.high-button {
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  margin: 12px;
+  color:  #FF8C42;
+  box-shadow: 4px  #373F47;
+  }
+
+.high-buttonText {
+  border-radius: 10px;
+  width: 320px;
+  height: 80px;
+  margin: 12px;
+  color:  #FF8C42;
+  box-shadow: 4px  #373F47;
+}
+
+.medium-button {
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  margin: 24px;
+  color: #6C91C2;
+  box-shadow: 4px  #373F47;
+}
+
+.medium-buttonText {
+  border-radius: 10px;
+  width: 180px;
+  height: 60px;
+  margin: 24px;
+  color: #6C91C2;
+  box-shadow: 4px  #373F47;
+}
+
+.low-button {
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  margin: 40px;
+  color: #6C91C2;
+  box-shadow: 4px  #373F47;
+}
+
+.low-buttonText {
+  border-radius: 10px;
+  width: 135px;
+  height: 45px;
+  margin: 40px;
+  color: #6C91C2;
+  box-shadow: 4px  #373F47;
+} 
+ 
+
+ @import url(//fonts.googleapis.com/css?family=manrope);

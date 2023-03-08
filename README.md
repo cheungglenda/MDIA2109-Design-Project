@@ -23,6 +23,11 @@ Github - remote repository
 Figma - to create the design of the app and test with protoyping 
 
 
+## Coding Language 
+
+
+
+
 # Command Line(s)
 
 npm run dev
