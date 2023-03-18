@@ -15,7 +15,22 @@ export default function Profile() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-PROFILE PAGE
+<h3>PROFILE PAGE</h3>
+<div className={styles.profilePic}>
+  <p>Profile Picture</p>
+</div>
+<h2>NAME</h2>
+<button>Edit Profile</button>
+<button>Edit Post</button>
+<div>
+  <p># of deliveries</p>
+</div>
+<div className={styles.profileMap}>
+
+</div>
+<nav>
+  
+</nav>
       </main>
     </>
   )
