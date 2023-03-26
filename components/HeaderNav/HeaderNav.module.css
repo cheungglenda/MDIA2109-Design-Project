@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
+
 .headerContainer{
     height: auto;
     width: 100%;
@@ -10,4 +12,8 @@
 .backIcon{
     object-fit: cover;
     align-items:left;
+}
+
+.title {
+    font-family: 'manrope'
 }
