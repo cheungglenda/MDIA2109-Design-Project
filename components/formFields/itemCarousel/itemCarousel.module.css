@@ -1,0 +1,14 @@
+.body{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    align-items: center;
+    width: 330px; /*this is the width of the screen. Update when we know exactly what it is*/
+    justify-content: center;
+    position: relative;
+}
+
+
+.imageL, .imageR{
+    margin: 0em 1em;
+}
