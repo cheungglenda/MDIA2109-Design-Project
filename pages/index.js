@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Landing.module.css'
 import Link from 'next/link'
 import Nav from '@/components/nav'
+import HeaderNav from '@/components/HeaderNav'
 import RequestItem from '@/components/requestItem'
 import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
 import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
@@ -13,7 +14,7 @@ import LpNTextButton from '@/components/buttons/noText/lowpriorityNotext'
 
 
 
-export default function Home() {
+export default function Landing() {
   return (
     <>
       <Head>
@@ -25,7 +26,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}> 
-        LANDING PAGE
+      THIS IS THE LANDING PAGE
       <Link href="/home">Home Page</Link>
       <Link href="/login">Login</Link>
       <Link href="/signup">Sign Up</Link>
@@ -34,11 +35,10 @@ export default function Home() {
       <Link href="/requests">Requests</Link>
       <Link href="/profile">Profile</Link>
       <Link href="/search">Search</Link>
-      <Link href="/editpost">Edit Post</Link>
-      <Link href="/editprofile">Edit Profile</Link>
       <Link href="/settings">Settings</Link>
       <Link href="/messages">Messages</Link>
       <Link href="/msghistory">Message History</Link>
+      <Link href="/requestsfulfilled">Requests Fulfilled</Link>
       </main>
     </>
   )
