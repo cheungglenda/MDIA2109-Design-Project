@@ -1,0 +1,26 @@
+.locationForm{
+display: flex;
+flex-direction: column;
+
+}
+
+.locationContainer{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 330px;
+    position: relative;
+}
+
+.locationInput{
+    width: 330px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.locationImg{
+    position: absolute;
+    right: 5px;
+    bottom: 8px;
+}

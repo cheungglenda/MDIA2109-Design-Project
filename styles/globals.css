@@ -1,5 +1,5 @@
 :root {
-  
+
   /* PRIMARY */
   --primary-black: #000;
   --primary-white: #fff;
@@ -7,27 +7,17 @@
   --primary-beige: #FDFAE3;
   --primary-silverLakeBlue: #6C91C2;
   --primary-charcoal: #373F47;
-  
+
 
   --max-width: 1100px;
   --border-radius: 10px;
-  
-  
+
+
   --primary-regular-font: 16px;
   --primary-h1-font: 24px;
   --primary-h2-font: 22px;
   --primary-h3-font: 20px;
   --primary-h4-font: 18px;
- 
-
-
-
-
-  
-
-
-
-  
 
 
   /* SECONDARY */
@@ -35,27 +25,24 @@
   --secondary-maroon: #a53860;
   --secondary-ocean: #61c9a8;
 
-
 }
-
-
 
 .high-button {
   border-radius: 10px;
   width: 80px;
   height: 80px;
   margin: 12px;
-  color:  #FF8C42;
-  box-shadow: 4px  #373F47;
-  }
+  color: #FF8C42;
+  box-shadow: 4px #373F47;
+}
 
 .high-buttonText {
   border-radius: 10px;
   width: 320px;
   height: 80px;
   margin: 12px;
-  color:  #FF8C42;
-  box-shadow: 4px  #373F47;
+  color: #FF8C42;
+  box-shadow: 4px #373F47;
 }
 
 .medium-button {
@@ -64,7 +51,7 @@
   height: 60px;
   margin: 24px;
   color: #6C91C2;
-  box-shadow: 4px  #373F47;
+  box-shadow: 4px #373F47;
 }
 
 .medium-buttonText {
@@ -73,7 +60,7 @@
   height: 60px;
   margin: 24px;
   color: #6C91C2;
-  box-shadow: 4px  #373F47;
+  box-shadow: 4px #373F47;
 }
 
 .low-button {
@@ -82,7 +69,7 @@
   height: 45px;
   margin: 40px;
   color: #6C91C2;
-  box-shadow: 4px  #373F47;
+  box-shadow: 4px #373F47;
 }
 
 .low-buttonText {
@@ -91,8 +78,12 @@
   height: 45px;
   margin: 40px;
   color: #6C91C2;
-  box-shadow: 4px  #373F47;
-} 
- 
+  box-shadow: 4px #373F47;
+}
 
- @import url(//fonts.googleapis.com/css?family=manrope);
+label{
+  font-size: 20px /*all form labels match font size of H3 text*/; 
+}
+
+
+@import url(//fonts.googleapis.com/css?family=manrope);

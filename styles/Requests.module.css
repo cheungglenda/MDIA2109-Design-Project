@@ -1,0 +1,20 @@
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.whenField{
+    width: 330px;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.detailsField{
+    width: 330px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: var(--white);
+}
