@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Quiz.module.css'
 import Link from 'next/link'
-import HPWTextButton from '@/components/buttons/withText/highprioityWtext'
+import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
 import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
 
 export default function Quiz () {
