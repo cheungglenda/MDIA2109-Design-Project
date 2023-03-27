@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Settings.module.css'
 
 
 export default function Settings() {
@@ -13,7 +13,8 @@ export default function Settings() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-EDIT PROFILE
+<h2>General</h2>
+<h4>Display Mode</h4>
       </main>
     </>
   )
