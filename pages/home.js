@@ -3,9 +3,9 @@ import Image from 'next/image'
 import HeaderWithLogo from '../components/HeaderWithLogo'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
+import Nav from '@/components/nav'
 
-
-export default function Home() {
+export default function Home({passName}) {
   return (
     <>
       <Head>
@@ -18,13 +18,13 @@ export default function Home() {
         <HeaderWithLogo />
         <div className={styles.welcomeMsg}>
           <h2 className={styles.welcome}>👋 Welcome,</h2>
-          <h1 className={styles.name}>Jane FakeName Doe!</h1>
+          <h1 className={styles.name}>{passName}!</h1>
         </div>
         <div className={styles.achievementButtons}>
-          <button className={styles.buttons}>
+          <Link href="/profile"><button className={styles.buttons}>
             <h1 className={styles.fulfillmentNum}>30</h1>
             <p className={styles.achievementDesc}>Requests Fulfilled</p>
-          </button>
+          </button></Link>
           <button className={styles.buttons}>
             <h1 className={styles.fulfillmentNum}>2</h1>
             <p className={styles.achievementDesc}>Requests in Progress</p>
@@ -37,9 +37,8 @@ export default function Home() {
         <Link href="/requests">Requests</Link>
         <Link href="/about">About</Link>
         <Link href="/settings">Settings</Link>
-        <Link href="/messages">Messages</Link>
-        <Link href="/profile">Profile</Link>
         <Link href="/tips">Tips</Link>
+        <Nav />
       </main>
     </>
   )
