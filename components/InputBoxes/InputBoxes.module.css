@@ -26,3 +26,28 @@
     display:flex;
     margin:auto;
 }
+
+.joinButton {
+    padding-top:2em;
+    padding-bottom:2em;
+    margin:auto;
+}
+
+.joinButton button {
+    border:none;
+    font-family:'manrope';
+    background-color:var(--primary-pumpkin);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius:20px;
+    padding-left:2em;
+    padding-right:2em;
+    padding-top:1.5em;
+    padding-bottom:1.5em;
+    font-size:16px;
+    margin:auto;
+}
+
+.joinButton a {
+    text-decoration:none;
+    color: var(--primary-black);
+}
