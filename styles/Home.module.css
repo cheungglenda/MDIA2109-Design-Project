@@ -3,8 +3,8 @@
 .main{
   width: 100%;
   display: flex;
+  align-items:center;
   flex-direction: column; 
-  align-items: center;
   font-family: 'manrope', sans-serif;
 }
 
@@ -20,10 +20,18 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.buttons {
-  width:10em;
-  height:20em;
+.buttons:hover {
+  cursor:pointer;
+}
+
+.achievementButtons button {
+  background-color:var(--primary-light-blue);
+  width:8em;
+  height:10em;
   font-family:'manrope', sans-serif;
+  border-radius:15px;
+  margin:0.5em;
+  border:none;
 }
 
 .fulfillmentNum {

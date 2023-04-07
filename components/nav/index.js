@@ -8,19 +8,19 @@ export default function Nav() {
     return (
         <div className={styles.navContainer}>
             <Link href="/home">
-                <Image src="/placeholder.jpg" alt="placeholder" width={60} height={60} className={styles.navIcon} />
+                <Image src="/navIcons/Home.png" alt="home" width={60} height={60} className={styles.navIcon} />
             </Link>
             <Link href="/search">
-                <Image src="/placeholder.jpg" alt="placeholder" width={60} height={60} className={styles.navIcon} />
+                <Image src="/navIcons/Search.png" alt="search" width={60} height={60} className={styles.navIcon} />
             </Link>
-            <Link href="/editpost">
-                <Image src="/placeholder.jpg" alt="placeholder" width={60} height={60} className={styles.navIcon} />
+            <Link href="/requests.js">
+                <Image src="/navIcons/Add.png" alt="add" width={60} height={60} className={styles.navIcon} />
             </Link>
             <Link href="/messages">
-                <Image src="/placeholder.jpg" alt="placeholder" width={60} height={60} className={styles.navIcon} />
+                <Image src="/navIcons/Messages.png" alt="messages" width={60} height={60} className={styles.navIcon} />
             </Link>
             <Link href="/profile">
-                <Image src="/placeholder.jpg" alt="placeholder" width={60} height={60} className={styles.navIcon} />
+                <Image src="/navIcons/Profile.png" alt="profile" width={60} height={60} className={styles.navIcon} />
             </Link>
 
 

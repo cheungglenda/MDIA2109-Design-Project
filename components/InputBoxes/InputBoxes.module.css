@@ -1,0 +1,28 @@
+.input {
+    border: 1px black solid;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    font-family: 'manrope';
+    border-radius:10px;
+    width:90%;
+    margin:auto;
+    padding-left:1em;
+}
+
+.main {
+    display:flex;
+    flex-direction:column;
+}
+
+.main h1,
+.main h2,
+.main h3,
+.main h4,
+.main p {
+    font-family:'manrope';
+}
+
+.logoPic {
+    display:flex;
+    margin:auto;
+}

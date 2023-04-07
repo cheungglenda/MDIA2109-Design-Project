@@ -5,6 +5,7 @@
     justify-content: center;
     gap: 12px;
     padding: 1em 0em;
+    background-color: var(--primary-light-spice);
 }
 
 .navIcon{

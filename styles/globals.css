@@ -7,6 +7,8 @@
   --primary-beige: #FDFAE3;
   --primary-silverLakeBlue: #6C91C2;
   --primary-charcoal: #373F47;
+  --primary-light-spice: #FFD89E;
+  --primary-light-blue: #C5D5EA;
 
 
   --max-width: 1100px;
@@ -24,6 +26,7 @@
   --secondary-darkPurple: #4c3b4d;
   --secondary-maroon: #a53860;
   --secondary-ocean: #61c9a8;
+
 
 }
 
@@ -85,5 +88,11 @@ label{
   font-size: 20px /*all form labels match font size of H3 text*/; 
 }
 
+html,
+body {
+  max-width: 390px;
+  max-height:844px;
+  margin:auto;
+}
 
 @import url(//fonts.googleapis.com/css?family=manrope);
