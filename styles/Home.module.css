@@ -3,14 +3,14 @@
 .main{
   width: 100%;
   display: flex;
-  align-items:center;
   flex-direction: column; 
   font-family: 'manrope', sans-serif;
 }
 
 .welcomeMsg {
   line-height:1em;
-  text-align:center;
+  text-align:left;
+  margin-left:1em;
   width:100%;
 }
 
@@ -29,11 +29,37 @@
   width:8em;
   height:10em;
   font-family:'manrope', sans-serif;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius:15px;
   margin:0.5em;
+  text-align:left;
   border:none;
 }
 
 .fulfillmentNum {
   font-weight:800;
+}
+
+.quickLinks {
+  display:grid;
+  grid-template-columns: 150px 150px;
+  gap:2em;
+  padding-bottom:2em;
+  margin:auto;
+}
+
+.quickLinks button {
+  height: 10em;
+  background-color:var(--primary-light-spice);
+  border:none;
+  border-radius:20px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'manrope';
+  text-align:left;
+}
+
+.quickLinks a {
+  text-decoration:none;
+  color:var(--primary-black);
+  font-size:20px;
 }
