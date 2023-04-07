@@ -34,10 +34,13 @@ export default function Home({passName}) {
             <p className={styles.achievementDesc}>Items Requested</p>
           </button>
         </div>
-        <Link href="/requests">Requests</Link>
-        <Link href="/about">About</Link>
-        <Link href="/settings">Settings</Link>
-        <Link href="/tips">Tips</Link>
+        <h1>Get Started</h1>
+        <div class={styles.quickLinks}>
+        <button><Link href="/search">Help Someone Nearby</Link></button>
+        <button><Link href="/requests">Request an Item</Link></button>
+        <button><Link href="/quiz">Test Your Knowledge</Link></button>
+        <button><Link href="/tips">Popular Tips</Link></button>
+        </div>
         <Nav />
       </main>
     </>
