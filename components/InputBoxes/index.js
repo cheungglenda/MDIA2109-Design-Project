@@ -3,6 +3,8 @@ import Home from '@/pages/home'
 import styles from './InputBoxes.module.css'
 import Nav from '../nav'
 import Image from 'next/image'
+import Link from 'next/link'
+
 
 
 export default function InputBoxes() {
@@ -56,11 +58,11 @@ export default function InputBoxes() {
                 <h4>Confirm Password:</h4>
                 <input type="password" placeholder="Confirm Password" className={styles.input} />
             </div>
-            
+            <div className={styles.joinButton} style={{ display: isActiveOne ? 'block' : 'none' }}>
+            <button><Link href="/home">Join Traffic Buddy!</Link></button>
+            </div>
             <div style={{ display: isActiveTwo ? 'block' : 'none' }}>
-                <Home
-                    passName={name}
-                />
+                <Home passName={name} />
             </div>
             <div style={{ display: isActiveOne ? 'block' : 'none' }}>
                 <Nav /></div>
