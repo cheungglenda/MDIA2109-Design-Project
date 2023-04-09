@@ -1,0 +1,12 @@
+.detailsField{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: var(--white);
+    font-family: Manrope;
+}
+
+.count{
+    text-align: right;
+}

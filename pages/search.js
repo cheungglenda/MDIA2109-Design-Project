@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Search.module.css'
 import Link from 'next/link'
+import Nav from '@/components/nav'
+import HeaderNav from '@/components/HeaderNav'
 
 
 export default function Search() {
@@ -13,6 +15,9 @@ export default function Search() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header>
+        <HeaderNav />
+      </header>
       <main className={styles.main}>
         SEARCH PAGE
         <Link href="/requests">Requests</Link>
@@ -22,6 +27,9 @@ export default function Search() {
       <Link href="/profile">Profile</Link>
       <Link href="/tips">Tips</Link>
       </main>
+      <footer>
+      <Nav />
+      </footer>
     </>
   )
 }

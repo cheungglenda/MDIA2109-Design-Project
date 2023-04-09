@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Tips.module.css'
 import Link from 'next/link'
+import Nav from '@/components/nav'
+import HeaderNav from '@/components/HeaderNav'
 
 
 export default function Tips() {
@@ -13,6 +15,9 @@ export default function Tips() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header>
+        <HeaderNav />
+      </header>
       <main className={styles.main}>
 TIPS PAGE
 
@@ -23,6 +28,9 @@ TIPS PAGE
       <Link href="/profile">Profile</Link>
       <Link href="/tips">Tips</Link>
       </main>
+      <footer>
+      <Nav />
+      </footer>
     </>
   )
 }

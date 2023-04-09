@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function RequestItem({
 
-    src = "/placeholder.jpg", 
+    src = "/placeholder.jpg",
 
 }) {
 
@@ -13,10 +13,10 @@ export default function RequestItem({
     //still need to add the background colour when Anika inputs the root colours
 
     return (
-     
+
         <div className={styles.requestContainer}>
 
-                <Image src={src} alt="placeholder" width={45} height={45} className={styles.navIcon} />
+            <Image src={src} alt="placeholder" width={60} height={60} className={styles.navIcon} /> 
 
         </div>
     )

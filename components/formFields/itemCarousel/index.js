@@ -1,68 +1,91 @@
-import RequestItem from "@/components/requestItem";
-import Image from "next/image";
-import { useState } from "react";
-import styles from "./itemCarousel.module.css"
-import { carousel } from '@/data/carousel/carousel.js'
+import React, { useEffect, useState } from 'react'
+import styles from './itemCarousel.module.css'
 
-export default function ItemCarousel() {
+const Carousel = (props) => {
+    const { children, show } = props
 
-    const [data, setData] = useState ([...carousel.image])
+    const [currentIndex, setCurrentIndex] = useState(0)
+    const [length, setLength] = useState(children.length)
 
-    const [img, setImg] = useState(0); //start the image at 0
+    const [touchPosition, setTouchPosition] = useState(null)
 
-    const icons = "<RequestItem"
+    // Set the length to match current children from props
+    useEffect(() => {
+        setLength(children.length)
+    }, [children])
 
-    const changeImage = (change) => { //this means, onChange, if someone clicks either of the two arrow buttons below, then run the if statement. 
-        if (change == "backward") {
-            setImg(img - 1);
-
-            if (img == 0) {
-                setImg(5)
-            }
-            console.log(img);
-        } else if (change == "forward") {
-            setImg(img + 1);
-
-            if (img == 5) {
-                setImg(0)
-            }
-            console.log(img);
+    const next = () => {
+        if (currentIndex < (length - 1)) {
+            setCurrentIndex(prevState => prevState + 1)
         }
     }
 
+    const prev = () => {
+        if (currentIndex > 0) {
+            setCurrentIndex(prevState => prevState - 1)
+        }
+    }
+
+    const handleTouchStart = (e) => {
+        const touchDown = e.touches[0].clientX
+        setTouchPosition(touchDown)
+    }
+
+    const handleTouchMove = (e) => {
+        const touchDown = touchPosition
+
+        if (touchDown === null) {
+            return
+        }
+
+        const currentTouch = e.touches[0].clientX
+        const diff = touchDown - currentTouch
+
+        if (diff > 5) {
+            next()
+        }
+
+        if (diff < -5) {
+            prev()
+        }
+
+        setTouchPosition(null)
+    }
+
     return (
-        <>
-            <div className={styles.main}>
-                <div className={styles.body}>
-                <Image className={styles.imageL}
-                        src={"/layoutIcons/Larrow.png"}
-                        alt={"/layoutIcons/Larrow.png"}
-                        width={15}
-                        height={15}
-                        onClick={() => changeImage("backward")}
-                    />
-                    {data && data.map((info,index) => {
-                        return(
-                            <div className={styles.requestItemContainer}>
-                                <RequestItem
-                                key={index}
-                                src={info.imageURL}/>
-                            </div>
-                        )
-                    })}
+        <div className={styles.carouselcontainer}>
+                    <label for="items">What do you need?</label>
+            {
+                currentIndex > 0 &&
+                <button onClick={prev} className={styles.leftarrow}>
+                    &lt;
+                </button>
+            }
+            <div className={styles.carouselwrapper}>
 
-
-                    <Image className={styles.imageR}
-                        src={"/layoutIcons/Rarrow.png"}
-                        alt={"/layoutIcons/Rarrow.png"}
-                        width={15}
-                        height={15}
-                        onClick={() => changeImage("forward")}
-                    />
-
+                <div
+                    className={styles.carouselcontentwrapper}
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                >
+                    <div
+                        className={`${styles.carouselcontent} ${styles.show3}`}
+                        style={{ transform: `translateX(-${currentIndex * (100 / show)}%)` }}
+                    >
+                        {children}
+                    </div>
                 </div>
-            </div>
 
-        </>
+
+            </div>
+            {
+                currentIndex < (length - 1) &&
+                <button onClick={next} className={styles.rightarrow}>
+                    &gt;
+                </button>
+            }
+        </div>
     )
 }
+
+export default Carousel
