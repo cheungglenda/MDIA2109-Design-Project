@@ -109,14 +109,25 @@ body{
   width: 390px;
   margin: auto;
   border-radius: 3em;
+
 }
 
 main{
   padding: var(--screen-padding);
+  padding-bottom: 97px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 2em;
+  height: 844px;
+  overflow: scroll;
+  border-bottom-left-radius: 3em;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.main::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
 select, textarea, input{
