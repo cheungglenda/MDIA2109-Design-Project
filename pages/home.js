@@ -41,8 +41,10 @@ export default function Home({passName}) {
         <button><Link href="/quiz">Test Your Knowledge</Link></button>
         <button><Link href="/tips">Popular Tips</Link></button>
         </div>
-        <Nav />
       </main>
+      <footer>
+      <Nav />
+      </footer>
     </>
   )
 }

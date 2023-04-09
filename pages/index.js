@@ -24,6 +24,9 @@ export default function Landing() {
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
+      <header>
+        <HeaderNav />
+      </header>
 
       <main className={styles.main}> 
       THIS IS THE LANDING PAGE
@@ -40,6 +43,9 @@ export default function Landing() {
       <Link href="/msghistory">Message History</Link>
       <Link href="/requestsfulfilled">Requests Fulfilled</Link>
       </main>
+      <footer>
+      <Nav />
+      </footer>
     </>
   )
 }

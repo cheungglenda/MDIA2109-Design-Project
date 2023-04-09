@@ -7,8 +7,9 @@ export default function HeaderNav() {
 
     return (
         <div className={styles.headerContainer}>
-            <Link href="/"><Image src="/placeholder.jpg" alt="placeholder" width={60} height={60} className={styles.backIcon} /></Link>
+            <Link href="/"><Image src="/navIcons/BackButton.svg" alt="placeholder" width={20} height={20} className={styles.backIcon} /></Link>
             <h2 className={styles.title}>Title of Page</h2>
+            <Link href="/"><Image src="/navIcons/Hamburger.svg" alt="placeholder" width={20} height={20} className={styles.backIcon} /></Link>
         </div>
     )
 }

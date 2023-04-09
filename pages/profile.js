@@ -2,10 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Profile.module.css'
 import Link from 'next/link'
-import Nav from '@/components/nav'
-import HeaderNav from '@/components/HeaderNav'
 import FulfilledChart from '../components/FulfilledChart'
 import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
+import Nav from '@/components/nav'
+import HeaderNav from '@/components/HeaderNav'
 
 
 
@@ -18,8 +18,10 @@ export default function Profile() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <header>
+        <HeaderNav />
+      </header>
             <main className={styles.main}>
-                <HeaderNav />
                 <div className={styles.profilePic}>
                   <Image 
                   src="/headshots/profile.jpeg"
@@ -38,6 +40,9 @@ export default function Profile() {
                 </div>
                 <Nav />
             </main>
+            <footer>
+      <Nav />
+      </footer>
     </>
   )
 }

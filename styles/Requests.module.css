@@ -1,20 +1,22 @@
-.main{
+.button {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
-.whenField{
-    width: 330px;
+.whenField {
+    width: 100%;
     border: 1px solid black;
     height: 30px;
     border-radius: 10px;
     background-color: var(--white);
 }
 
-.detailsField{
-    width: 330px;
-    height: auto;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: var(--white);
+.carousel{
+    display: flex;
+    flex-direction: row;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
 }
+

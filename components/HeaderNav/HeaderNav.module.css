@@ -4,9 +4,14 @@
     height: auto;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 12px;
-    padding: 1em 0em;
+    padding: 1em var(--screen-padding);
+    background: var(--primary-light-spice);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-sizing: border-box;
 }
 
 .backIcon{
@@ -15,5 +20,5 @@
 }
 
 .title {
-    font-family: 'manrope'
+    font-family: 'manrope';
 }

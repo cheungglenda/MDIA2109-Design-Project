@@ -1,13 +1,22 @@
 export const carousel = {
     image: [
         {
-            imageURL: "/itemIcons/clothes.png"
+            imageURLLight: "/itemIcons/Clothes-Light.svg"
         },
         {
-            imageURL: "/itemIcons/food.png"
+            imageURLLight: "/itemIcons/Food-Light.svg"
         },
         {
-            imageURL: "/itemIcons/waterBottle.png"
+            imageURLLight: "/itemIcons/Meds-Light.svg"
+        },
+        {
+            imageURLLight: "/itemIcons/Water-Light.svg"
+        },
+        {
+            imageURLLight: "/placeholder.jpg"
+        },
+        {
+            imageURLLight: "/placeholder.jpg"
         }
     ]
 }

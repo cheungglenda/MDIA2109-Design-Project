@@ -6,6 +6,9 @@
     gap: 12px;
     padding: 1em 0em;
     background-color: var(--primary-light-spice);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-sizing: border-box;
 }
 
 .navIcon{
