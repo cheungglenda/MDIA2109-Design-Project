@@ -7,7 +7,7 @@ import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
 import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
 
-export default function Quiz () {
+export default function QuizResults() {
 return(
 <>
 <Head>
@@ -20,10 +20,14 @@ return(
         <HeaderNav />
       </header>
 <main className={styles.main}>
-<h1 className={styles.header}>Let's Test Your Knowledge!</h1>
 <img></img>
+<div>
+    <h1>Your Final Score:</h1>
+    <h3>3 out 5 Questions Correct</h3>
+</div>
 <div className={styles.btn}>
 <HPWTextButton/>
+<MPWTextButton/>
 <MPWTextButton/>
 </div>
 </main>
