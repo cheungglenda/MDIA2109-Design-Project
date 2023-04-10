@@ -6,7 +6,7 @@ import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
 import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
 
-export default function QuizTutorial() {
+export default function QuizTutorialTwo() {
   return (
     <>
       <Head>
@@ -20,14 +20,13 @@ export default function QuizTutorial() {
       </header>
       <main className={styles.main}>
         <img></img>
-        <h1 className={styles.header}>Welcome to Traffic Buddy's Quiz!</h1>
         <div className={styles.text}>
-          <p>This quiz is designed to test your knowledge on a variety of supplies to keep in your can and tips!</p>
-          <h4>We'll be taking you through a quick tutorial on how to play and what to expect!</h4>
+          <p>To take the quiz, a question will appear and there will be multiple choice options.</p>
+          <p>Choose one option that you think is the correct answer.</p>
+          <h3>Choose the option that has a fruit in it.</h3>
         </div>
         <div className={styles.btn}>
-          <MPWTextButton />
-          <MPWTextButton />
+        
         </div>
 
       </main>
