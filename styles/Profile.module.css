@@ -13,6 +13,8 @@
     align-items:center;
     justify-content:center;
     flex-direction:column;
+    padding-bottom:220px;
+    padding-top:200px;
 }
 
 .title {

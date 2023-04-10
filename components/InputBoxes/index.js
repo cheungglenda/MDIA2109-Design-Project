@@ -64,8 +64,6 @@ export default function InputBoxes() {
             <div style={{ display: isActiveTwo ? 'block' : 'none' }}>
                 <Home passName={name} />
             </div>
-            <div style={{ display: isActiveOne ? 'block' : 'none' }}>
-                <Nav /></div>
         </div>
     )
 }
