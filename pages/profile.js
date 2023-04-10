@@ -38,7 +38,6 @@ export default function Profile() {
                 <div className={styles.chartContainer}>
                     <FulfilledChart />
                 </div>
-                <Nav />
             </main>
             <footer>
       <Nav />
