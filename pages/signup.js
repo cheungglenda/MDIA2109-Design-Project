@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from '@/styles/Signup.module.css'
 import Link from 'next/link'
 import InputBoxes from '../components/InputBoxes'
-import Nav from '@/components/Nav'
 
 
 
