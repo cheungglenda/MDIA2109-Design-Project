@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Nav() {
-//still need to add the background colour when Anika inputs the root colours
+
 
     return (
         <div className={styles.navContainer}>
