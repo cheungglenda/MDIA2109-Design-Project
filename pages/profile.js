@@ -4,7 +4,7 @@ import styles from '@/styles/Profile.module.css'
 import Link from 'next/link'
 import FulfilledChart from '../components/FulfilledChart'
 import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
-import Nav from '@/components/nav'
+import Nav from '@/components/Nav'
 import HeaderNav from '@/components/HeaderNav'
 
 

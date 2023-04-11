@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Requests.module.css'
-import Location from '@/components/formFields/location'
+import Location from '@/components/formFields/Location'
 import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
 import HeaderNav from '@/components/HeaderNav'
-import CharCount from '@/components/formFields/characterCount/characterCount'
-import Nav from '@/components/nav'
-import Test from '@/components/formFields/carouselContainer'
+import CharCount from '@/components/formFields/CharacterCount/characterCount'
+import Nav from '@/components/Nav'
+import CarouselContainer from '@/components/formFields/ItemCarousel'
 
 export default function Requests() {
   return (
@@ -23,7 +23,7 @@ export default function Requests() {
       <main className={styles.main}>
 
         <Location />
-        <Test/>
+        <CarouselContainer/>
 
         <div>
           <label for="when">When do you need it?</label>

@@ -92,7 +92,6 @@ label{
   font-weight: bold;
 }
 
-
 html{
   height: 844px;
   width: 390px;
@@ -114,13 +113,13 @@ body{
 
 main{
   padding: var(--screen-padding);
-  padding-bottom: 97px;
+  padding-bottom: 97px; /*This makes it so that you can see right to the bottom of the page content (takes the bottom nav into account)*/
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 2em;
-  height: 844px;
-  overflow: scroll;
+  height: 737px;
+  overflow: scroll; /*this makes it so that overflowing content (vertically) on the page is hidden and you have to scroll to see it*/
   border-bottom-left-radius: 3em;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
@@ -138,5 +137,9 @@ footer{
 position: absolute;
 bottom: 0px;
 width: 100%;
+}
+
+input{
+  font-family: Manrope;
 }
 

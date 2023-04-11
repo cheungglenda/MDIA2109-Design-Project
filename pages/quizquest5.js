@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Quiz.module.css'
 import Link from 'next/link'
 import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
-import Nav from '@/components/nav'
+import Nav from '@/components/Nav'
 import HeaderNav from '@/components/HeaderNav'
 
 export default function QuizQuestFive() {

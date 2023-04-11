@@ -3,7 +3,7 @@ import Image from 'next/image'
 import HeaderWithLogo from '../components/HeaderWithLogo'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
-import Nav from '@/components/nav'
+import Nav from '@/components/Nav'
 
 export default function Home({passName}) {
   return (
@@ -14,8 +14,11 @@ export default function Home({passName}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header>
+      <HeaderWithLogo />
+      </header>
       <main className={styles.main}>
-        <HeaderWithLogo />
+
         <div className={styles.welcomeMsg}>
           <h2 className={styles.welcome}>👋 Welcome,</h2>
           <h1 className={styles.name}>{passName}!</h1>

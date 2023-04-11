@@ -1,7 +1,7 @@
 import styles from './location.module.css'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import ItemCarousel from '../itemCarousel';
+import ItemCarousel from '../ItemCarousel';
 
 export default function Location() {
 

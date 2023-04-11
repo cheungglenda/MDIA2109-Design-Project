@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import styles from './itemCarousel.module.css'
 
-const Carousel = (props) => {
-    const { children, show } = props
+export default function Carousel (props) {
+    
+    const {children, show} = props
 
     const [currentIndex, setCurrentIndex] = useState(0)
     const [length, setLength] = useState(children.length)
@@ -87,5 +88,3 @@ const Carousel = (props) => {
         </div>
     )
 }
-
-export default Carousel
