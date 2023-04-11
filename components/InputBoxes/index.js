@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Home from '@/pages/home'
 import styles from './InputBoxes.module.css'
-import Nav from '../Nav'
 import Image from 'next/image'
 import Link from 'next/link'
 
