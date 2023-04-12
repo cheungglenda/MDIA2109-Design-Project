@@ -6,7 +6,7 @@ import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
 
 
-export default function Search() {
+export default function findRequest() {
   return (
     <>
       <Head>

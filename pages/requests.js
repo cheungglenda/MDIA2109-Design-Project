@@ -7,8 +7,13 @@ import HeaderNav from '@/components/HeaderNav'
 import CharCount from '@/components/formFields/characterCount/characterCount'
 import Nav from '@/components/nav'
 import CarouselContainer from '@/components/formFields/carouselContainer'
+import { text } from '@/data/text/text'
+import { useState } from 'react'
 
 export default function Requests() {
+
+  const [data, setData] = useState([...text.headers])
+
   return (
     <>
       <Head>
@@ -18,12 +23,21 @@ export default function Requests() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <HeaderNav />
+
+        {data && data.map((info, index) => {
+          return (
+              <HeaderNav
+                key={index}
+                headers={info.newRequest} />
+          )
+        })}
+
       </header>
+      
       <main className={styles.main}>
 
         <Location />
-        <CarouselContainer/>
+        <CarouselContainer />
 
         <div>
           <label for="when">When do you need it?</label>
