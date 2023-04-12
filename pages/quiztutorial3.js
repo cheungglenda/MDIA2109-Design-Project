@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/QuizTutorial.module.css'
 import Link from 'next/link'
-import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
-import Nav from '@/components/Nav'
 import HeaderNav from '@/components/HeaderNav'
 
 export default function QuizTutorialThree() {
@@ -39,7 +37,6 @@ export default function QuizTutorialThree() {
 
       </main>
       <footer>
-        <Nav />
       </footer>
     </>
   )

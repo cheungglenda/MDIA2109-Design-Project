@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Tips.module.css'
 import Link from 'next/link'
-import Nav from '@/components/Nav'
 import HeaderNav from '@/components/HeaderNav'
 import SearchBar from '@/components/searchBar'
 import TipsCard from '@/components/tipsCard'
@@ -42,7 +41,6 @@ export default function Tips() {
       </main>
 
       <footer>
-        <Nav />
       </footer>
     </>
   )

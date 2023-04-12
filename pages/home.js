@@ -3,7 +3,6 @@ import Image from 'next/image'
 import HeaderWithLogo from '../components/HeaderWithLogo'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
-import Nav from '@/components/Nav'
 
 export default function Home({passName}) {
   return (
@@ -46,7 +45,6 @@ export default function Home({passName}) {
         </div>
       </main>
       <footer>
-      <Nav />
       </footer>
     </>
   )

@@ -29,7 +29,6 @@ export default function MessageHistory() {
       <Link href="/tips">Tips</Link>
       </main>
       <footer>
-      <Nav />
       </footer>
     </>
   )

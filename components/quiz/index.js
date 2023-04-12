@@ -17,43 +17,43 @@ const Quiz = () => {
         setAnswerCorrect(false);
     };
 
-    return(
+    return (
         <div>
             {currentQuestion < quizData.length ? (
                 <div>
                     <h2>{quizData[currentQuestion].question}</h2>
                     {quizData[currentQuestion].options.map((option) => (
                         <div key={option}>
-                                <button 
+                            <button
                                 type="button"
                                 className={`quiz-option ${selectedOption === option ? 'selected' : ''}`}
                                 onClick={() => handleAnswerSelection(option)}
                             >
-                            {option}
-                           </button>
-                            </div>
+                                {option}
+                            </button>
+                        </div>
                     ))}
                     {selectedOption && (
                         <div>
                             {answerCorrect ? (
-                                <img/>
+                                <img />
                             ) : (
-                                <div> 
-                                    <img/>
+                                <div>
+                                    <img />
                                     <p>
                                         The correct answer was {quizData[currentQuestion].answer}
                                     </p>
-                                    </div>
+                                </div>
                             )}
                             <button onClick={handleNextQuestion}>Next</button>
-                            </div>
+                        </div>
                     )}
-             </div>
+                </div>
 
             ) : (
                 <div>
                     <h2>Quiz Completed!</h2>
-                    </div>
+                </div>
             )}
         </div>
 
@@ -63,6 +63,6 @@ const Quiz = () => {
     );
 
 
-} ;
+};
 
 export default Quiz;

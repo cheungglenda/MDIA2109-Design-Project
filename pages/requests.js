@@ -5,7 +5,6 @@ import Location from '@/components/formFields/Location'
 import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
 import HeaderNav from '@/components/HeaderNav'
 import CharCount from '@/components/formFields/CharacterCount/characterCount'
-import Nav from '@/components/Nav'
 import CarouselContainer from '@/components/formFields/ItemCarousel'
 
 export default function Requests() {
@@ -42,7 +41,6 @@ export default function Requests() {
       </main>
 
       <footer>
-        <Nav />
       </footer>
     </>
   )

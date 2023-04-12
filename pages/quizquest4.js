@@ -3,8 +3,6 @@ import Image from 'next/image'
 import styles from '@/styles/Quiz.module.css'
 import Link from 'next/link'
 import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
-import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
-import Nav from '@/components/Nav'
 import HeaderNav from '@/components/HeaderNav'
 
 export default function QuizQuestFour() {
@@ -30,7 +28,6 @@ return(
 </div>
 </main>
 <footer>
-      <Nav />
       </footer>
 </>
 )

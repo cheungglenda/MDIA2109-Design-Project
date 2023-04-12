@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Settings.module.css'
-import Nav from '@/components/Nav'
 import HeaderNav from '@/components/HeaderNav'
 
 
@@ -36,7 +35,6 @@ export default function Settings() {
 <h4>Report a Bug</h4>
       </main>
       <footer>
-      <Nav />
       </footer>
     </>
   )

@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Landing.module.css'
 import Link from 'next/link'
-import Nav from '@/components/Nav'
 import HeaderNav from '@/components/HeaderNav'
 
 
@@ -38,7 +37,6 @@ export default function Landing() {
       <Link href="/requestsfulfilled">Requests Fulfilled</Link>
       </main>
       <footer>
-      <Nav />
       </footer>
     </>
   )

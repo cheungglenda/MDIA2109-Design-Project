@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Search.module.css'
 import Link from 'next/link'
-import Nav from '@/components/Nav'
 import HeaderNav from '@/components/HeaderNav'
 
 
@@ -28,7 +27,6 @@ export default function Search() {
       <Link href="/tips">Tips</Link>
       </main>
       <footer>
-      <Nav />
       </footer>
     </>
   )
