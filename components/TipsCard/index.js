@@ -1,4 +1,4 @@
-import styles from './tips.module.css'
+import styles from './tipsCard.module.css'
 import Image from 'next/image'
 
 

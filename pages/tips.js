@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from '@/styles/Tips.module.css'
 import Link from 'next/link'
 import HeaderNav from '@/components/HeaderNav'
-import SearchBar from '@/components/searchBar'
+import SearchBar from '@/components/formFields/SearchBar'
 import TipsCard from '@/components/TipsCard'
 import { tips } from '@/data/tips/tips'
 import { useState } from 'react'
@@ -33,8 +33,6 @@ export default function Tips() {
       </main>
 
       <footer>
-        <Nav />
-        <Nav />
       </footer>
     </>
   )
