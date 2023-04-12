@@ -2,13 +2,15 @@ import styles from './lptext.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function LPWTextButton() {
+export default function LPWTextButton({
+    
+    buttonText,
 
-    //still need to add the background colour and text sizing when Anika inputs the root colours/sizes
+}) {
 
     return (
         <div className={styles.buttonContainer}>
-            <p>Low Priority</p>
+            <p>{buttonText}</p>
         </div>
     )
 }

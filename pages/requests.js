@@ -13,6 +13,7 @@ import { useState } from 'react'
 export default function Requests() {
 
   const [data, setData] = useState([...text.headers])
+  const [buttText, setButText] = useState([...text.buttons])
 
   return (
     <>
@@ -50,7 +51,14 @@ export default function Requests() {
         </div>
         <CharCount />
         <div className={styles.button}>
-          <HPWTextButton />
+
+          {buttText && buttText.map((binfo, bindex) => {
+          return (
+              <HPWTextButton
+                key={bindex}
+                buttonText={binfo.postRequest} />
+          )
+        })}
         </div>
 
       </main>

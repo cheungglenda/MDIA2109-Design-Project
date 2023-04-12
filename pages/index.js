@@ -37,11 +37,12 @@ export default function Landing() {
       <Link href="/tips">Tips</Link>
       <Link href="/requests">Requests</Link>
       <Link href="/profile">Profile</Link>
-      <Link href="/findRequest">findRequest</Link>
+      <Link href="/findRequest">Find a Request</Link>
       <Link href="/settings">Settings</Link>
       <Link href="/messages">Messages</Link>
       <Link href="/msghistory">Message History</Link>
-      <Link href="/requestsfulfilled">Requests Fulfilled</Link>
+      <Link href="/requestDetails">Request Details</Link>
+      <Link href="/yourRequests">Your Requests</Link>
       </main>
       <footer>
       <Nav />
