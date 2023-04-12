@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
+
+.main {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding-bottom:220px;
+    padding-top:200px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    margin-top: -5rem;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--primary-h1-font);
+    font-weight: var(--primary-bold);;
+    word-break: break-all;
+    text-align: center;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+}

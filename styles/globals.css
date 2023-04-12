@@ -24,6 +24,8 @@
   --primary-h3-font: 20px;
   --primary-h4-font: 18px;
 
+  --primary-bold: bold;
+
 
   /* SECONDARY */
   --secondary-darkPurple: #4c3b4d;
@@ -86,6 +88,8 @@
   color: #6C91C2;
   box-shadow: 4px #373F47;
 }
+
+
 
 label{
   font-size: 20px /*all form labels match font size of H3 text*/; 

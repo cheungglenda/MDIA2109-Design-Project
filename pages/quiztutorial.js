@@ -5,8 +5,12 @@ import Link from 'next/link'
 import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
 import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
+import { text } from '@/data/text/text'
+import { useState } from 'react'
 
 export default function QuizTutorial() {
+
+  const [buttText, setButText] = useState([...text.buttons])
   return (
     <>
       <Head>
@@ -19,15 +23,33 @@ export default function QuizTutorial() {
         <HeaderNav />
       </header>
       <main className={styles.main}>
-        <img></img>
-        <h1 className={styles.header}>Welcome to Traffic Buddy's Quiz!</h1>
+        <div className={styles.navImg}>
+        <img className={styles.img} src="/logos/logo.png"></img>
+        <h1 className={styles.head}>Welcome to Traffic Buddy's Quiz!</h1>
+        </div>
         <div className={styles.text}>
-          <p>This quiz is designed to test your knowledge on a variety of supplies to keep in your can and tips!</p>
-          <h4>We'll be taking you through a quick tutorial on how to play and what to expect!</h4>
+          <p className={styles.reg}>This quiz is designed to test your knowledge on a variety of supplies to keep in your can and tips!</p>
+          <h4 className={styles.headFour}>We'll be taking you through a quick tutorial on how to play and what to expect!</h4>
         </div>
         <div className={styles.btn}>
-          <MPWTextButton />
-          <MPWTextButton />
+        {buttText && buttText.map((binfo, bindex) => {
+          return (
+              <Link href="/quizmain">
+              <MPWTextButton
+                key={bindex}
+                buttonText={binfo.skip} />
+                </Link>
+          )
+        })}
+          {buttText && buttText.map((binfo, bindex) => {
+          return (
+              <Link href="/quiztutorial2">
+              <MPWTextButton
+                key={bindex}
+                buttonText={binfo.next} />
+                </Link>
+          )
+        })}
         </div>
 
       </main>
