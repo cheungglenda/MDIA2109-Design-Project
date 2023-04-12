@@ -38,7 +38,7 @@ export default function Home({passName}) {
         <div class={styles.quickLinks}>
         <button><Link href="/search">Help Someone Nearby</Link></button>
         <button><Link href="/requests">Request an Item</Link></button>
-        <button><Link href="/quiz">Test Your Knowledge</Link></button>
+        <button><Link href="/quizmain">Test Your Knowledge</Link></button>
         <button><Link href="/tips">Popular Tips</Link></button>
         </div>
       </main>
