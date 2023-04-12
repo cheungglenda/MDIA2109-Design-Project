@@ -8,12 +8,14 @@ import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
 import { text } from '@/data/text/text'
 import { useState } from 'react'
+import LPWTextButton from '@/components/buttons/withText/lowpriorityWtext'
 
 
 
 export default function Profile() {
 
   const [data, setData] = useState([...text.headers])
+  const [buttText, setButText] = useState([...text.buttons])
 
   return (
     <>
@@ -45,7 +47,13 @@ export default function Profile() {
           <h1 className={styles.name}>Jane Doe</h1>
         </div>
         <div className={styles.postButton}>
-          <button><Link href="/home">View Posts</Link></button>
+        {buttText && buttText.map((binfo, bindex) => {
+          return (
+              <LPWTextButton
+                key={bindex}
+                buttonText={binfo.postRequest} />
+          )
+        })}
         </div>
         <h2 className={styles.title}>Way to lend a helping hand in 2023 so far, Jane 👏</h2>
         <div className={styles.chartContainer}>

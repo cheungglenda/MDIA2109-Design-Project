@@ -4,9 +4,14 @@ import styles from '@/styles/Search.module.css'
 import Link from 'next/link'
 import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
+import { text } from '@/data/text/text'
+import { useState } from 'react'
 
 
 export default function findRequest() {
+
+  const [data, setData] = useState([...text.headers])
+
   return (
     <>
       <Head>
@@ -16,7 +21,13 @@ export default function findRequest() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <HeaderNav />
+        {data && data.map((info, index) => {
+          return (
+              <HeaderNav
+                key={index}
+                headers={info.findRequest} />
+          )
+        })}
       </header>
       <main className={styles.main}>
         SEARCH PAGE

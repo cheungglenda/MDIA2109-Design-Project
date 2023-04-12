@@ -4,6 +4,8 @@ import styles from './InputBoxes.module.css'
 import Nav from '../nav'
 import Image from 'next/image'
 import Link from 'next/link'
+import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
+import { text } from '@/data/text/text'
 
 
 
@@ -12,6 +14,8 @@ export default function InputBoxes() {
     const [name, setName] = useState("");
     const [isActiveOne, setIsActiveOne] = useState(true);
     const [isActiveTwo, setIsActiveTwo] = useState(false);
+
+    const [buttText, setButText] = useState([...text.buttons])
 
     const passName = (event) => {
         if (event.key === "Enter") {
@@ -28,7 +32,7 @@ export default function InputBoxes() {
                 alt=""
                 width={200}
                 height={200}
-                className={styles.logoPic} 
+                className={styles.logoPic}
                 style={{ display: isActiveOne ? 'block' : 'none' }} />
             <h2 style={{ display: isActiveOne ? 'block' : 'none' }}>Sign Up</h2>
             <div style={{ display: isActiveOne ? 'block' : 'none' }}>
@@ -59,7 +63,14 @@ export default function InputBoxes() {
                 <input type="password" placeholder="Confirm Password" className={styles.input} />
             </div>
             <div className={styles.joinButton} style={{ display: isActiveOne ? 'block' : 'none' }}>
-            <button><Link href="/home">Join Traffic Buddy!</Link></button>
+                {buttText && buttText.map((binfo, bindex) => {
+                    return (
+
+                        <Link href="/home"><HPWTextButton
+                            key={bindex}
+                            buttonText={binfo.join} /></Link>
+                    )
+                })}
             </div>
             <div style={{ display: isActiveTwo ? 'block' : 'none' }}>
                 <Home passName={name} />
