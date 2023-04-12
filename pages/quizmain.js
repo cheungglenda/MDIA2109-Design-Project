@@ -24,8 +24,10 @@ return(
         <HeaderNav />
       </header>
 <main className={styles.main}>
-<h1 className={styles.header}>Let's Test Your Knowledge!</h1>
-<img></img>
+  <div className={styles.header}>
+<h1 className={styles.head}>Let's Test Your Knowledge!</h1>
+</div>
+<img className={styles.img} src="/logos/logo.png"></img>
 <div className={styles.btn}>
 
 

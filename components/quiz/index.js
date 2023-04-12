@@ -52,7 +52,7 @@ const Quiz = () => {
 
             ) : (
                 <div>
-                    <h2>Quiz Completed!</h2>
+                   
                     </div>
             )}
         </div>
