@@ -20,6 +20,7 @@ export default function Tips() {
       </header>
       <main className={styles.main}>
 TIPS PAGE
+HELLO i AM TESTING
 
 <Link href="/requests">Requests</Link>
       <Link href="/about">About</Link>
