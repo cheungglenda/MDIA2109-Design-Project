@@ -34,3 +34,6 @@ npm run dev
 npm run test:e2e
 --help 
 
+## References
+[Multiple Item React Carousel](https://dev.to/rakumairu/how-to-show-multiple-item-in-simple-react-carousel-32dd)
+

@@ -119,7 +119,7 @@ main{
   display: flex;
   flex-direction: column;
   gap: 2em;
-  height: 844px;
+  height: 737px;
   overflow: scroll;
   border-bottom-left-radius: 3em;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */

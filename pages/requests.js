@@ -6,7 +6,7 @@ import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
 import HeaderNav from '@/components/HeaderNav'
 import CharCount from '@/components/formFields/characterCount/characterCount'
 import Nav from '@/components/nav'
-import Test from '@/components/formFields/carouselContainer'
+import CarouselContainer from '@/components/formFields/carouselContainer'
 
 export default function Requests() {
   return (
@@ -23,7 +23,7 @@ export default function Requests() {
       <main className={styles.main}>
 
         <Location />
-        <Test/>
+        <CarouselContainer/>
 
         <div>
           <label for="when">When do you need it?</label>

@@ -4,7 +4,7 @@ import { useState } from "react"
 import { carousel } from '@/data/carousel/carousel.js'
 import RequestItem from "@/components/requestItem"
 
-const Test = () => {
+const CarouselContainer = () => {
 
 
     const [data, setData] = useState([...carousel.image])
@@ -28,4 +28,4 @@ const Test = () => {
     )
 }
 
-export default Test
+export default CarouselContainer
