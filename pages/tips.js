@@ -6,16 +6,25 @@ import SearchBar from '@/components/formFields/SearchBar'
 import TipsCard from '@/components/TipsCard'
 import { tips } from '@/data/tips/tips'
 import { useState } from 'react'
+import { text } from '@/data/text/text'
 
 export default function Tips() {
 
   const [data, setData] = useState([...tips.card])
+  const [data2, setData2] = useState([...text.headers])
 
   return (
     <>
       <header>
-        <HeaderNav />
+      {data2 && data2.map((info, index) => {
+          return (
+              <HeaderNav
+                key={index}
+                headers={info.tips} />
+          )
+        })}
       </header>
+      
       <main className={styles.main}>
         <SearchBar />
 

@@ -37,7 +37,7 @@ export default function Landing() {
       <Link href="/tips">Tips</Link>
       <Link href="/requests">Requests</Link>
       <Link href="/profile">Profile</Link>
-      <Link href="/search">Search</Link>
+      <Link href="/findRequest">findRequest</Link>
       <Link href="/settings">Settings</Link>
       <Link href="/messages">Messages</Link>
       <Link href="/msghistory">Message History</Link>
