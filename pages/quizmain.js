@@ -6,8 +6,12 @@ import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
 import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
 import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
+import { text } from '@/data/text/text'
+import { useState } from 'react'
 
 export default function QuizMain() {
+
+  const [buttText, setButText] = useState([...text.buttons])
 return(
 <>
 <Head>
@@ -23,8 +27,27 @@ return(
 <h1 className={styles.header}>Let's Test Your Knowledge!</h1>
 <img></img>
 <div className={styles.btn}>
-<HPWTextButton/>
-<MPWTextButton/>
+
+
+{buttText && buttText.map((binfo, bindex) => {
+          return (
+              <Link href="/quizquest1">
+              <HPWTextButton
+                key={bindex}
+                buttonText={binfo.start} />
+                </Link>
+          )
+        })}
+        {buttText && buttText.map((binfo, bindex) => {
+          return (
+              <Link href="/quiztutorial">
+              <MPWTextButton
+                key={bindex}
+                buttonText={binfo.tutorial} />
+                </Link>
+          )
+        })}
+
 </div>
 </main>
 <footer>
