@@ -62,13 +62,15 @@ export default function TipsDescription({
                 <h1>{title}</h1>
                 <Image src={image} width={width} height={height} className={styles.tipsImg} />
 
-                {buttText && buttText.map((binfo, bindex) => {
-                    return (
-                        <HPWTextButton
-                            key={bindex}
-                            buttonText={binfo.testKnowledge} />
-                    )
-                })}
+                <div className={styles.buttonContainer}>
+                    {buttText && buttText.map((binfo, bindex) => {
+                        return (
+                            <HPWTextButton
+                                key={bindex}
+                                buttonText={binfo.testKnowledge} />
+                        )
+                    })}
+                </div>
 
                 <p>{description}</p>
                 <h2>{subheader}</h2>
