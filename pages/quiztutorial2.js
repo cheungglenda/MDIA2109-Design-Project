@@ -1,12 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '@/styles/QuizTutorial.module.css'
+import styles from '@/styles/QuizTutorial2.module.css'
 import Link from 'next/link'
 import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
 import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
+import { text } from '@/data/text/text'
+import { useState } from 'react'
 
 export default function QuizTutorialTwo() {
+  const [buttText, setButText] = useState([...text.buttons])
   return (
     <>
       <Head>
@@ -19,14 +22,42 @@ export default function QuizTutorialTwo() {
         <HeaderNav />
       </header>
       <main className={styles.main}>
-        <img></img>
+      <div className={styles.navImg}>
+      <img className={styles.img} src="/logos/logo.png"></img>
+      </div>
         <div className={styles.text}>
-          <p>To take the quiz, a question will appear and there will be multiple choice options.</p>
-          <p>Choose one option that you think is the correct answer.</p>
-          <h3>Choose the option that has a fruit in it.</h3>
+          <p className={styles.reg}>To take the quiz, a question will appear and there will be multiple choice options.</p>
+          <p className={styles.reg}>Choose one option that you think is the correct answer.</p>
+          <h3 className={styles.headThree}>Choose the option that has a fruit in it.</h3>
         </div>
         <div className={styles.btn}>
-        
+        {buttText && buttText.map((binfo, bindex) => {
+          return (
+              <Link href="/quiztutorial3">
+              <MPWTextButton
+                key={bindex}
+                buttonText={binfo.dog} />
+                </Link>
+          )
+        })}
+          {buttText && buttText.map((binfo, bindex) => {
+          return (
+              <Link href="/quiztutorial3">
+              <MPWTextButton
+                key={bindex}
+                buttonText={binfo.apple} />
+                </Link>
+          )
+        })}
+          {buttText && buttText.map((binfo, bindex) => {
+          return (
+              <Link href="/quiztutorial3">
+              <MPWTextButton
+                key={bindex}
+                buttonText={binfo.cat} />
+                </Link>
+          )
+        })}
         </div>
 
       </main>
