@@ -10,11 +10,25 @@ const CarouselContainer = () => {
 
 
     const [data, setData] = useState([...carousel.image])
-    const [color, setColor] = useState(true)
-    const [img, setImg] = useState("/itemIcons/Clothes-Light.svg")
+    const [clothesColor, setClothesColor] = useState(true)
+    const [foodColor, setFoodColor] = useState(true)
+    const [medsColor, setMedsColor] = useState(true)
+    const [waterColor, setWaterColor] = useState(true)
 
-    const onClick = () => {
-        setColor(!color)
+    const changeClothes = () => {
+        setClothesColor(!clothesColor)
+    }
+
+    const changeFood = () => {
+        setFoodColor(!foodColor)
+    }
+
+    const changeMeds = () => {
+        setMedsColor(!medsColor)
+    }
+
+    const changeWater = () => {
+        setWaterColor(!waterColor)
     }
 
 
@@ -25,11 +39,22 @@ const CarouselContainer = () => {
             <Carousel
                 className={styles.test}
                 show={3}>
-            <Image src={`${img}`} onClick={() => onClick()} alt="placeholder" width={60} height={60} className={styles.navIcon}/>
-            {color ? "yes" : "no"}
-            <Image src={"/placeholder.jpg"} alt="placeholder" width={60} height={60} className={styles.navIcon}/>
-            <Image src={"/placeholder.jpg"} alt="placeholder" width={60} height={60} className={styles.navIcon}/>
-            <Image src={"/placeholder.jpg"} alt="placeholder" width={60} height={60} className={styles.navIcon}/>
+
+                {clothesColor == true ? //Clothes image
+                    <Image src={"/itemIcons/Clothes-Light.svg"} onClick={() => changeClothes()} alt="placeholder" width={60} height={60} className={styles.navIcon} /> :
+                    <Image src={"/itemIcons/Clothes-Dark.svg"} onClick={() => changeClothes()} alt="placeholder" width={60} height={60} className={styles.navIcon} />}
+
+                {foodColor == true ? //Food image
+                    <Image src={"/itemIcons/Food-Light.svg"} onClick={() => changeFood()} alt="placeholder" width={60} height={60} className={styles.navIcon} /> :
+                    <Image src={"/itemIcons/Food-Dark.svg"} onClick={() => changeFood()} alt="placeholder" width={60} height={60} className={styles.navIcon} />}
+
+                {medsColor == true ? //Meds image
+                    <Image src={"/itemIcons/Meds-Light.svg"} onClick={() => changeMeds()} alt="placeholder" width={60} height={60} className={styles.navIcon} /> :
+                    <Image src={"/itemIcons/Meds-Dark.svg"} onClick={() => changeMeds()} alt="placeholder" width={60} height={60} className={styles.navIcon} />}
+
+                {waterColor == true ? //Water image
+                    <Image src={"/itemIcons/Water-Light.svg"} onClick={() => changeWater()} alt="placeholder" width={60} height={60} className={styles.navIcon} /> :
+                    <Image src={"/itemIcons/Water-Dark.svg"} onClick={() => changeWater()} alt="placeholder" width={60} height={60} className={styles.navIcon} />}
             </Carousel>
         </div>
     )

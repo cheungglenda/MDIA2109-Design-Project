@@ -36,4 +36,5 @@ npm run test:e2e
 
 ## References
 [Multiple Item React Carousel](https://dev.to/rakumairu/how-to-show-multiple-item-in-simple-react-carousel-32dd)
+[Tips Description page Toggle](https://codesandbox.io/s/pg3xv?file=/components/accordion.js)
 
