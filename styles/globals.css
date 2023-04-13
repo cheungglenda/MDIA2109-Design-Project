@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=manrope);
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
 
@@ -113,10 +113,9 @@ body{
   width: 390px;
   margin: auto;
   border-radius: 3em;
-
 }
 
-main{
+main {
   padding: var(--screen-padding);
   padding-bottom: 97px;
   box-sizing: border-box;
