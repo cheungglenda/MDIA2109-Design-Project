@@ -29,9 +29,9 @@ export default function Profile() {
 
         {data && data.map((info, index) => {
           return (
-              <HeaderNav
-                key={index}
-                headers={info.profile} />
+            <HeaderNav
+              key={index}
+              headers={info.profile} />
           )
         })}
 
@@ -45,17 +45,20 @@ export default function Profile() {
             height={250}
           />
           <h1 className={styles.name}>Jane Doe</h1>
+          <div className={styles.postButton}>
+            {buttText && buttText.map((binfo, bindex) => {
+              return (
+                <LPWTextButton
+                  key={bindex}
+                  buttonText={binfo.viewPosts} />
+              )
+            })}
+          </div>
         </div>
-        <div className={styles.postButton}>
-        {buttText && buttText.map((binfo, bindex) => {
-          return (
-              <LPWTextButton
-                key={bindex}
-                buttonText={binfo.postRequest} />
-          )
-        })}
-        </div>
+        <div className={styles.text}>
         <h2 className={styles.title}>Way to lend a helping hand in 2023 so far, Jane 👏</h2>
+        <p className={styles.description}>Check out your stats on how many requests you’ve fulfilled so far in 2023:</p>
+        </div>
         <div className={styles.chartContainer}>
           <FulfilledChart />
         </div>
