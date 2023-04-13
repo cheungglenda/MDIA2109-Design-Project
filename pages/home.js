@@ -24,24 +24,51 @@ export default function Home({passName}) {
         </div>
         <div className={styles.achievementButtons}>
           <Link href="/profile"><button className={styles.buttons}>
-            <h1 className={styles.fulfillmentNum}>30</h1>
-            <p className={styles.achievementDesc}>Requests Fulfilled</p>
+            <div className={styles.inside}>
+              <div className={styles.emoji}><span>✔️</span></div>
+            <div className={styles.fulfillmentNum}><h1>30</h1></div>
+            <div className={styles.achievementDesc}><p>Requests Fulfilled</p></div>
+            </div>
           </button></Link>
-          <button className={styles.buttons}>
-            <h1 className={styles.fulfillmentNum}>2</h1>
-            <p className={styles.achievementDesc}>Requests in Progress</p>
-          </button>
-          <button className={styles.buttons}>
-            <h1 className={styles.fulfillmentNum}>2</h1>
-            <p className={styles.achievementDesc}>Items Requested</p>
-          </button>
+          <Link href="/messages"><button className={styles.buttons}>
+          <div className={styles.inside}>
+              <div className={styles.emoji}><span>⏳</span></div>
+            <div className={styles.fulfillmentNum}><h1>2</h1></div>
+            <div className={styles.achievementDesc}><p>Requests In Progress</p></div>
+            </div>
+          </button></Link>
+          <Link href="/requests"><button className={styles.buttons}>
+          <div className={styles.inside}>
+              <div className={styles.emoji}><span>📝</span></div>
+            <div className={styles.fulfillmentNum}><h1>2</h1></div>
+            <div className={styles.achievementDesc}><p>Items Requested</p></div>
+            </div>
+          </button></Link>
         </div>
-        <h1>Get Started</h1>
+        <div className={styles.title}>
+          <h2>Get Started</h2>
+        </div>
         <div class={styles.quickLinks}>
-        <button><Link href="/search">Help Someone Nearby</Link></button>
-        <button><Link href="/requests">Request an Item</Link></button>
-        <button><Link href="/quizmain">Test Your Knowledge</Link></button>
-        <button><Link href="/tips">Popular Tips</Link></button>
+        <Link href="/search"><button>
+        <div className={styles.quickInside}>
+            <div className={styles.quickEmoji}><span>🤝</span></div>
+            <div className={styles.quickTitle}><h2>Help Someone Nearby</h2>
+        </div></div>
+          </button></Link>
+          <Link href="/requests">
+            <button>
+            <div className={styles.quickInside}>
+            <div className={styles.quickEmoji}><span>🙋‍♀️</span></div>
+            <div className={styles.quickTitle}><h2>Request<br />An <br />Item</h2>
+        </div></div></button></Link>
+        <Link href="/quizmain"><button> <div className={styles.quickInside}>
+            <div className={styles.quickEmoji}><span>🧠</span></div>
+            <div className={styles.quickTitle}><h2>Test<br />Your <br />Knowledge</h2>
+        </div></div></button></Link>
+        <Link href="/tips"><button><div className={styles.quickInside}>
+            <div className={styles.quickEmoji}><span>💡</span></div>
+            <div className={styles.quickTitle}><h2>Popular<br />Tips</h2>
+        </div></div></button></Link>
         </div>
       </main>
       <footer>
