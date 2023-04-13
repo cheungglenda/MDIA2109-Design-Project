@@ -14,8 +14,10 @@ export default function Home({passName}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header>
+      <HeaderWithLogo />
+      </header>
       <main className={styles.main}>
-        <HeaderWithLogo />
         <div className={styles.welcomeMsg}>
           <h2 className={styles.welcome}>👋 Welcome,</h2>
           <h1 className={styles.name}>{passName}!</h1>

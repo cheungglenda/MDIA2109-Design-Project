@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 .welcomeMsg {
   line-height:1em;
@@ -19,7 +19,7 @@
 
 .achievementButtons button {
   background-color:var(--primary-light-blue);
-  width:8em;
+  width:7.5em;
   height:10em;
   font-family:'manrope', sans-serif;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);

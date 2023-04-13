@@ -15,8 +15,11 @@
 }
 
 .backIcon{
-    object-fit: cover;
     align-items:left;
+}
+
+.backIcon img {
+    object-fit:contain;
 }
 
 .title {
