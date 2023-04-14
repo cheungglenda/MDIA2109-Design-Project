@@ -1,0 +1,21 @@
+.links a {
+    text-decoration:none;
+    color:var(--primary-black);
+}
+
+.links {
+    display:flex;
+    flex-direction:column;
+    margin-top:10em;
+}
+
+
+.open:hover {
+    cursor:pointer;
+}
+
+.open {
+    align-items:right;
+    margin-right:3em;
+    position:absolute;
+}
