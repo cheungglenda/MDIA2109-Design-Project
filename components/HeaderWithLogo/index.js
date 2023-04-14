@@ -1,6 +1,7 @@
 import styles from './HeaderWithLogo.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import HamburgerPopup from '../HamburgerPopup'
 
 
 export default function HeaderWithLogo() {
@@ -17,9 +18,8 @@ export default function HeaderWithLogo() {
                     />  
                 </Link></div>
                 <div className={styles.hamburger}>
-                <Link href="/">
-                    <Image src="/navIcons/Hamburger.svg" alt="placeholder" width={30} height={20} className={styles.backIcon} />
-                </Link></div>
+               <HamburgerPopup />
+               </div>
         </div>
     )
 }
