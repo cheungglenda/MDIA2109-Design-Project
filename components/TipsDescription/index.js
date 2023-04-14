@@ -75,64 +75,90 @@ export default function TipsDescription({
                 <p>{description}</p>
                 <h2>{subheader}</h2>
                 <div className={styles.accordionContainer}>
-                    <button className={styles.button}
-                        onClick={toggle1}
-                        type="button"
-                    >
-                        <p>{accordion1}</p>
-                    </button>
-                    <div style={{ display: isShowing1 ? "block" : "none", padding: "5px" }}
-                    >
-                        {accordion1Desc}
+
+                    <div className={styles.toggleContainer}>
+                        <div className={styles.buttonFlex}>
+                            <button className={styles.button}
+                                onClick={toggle1}
+                                type="button"
+                            >
+                                <h4>{accordion1}</h4>
+                            </button>
+                            <p>{isShowing1 ? "-" : "+"}</p>
+                        </div>
+                        <div style={{ display: isShowing1 ? "block" : "none", padding: "5px" }}
+                        >
+                            {accordion1Desc}
+                        </div>
                     </div>
 
-                    <button className={styles.button}
-                        onClick={toggle2}
-                        type="button"
-                    >
-                        <p>{accordion2}</p>
-                    </button>
-                    <div style={{ display: isShowing2 ? "block" : "none", padding: "5px" }}
-                    >
-                        {accordion2Desc}
+                    <div className={styles.toggleContainer}>
+                        <div className={styles.buttonFlex}>
+                            <button className={styles.button}
+                                onClick={toggle2}
+                                type="button"
+                            >
+                                <h4>{accordion2}</h4>
+                            </button>
+                            <p>{isShowing2 ? "-" : "+"}</p>
+                        </div>
+                        <div style={{ display: isShowing2 ? "block" : "none", padding: "5px" }}
+                        >
+                            {accordion2Desc}
+                        </div>
                     </div>
 
-                    <button className={styles.button}
-                        onClick={toggle3}
-                        type="button"
-                    >
-                        <p>{accordion3}</p>
-                    </button>
-                    <div style={{ display: isShowing3 ? "block" : "none", padding: "5px" }}
-                    >
-                        {accordion3Desc}
+                    <div className={styles.toggleContainer}>
+                        <div className={styles.buttonFlex}>
+                            <button className={styles.button}
+                                onClick={toggle3}
+                                type="button"
+                            >
+                                <h4>{accordion3}</h4>
+                            </button>
+                            <p>{isShowing3 ? "-" : "+"}</p>
+                        </div>
+                        <div style={{ display: isShowing3 ? "block" : "none", padding: "5px" }}
+                        >
+                            {accordion3Desc}
+                        </div>
                     </div>
 
-                    <button className={styles.button}
-                        onClick={toggle4}
-                        type="button"
-                    >
-                        <p>{accordion4}</p>
-                    </button>
-                    <div style={{ display: isShowing4 ? "block" : "none", padding: "5px" }}
-                    >
-                        {accordion4Desc}
+                    <div className={styles.toggleContainer}>
+                        <div className={styles.buttonFlex}>
+                            <button className={styles.button}
+                                onClick={toggle4}
+                                type="button"
+                            >
+                                <h4>{accordion4}</h4>
+                            </button>
+                            <p>{isShowing4 ? "-" : "+"}</p>
+                        </div>
+                        <div style={{ display: isShowing4 ? "block" : "none", padding: "5px" }}
+                        >
+                            {accordion4Desc}
+                        </div>
                     </div>
 
-                    <button className={styles.button}
-                        onClick={toggle5}
-                        type="button"
-                    >
-                        <p>{accordion5}</p>
-                    </button>
-                    <div style={{ display: isShowing5 ? "block" : "none", padding: "5px" }}
-                    >
-                        {accordion5Desc}
+                    <div className={styles.toggleContainer}>
+                        <div className={styles.buttonFlex}>
+                            <button className={styles.button}
+                                onClick={toggle5}
+                                type="button"
+                            >
+                                <h4>{accordion5}</h4>
+                            </button>
+                            <p>{isShowing5 ? "-" : "+"}</p>
+                        </div>
+                        <div style={{ display: isShowing5 ? "block" : "none", padding: "5px" }}
+                        >
+                            {accordion5Desc}
+                        </div>
                     </div>
 
                 </div>
 
-            </main>
+            </main >
 
 
         </>
