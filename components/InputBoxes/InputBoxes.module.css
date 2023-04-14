@@ -4,14 +4,24 @@
     padding-bottom:0.5em;
     font-family: 'manrope';
     border-radius:10px;
-    width:90%;
-    margin:auto;
-    padding-left:1em;
+    width:100%;
+}
+
+.fields {
+    width:100%;
+}
+
+.box {
+    width:100%;
+}
+
+.box h4 {
+    width:100%;
 }
 
 .main {
     display:flex;
-    flex-direction:column;
+    width:100%;
 }
 
 .main h1,
