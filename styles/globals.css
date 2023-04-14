@@ -18,7 +18,7 @@
   --screen-padding: 20px;
 
 
-  --primary-regular-font: 16px;
+  --primary-regular-font: 16px; /*Replace all css using this with the H1 font elements listed below. When complete, then delete this*/
   --primary-h1-font: 24px;
   --primary-h2-font: 22px;
   --primary-h3-font: 20px;
@@ -33,6 +33,30 @@
   --secondary-ocean: #61c9a8;
 
 
+}
+
+h1{
+font-size: 24px;
+font-weight: bold;
+}
+
+h2{
+font-size: 22px;
+font-weight: 400;
+}
+
+h3{
+font-size: 20px;
+font-weight: bold;
+}
+
+h4{
+font-size: 18px;
+font-weight: 400;
+}
+
+p{
+  font-size: 16px;
 }
 
 .high-button {
@@ -89,8 +113,6 @@
   box-shadow: 4px #373F47;
 }
 
-
-
 label{
   font-size: 20px /*all form labels match font size of H3 text*/; 
   font-weight: bold;
@@ -116,20 +138,23 @@ body{
 }
 
 main {
-  padding: var(--screen-padding);
+  padding-left: var(--screen-padding);
+  padding-right: var(--screen-padding);
   padding-bottom: 97px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 2em;
-  height: 737px;
+  height: 745px;
   overflow: scroll;
   border-bottom-left-radius: 3em;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
+  font-family: Manrope;
+  box-sizing: border-box;
 }
 
-.main::-webkit-scrollbar { 
+
+main::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
 }
 

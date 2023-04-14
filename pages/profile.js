@@ -36,6 +36,7 @@ export default function Profile() {
         })}
 
       </header>
+      
       <main className={styles.main}>
         <div className={styles.profilePic}>
           <Image
@@ -56,13 +57,14 @@ export default function Profile() {
           </div>
         </div>
         <div className={styles.text}>
-        <h2 className={styles.title}>Way to lend a helping hand in 2023 so far, Jane 👏</h2>
-        <p className={styles.description}>Check out your stats on how many requests you’ve fulfilled so far in 2023:</p>
+          <h2 className={styles.title}>Way to lend a helping hand in 2023 so far, Jane 👏</h2>
+          <p className={styles.description}>Check out your stats on how many requests you’ve fulfilled so far in 2023:</p>
         </div>
         <div className={styles.chartContainer}>
           <FulfilledChart />
         </div>
       </main>
+
       <footer>
         <Nav />
       </footer>

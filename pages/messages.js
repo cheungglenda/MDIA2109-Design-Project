@@ -30,6 +30,7 @@ export default function Messages() {
       <main className={styles.main}>
 MESSAGES
       </main>
+      
       <footer>
       <Nav />
       </footer>
