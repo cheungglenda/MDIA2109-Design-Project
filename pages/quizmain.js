@@ -11,10 +11,10 @@ import { useState } from 'react'
 
 export default function QuizMain() {
 
-  const [buttText, setButText] = useState([...text.buttons])
-return(
-<>
-<Head>
+  const [buttText, setButText] = useState([...text.quiz])
+  return (
+    <>
+      <Head>
         <title>Traffic Buddy</title>
         <meta name="description" content="Traffic Buddy" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,38 +23,37 @@ return(
       <header>
         <HeaderNav />
       </header>
-<main className={styles.main}>
-  <div className={styles.header}>
-<h1 className={styles.head}>Let's Test Your Knowledge!</h1>
-</div>
-<img className={styles.img} src="/logos/logo.png"></img>
-<div className={styles.btn}>
-
-
-{buttText && buttText.map((binfo, bindex) => {
-          return (
+      <main className={styles.main}>
+        <div className={styles.header}>
+          <h1 className={styles.head}>Let's Test Your Knowledge!</h1>
+        </div>
+        <img className={styles.img} src="/logos/logo.png"></img>
+        
+        <div className={styles.btn}>
+          {buttText && buttText.map((binfo, bindex) => {
+            return (
               <Link href="/quizquest1">
-              <HPWTextButton
-                key={bindex}
-                buttonText={binfo.start} />
-                </Link>
-          )
-        })}
-        {buttText && buttText.map((binfo, bindex) => {
-          return (
+                <HPWTextButton
+                  key={bindex}
+                  buttonText={binfo.start} />
+              </Link>
+            )
+          })}
+          {buttText && buttText.map((binfo, bindex) => {
+            return (
               <Link href="/quiztutorial">
-              <MPWTextButton
-                key={bindex}
-                buttonText={binfo.tutorial} />
-                </Link>
-          )
-        })}
+                <MPWTextButton
+                  key={bindex}
+                  buttonText={binfo.tutorial} />
+              </Link>
+            )
+          })}
 
-</div>
-</main>
-<footer>
-      <Nav />
+        </div>
+      </main>
+      <footer>
+        <Nav />
       </footer>
-</>
-)
+    </>
+  )
 }
