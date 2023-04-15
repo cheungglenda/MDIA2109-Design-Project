@@ -6,22 +6,32 @@ import Image from 'next/image'
 import Link from 'next/link'
 import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
 import { text } from '@/data/text/text'
-
+import { useRouter } from 'next/router'
 
 
 export default function InputBoxes() {
 
-    const [name, setName] = useState("");
-    const [isActiveOne, setIsActiveOne] = useState(true);
-    const [isActiveTwo, setIsActiveTwo] = useState(false);
-
     const [buttText, setButText] = useState([...text.buttons])
 
-    const passName = (event) => {
-        if (event.key === "Enter") {
-            console.log("enter")
-            setIsActiveOne(false);
-            setIsActiveTwo(true);
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+
+    })
+    const router = useRouter()
+
+    const CheckLogin = () => {
+        console.log(formData.firstName)
+
+        if (formData.firstName !== null) {
+            router.push({
+                pathname: './home',
+                query: {
+                    firstName: formData.firstName
+                }
+            })
         }
     }
 
@@ -32,48 +42,56 @@ export default function InputBoxes() {
                 alt=""
                 width={200}
                 height={200}
-                className={styles.logoPic}
-                style={{ display: isActiveOne ? 'block' : 'none' }} />
-            <h2 style={{ display: isActiveOne ? 'block' : 'none' }}>Sign Up</h2>
-            <div style={{ display: isActiveOne ? 'block' : 'none' }}>
+                className={styles.logoPic} />
+            <h2>Sign Up</h2>
+
+            <div>
                 <h4>First Name:</h4>
                 <input
-                    value={name}
-                    onChange={event => setName(event.target.value)}
+                    onChange={(e => setFormData({ ...formData, firstName: e.target.value }))}
                     placeholder="Enter First Name"
-                    onKeyDown={passName}
                     type="text"
                     className={styles.input}
                 />
             </div>
-            <div style={{ display: isActiveOne ? 'block' : 'none' }}>
+
+            <div>
                 <h4>Last Name:</h4>
-                <input type="text" placeholder="Enter Last Name" className={styles.input} />
+                <input
+                    onChange={(e => setFormData({ ...formData, lastName: e.target.value }))}
+                    type="text"
+                    placeholder="Enter Last Name"
+                    className={styles.input} />
             </div>
-            <div style={{ display: isActiveOne ? 'block' : 'none' }}>
+            <div>
                 <h4>Email:</h4>
-                <input type="email" placeholder="Enter Email" className={styles.input} />
+                <input
+                    onChange={(e => setFormData({ ...formData, email: e.target.value }))}
+                    type="email"
+                    placeholder="Enter Email"
+                    className={styles.input} />
             </div>
-            <div style={{ display: isActiveOne ? 'block' : 'none' }}>
+            <div>
                 <h4>Password:</h4>
-                <input type="password" placeholder="Enter Password" className={styles.input} />
+                <input
+                    type="password"
+                    placeholder="Enter Password"
+                    className={styles.input}
+                    onChange={(e => setFormData({ ...formData, password: e.target.value }))} />
             </div>
-            <div style={{ display: isActiveOne ? 'block' : 'none' }}>
+            <div>
                 <h4>Confirm Password:</h4>
                 <input type="password" placeholder="Confirm Password" className={styles.input} />
             </div>
-            <div className={styles.joinButton} style={{ display: isActiveOne ? 'block' : 'none' }}>
+            <div className={styles.joinButton}>
                 {buttText && buttText.map((binfo, bindex) => {
                     return (
 
-                        <Link href="/home"><HPWTextButton
+                        <a onClick={() => CheckLogin()}><HPWTextButton
                             key={bindex}
-                            buttonText={binfo.join} /></Link>
+                            buttonText={binfo.join} /></a>
                     )
                 })}
-            </div>
-            <div style={{ display: isActiveTwo ? 'block' : 'none' }}>
-                <Home passName={name} />
             </div>
         </div>
     )

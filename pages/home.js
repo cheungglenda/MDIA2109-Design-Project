@@ -4,8 +4,13 @@ import HeaderWithLogo from '../components/HeaderWithLogo'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import Nav from '@/components/nav'
+import { useSearchParams } from 'next/navigation'
 
-export default function Home({passName}) {
+export default function Home() {
+
+  const searchParams = useSearchParams();
+  const firstName = searchParams.get('firstName')
+
   return (
     <>
       <Head>
@@ -20,7 +25,7 @@ export default function Home({passName}) {
       <main className={styles.main}>
         <div className={styles.welcomeMsg}>
           <h2 className={styles.welcome}>👋 Welcome,</h2>
-          <h1 className={styles.name}>{passName}!</h1>
+          <h1 className={styles.name}>{firstName}!</h1>
         </div>
         <div className={styles.achievementButtons}>
           <Link href="/profile"><button className={styles.buttons}>

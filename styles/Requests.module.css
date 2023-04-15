@@ -1,3 +1,7 @@
+.main{
+    position: relative;
+}
+
 .button {
     display: flex;
     justify-content: center;
@@ -20,3 +24,18 @@
     margin-top: 64px;
 }
 
+
+.successContainer{
+    border: 5px solid var(--primary-charcoal);
+    background-color: var(--primary-white);
+    padding: 1em;
+    border-radius: 10px;
+    position: absolute;
+    top: 26%;
+    z-index: 1;
+    margin-right: 20px;
+}
+
+.successContainer > h1{
+    text-align: center;
+}

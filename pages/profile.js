@@ -12,10 +12,12 @@ import LPWTextButton from '@/components/buttons/withText/lowpriorityWtext'
 
 
 
+
 export default function Profile() {
 
   const [data, setData] = useState([...text.headers])
   const [buttText, setButText] = useState([...text.buttons])
+
 
   return (
     <>

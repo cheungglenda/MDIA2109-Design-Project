@@ -54,7 +54,7 @@ const Carousel = (props) => {
 
     return (
         <div className={styles.carouselcontainer}>
-                    <label for="items">What do you need?</label>
+            <label for="items">What do you need?</label>
             {
                 currentIndex > 0 &&
                 <button onClick={prev} className={styles.leftarrow}>
@@ -78,8 +78,11 @@ const Carousel = (props) => {
 
 
             </div>
+            <div className={styles.button}>
+
+            </div>
             {
-                currentIndex < (length - 1) &&
+                currentIndex < (length - 3) &&
                 <button onClick={next} className={styles.rightarrow}>
                     &gt;
                 </button>
