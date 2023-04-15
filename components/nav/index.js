@@ -13,7 +13,7 @@ export default function Nav() {
             <Link href="/search">
                 <Image src="/navIcons/Search.png" alt="search" width={60} height={60} className={styles.navIcon} />
             </Link>
-            <Link href="/requests.js">
+            <Link href="/requests">
                 <Image src="/navIcons/Add.png" alt="add" width={60} height={60} className={styles.navIcon} />
             </Link>
             <Link href="/messages">

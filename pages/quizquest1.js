@@ -78,8 +78,6 @@ export default function QuizQuestOne() {
           )
         })}
       </header>
-      {score}
-{count}
 
       <main className={styles.main}>
 

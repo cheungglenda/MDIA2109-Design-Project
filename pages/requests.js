@@ -9,11 +9,15 @@ import Nav from '@/components/nav'
 import CarouselContainer from '@/components/formFields/carouselContainer'
 import { text } from '@/data/text/text'
 import { useState } from 'react'
+import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
+import Link from 'next/link'
 
 export default function Requests() {
 
   const [data, setData] = useState([...text.headers])
   const [buttText, setButText] = useState([...text.buttons])
+
+  const [showDisplay, setShowDisplay] = useState(false)
 
   return (
     <>
@@ -27,14 +31,14 @@ export default function Requests() {
 
         {data && data.map((info, index) => {
           return (
-              <HeaderNav
-                key={index}
-                headers={info.newRequest} />
+            <HeaderNav
+              key={index}
+              headers={info.newRequest} />
           )
         })}
 
       </header>
-      
+
       <main className={styles.main}>
 
         <Location />
@@ -53,13 +57,31 @@ export default function Requests() {
         <div className={styles.button}>
 
           {buttText && buttText.map((binfo, bindex) => {
-          return (
-              <HPWTextButton
+            return (
+              <a onClick={() => setShowDisplay(true)}><HPWTextButton
                 key={bindex}
-                buttonText={binfo.postRequest} />
-          )
-        })}
+                buttonText={binfo.postRequest}
+              /></a>
+            )
+          })}
+
         </div>
+
+        <div className={styles.successContainer} style={{ display: showDisplay ? 'block' : 'none' }}>
+          <h1>Success!</h1>
+          <h2>Your post is now live and ready to be fulfilled.</h2>
+          <div className={styles.button}>
+            {buttText && buttText.map((binfo, bindex) => {
+              return (
+                <Link href="/home"><MPWTextButton
+                  key={bindex}
+                  buttonText={binfo.home} /></Link>
+              )
+            })}
+          </div>
+
+        </div>
+
 
       </main>
 
