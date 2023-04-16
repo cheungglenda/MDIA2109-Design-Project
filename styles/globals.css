@@ -178,10 +178,7 @@ body{
   border-radius: 3em;
 }
 
-.body.dark-mode {
-  background-color: #1a1a1a;
-  color: white;
-}
+
 main {
   padding-left: var(--screen-padding);
   padding-right: var(--screen-padding);

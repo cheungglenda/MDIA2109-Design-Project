@@ -39,6 +39,8 @@ export default function QuizMain() {
               </Link>
             )
           })}
+           </div>
+           <div className={styles.btn}>
           {buttText && buttText.map((binfo, bindex) => {
             return (
               <Link href="/quiztutorial">
@@ -48,8 +50,8 @@ export default function QuizMain() {
               </Link>
             )
           })}
-
-        </div>
+</div>
+       
       </main>
       <footer>
         <Nav />

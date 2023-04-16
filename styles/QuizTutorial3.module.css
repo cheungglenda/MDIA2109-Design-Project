@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
+
+.main {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding-top:300px;
+}
+
+.btn {
+    margin: none;
+    padding: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
