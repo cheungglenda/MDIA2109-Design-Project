@@ -4,6 +4,7 @@ import styles from '@/styles/Settings.module.css'
 import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
 import DarkMode from '@/components/DarkMode'
+import TextToggle from '@/components/TextSize'
 
 export default function Settings() {
   return (
@@ -22,6 +23,7 @@ export default function Settings() {
 <h4>Dark Mode</h4>
 <DarkMode/>
 <h4>Text Size</h4>
+<TextToggle/>
 <h4>Language</h4>
 <hr></hr>
 <h2>About</h2>
