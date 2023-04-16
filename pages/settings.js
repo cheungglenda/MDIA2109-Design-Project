@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Settings.module.css'
 import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
-
+import DarkMode from '@/components/DarkMode'
 
 export default function Settings() {
   return (
@@ -20,6 +20,7 @@ export default function Settings() {
       <main className={styles.main}>
 <h2>General</h2>
 <h4>Dark Mode</h4>
+<DarkMode/>
 <h4>Text Size</h4>
 <h4>Language</h4>
 <hr></hr>

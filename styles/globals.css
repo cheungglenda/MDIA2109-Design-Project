@@ -113,6 +113,10 @@ p{
   box-shadow: 4px #373F47;
 }
 
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
 label{
   font-size: 20px /*all form labels match font size of H3 text*/; 
   font-weight: bold;
