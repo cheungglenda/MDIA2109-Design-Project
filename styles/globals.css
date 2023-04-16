@@ -83,19 +83,6 @@ p{
   font-size: 16px;
 }
 
-p.text-small{
-  font-size: 16px;
-}
-
-p.text-medium{
-  font-size:18px;
-}
-
-p.text-large{
-  font-size: 20px;
-}
-
-
 .high-button {
   border-radius: 10px;
   width: 80px;
