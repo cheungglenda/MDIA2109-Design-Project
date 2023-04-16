@@ -16,7 +16,7 @@ export default function Nav() {
             <Link href="/requests">
                 <Image src="/navIcons/Add.png" alt="add" width={60} height={60} className={styles.navIcon} />
             </Link>
-            <Link href="/messages">
+            <Link href="/msghistory">
                 <Image src="/navIcons/Messages.png" alt="messages" width={60} height={60} className={styles.navIcon} />
             </Link>
             <Link href="/profile">
