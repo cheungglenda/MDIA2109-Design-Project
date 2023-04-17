@@ -12,11 +12,11 @@ export default function HeaderNav({
 
     return (
         <div className={styles.headerContainer}>
-            <a onClick={() => router.back()} ><Image src="/navIcons/BackButton.svg" alt="placeholder" width={25} height={20} className={styles.backIcon}/></a>
-            <h2 className={styles.title}>{headers}</h2>
+            <a onClick={() => router.back()} ><Image src="/navIcons/BackButton.svg" alt="placeholder" width={25} height={20} className={styles.backIcon} /></a>
+            <h1 className={styles.title}>{headers}</h1>
             <div className={styles.hamburger}>
-               <HamburgerPopup />
-               </div>
+                <HamburgerPopup />
+            </div>
         </div>
     )
 }

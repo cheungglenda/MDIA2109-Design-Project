@@ -26,10 +26,10 @@
 .title {
     font-family: 'manrope';
     margin: .25em;
+    text-align: center;
 }
 
-.hamburger {
-    position:absolute;
-    right:1.5em;
-    z-index: 2;
+.hamburger{
+    height: auto;
+    width: auto;
 }

@@ -57,7 +57,8 @@ export default function MessageHistory() {
       </main>
 
       <footer>
-        <Nav />
+        <Nav 
+        srcMsg="/navIcons/MessagesOrange.svg"/>
       </footer>
     </>
   )

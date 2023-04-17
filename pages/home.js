@@ -77,7 +77,8 @@ export default function Home() {
         </div>
       </main>
       <footer>
-      <Nav />
+      <Nav 
+      srcHome="/navIcons/HomeOrange.svg"/>
       </footer>
     </>
   )

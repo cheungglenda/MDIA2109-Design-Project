@@ -68,7 +68,8 @@ export default function Profile() {
       </main>
 
       <footer>
-        <Nav />
+        <Nav 
+        srcProfile="/navIcons/ProfileOrange.svg"/>
       </footer>
     </>
   )
