@@ -7,6 +7,7 @@ import TipsCard from '@/components/TipsCard'
 import { tips } from '@/data/tips/tips'
 import { useState } from 'react'
 import { text } from '@/data/text/text'
+import Nav from '@/components/nav'
 
 export default function Tips() {
 
@@ -16,25 +17,27 @@ export default function Tips() {
   return (
     <>
       <header>
-      {data2 && data2.map((info, index) => {
+        {data2 && data2.map((info, index) => {
           return (
-              <HeaderNav
-                key={index}
-                headers={info.tips} />
+            <HeaderNav
+              key={index}
+              headers={info.tips} />
           )
         })}
       </header>
-      
+
       <main className={styles.main}>
         <SearchBar />
 
         {data && data.map((info, index) => {
           return (
-            <TipsCard
-              key={index}
-              src={info.image}
-              header={info.title}
-            />
+      
+              <TipsCard
+                key={index}
+                src={info.image}
+                header={info.title}
+                path={info.path}
+              />
 
           )
         })}
@@ -42,6 +45,7 @@ export default function Tips() {
       </main>
 
       <footer>
+        <Nav/>
       </footer>
     </>
   )

@@ -50,15 +50,16 @@ export default function MessageHistory() {
           )
         })}
 
+        <div className={styles.endMsg}>
+          <p>End of Messages</p>
+        </div>
 
-
-        <p className={styles.endMsg}>End of Messages</p>
 
       </main>
 
       <footer>
-        <Nav 
-        srcMsg="/navIcons/MessagesOrange.svg"/>
+        <Nav
+          srcMsg="/navIcons/MessagesOrange.svg" />
       </footer>
     </>
   )
