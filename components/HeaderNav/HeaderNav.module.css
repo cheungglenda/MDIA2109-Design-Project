@@ -27,3 +27,9 @@
     font-family: 'manrope';
     margin: .25em;
 }
+
+.hamburger {
+    position:absolute;
+    right:1.5em;
+    z-index: 2;
+}
