@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Messages.module.css'
-import Nav from '@/components/nav'
+import ChatNav from '@/components/Messages/ChatNav'
 import HeaderNav from '@/components/HeaderNav'
 import { text } from '@/data/text/text'
 import { messages } from '@/data/messages'
@@ -33,19 +33,20 @@ export default function Messages() {
 
       <main className={styles.main}>
         {data2 && data2.map((info2, index2) => {
+          if(info2.userName=="Taylor S."){
           return (
             <ChatPage
               key={index2}
               userName={info2.userName}
               needs={info2.needs} />
-          )
+          )}
         })}
 
 
       </main>
 
       <footer>
-        <Nav />
+        <ChatNav />
       </footer>
     </>
   )

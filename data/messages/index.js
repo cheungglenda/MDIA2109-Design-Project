@@ -12,7 +12,12 @@ export const messages = {
             message: [
                 "I just need one painkiller (advil or tylenol). All the stale car exhaust is giving me a pretty bad headache.",
                 "That would be great, thank you! Where can we meet?",
-                "We can meet at the rest stop on the south side of the highway. Does that work?"]
+                "We can meet at the rest stop on the south side of the highway. Does that work?"],
+            userMessage: [
+                "I've got extra strength tylenol, would that work?",
+                "I'm stuck by the overpass. Maybe ther's a rest stop near by?",
+                "Sounds good. See you soon."
+            ]
         },
         {
             profileImg: "",
