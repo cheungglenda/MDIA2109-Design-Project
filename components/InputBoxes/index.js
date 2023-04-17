@@ -43,7 +43,7 @@ export default function InputBoxes() {
                 width={200}
                 height={200}
                 className={styles.logoPic} />
-            <h2>Sign Up</h2>
+            <h1>Sign Up</h1>
 
             <div>
                 <h4>First Name:</h4>

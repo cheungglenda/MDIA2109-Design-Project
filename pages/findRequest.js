@@ -39,7 +39,8 @@ export default function findRequest() {
       <Link href="/tips">Tips</Link>
       </main>
       <footer>
-      <Nav />
+      <Nav 
+      srcSearch="/navIcons/SearchOrange.svg"/>
       </footer>
     </>
   )

@@ -86,7 +86,8 @@ export default function Requests() {
       </main>
 
       <footer>
-        <Nav />
+        <Nav 
+        srcRequest="/navIcons/AddOrange.svg"/>
       </footer>
     </>
   )
