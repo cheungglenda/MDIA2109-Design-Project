@@ -9,7 +9,7 @@ import { text } from '@/data/text/text'
 import { useState } from 'react'
 
 export default function QuizTutorialTwo() {
-  const [buttText, setButText] = useState([...text.buttons])
+  const [buttText, setButText] = useState([...text.quiz])
   return (
     <>
       <Head>
