@@ -29,7 +29,7 @@ export const text = {
             postRequest: "Post Request",
             message: "Message",
 
-            finish: "Finish",
+            
         }
 
     ],
@@ -41,6 +41,7 @@ export const text = {
             start: "Start",
             tutorial: "Tutorial",
             tryAgain: "Try Again",
+            finish: "Finish",
             mainQuiz: "Main Quiz",
             seeResults: "See Results",
             moreQuiz: "More Tips and Quizzes",

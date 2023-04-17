@@ -10,7 +10,7 @@ import { useState } from 'react'
 
 export default function QuizTutorial() {
 
-  const [buttText, setButText] = useState([...text.buttons])
+  const [buttText, setButText] = useState([...text.quiz])
   return (
     <>
       <Head>

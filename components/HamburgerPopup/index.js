@@ -20,7 +20,7 @@ export default function HamburgerPopup() {
                 <ul className={styles.links}>
                     <Link href="/settings">⚙️ Settings</Link>
                     <Link href="/quizresultsall">📝 Quiz Results</Link>
-                    <Link href="/quizresultsall">✖️ Log Out</Link>
+                    <Link href="/">✖️ Log Out</Link>
                 </ul>)}
             </Popup>
         </div>
