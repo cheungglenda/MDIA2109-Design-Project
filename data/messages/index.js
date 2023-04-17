@@ -49,7 +49,7 @@ export const messages = {
         },
         {
             profileImg: "",
-            userName: "Tom H..",
+            userName: "Tom H.",
             time: "4 days",
             color: "none",
             needs: "Water, Medicine",

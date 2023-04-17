@@ -170,6 +170,7 @@ main {
   padding-left: var(--screen-padding);
   padding-right: var(--screen-padding);
   padding-bottom: 97px;
+  padding-top: 1em;
   display: flex;
   flex-direction: column;
   gap: 2em;

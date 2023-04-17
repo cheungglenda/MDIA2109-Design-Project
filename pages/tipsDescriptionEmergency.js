@@ -27,35 +27,31 @@ export default function TipsEmergency() {
             </header>
 
             <main className={styles.main}>
-            {data && data.map((infoTip, indexTip) => {
-                if(infoTip.title == "5 Useful Emergency Items for Your Car")
-                    return (
-                        <TipsDescription
-                            key={infoTip}
-                            image={infoTip.image}
-                            title={infoTip.title}
-                            description={infoTip.description}
-                            subheader={infoTip.subheader}
-                            accordion1={infoTip.accordion1}
-                            accordion2={infoTip.accordion2}
-                            accordion3={infoTip.accordion3}
-                            accordion4={infoTip.accordion4}
-                            accordion5={infoTip.accordion5}
-                            accordion1Desc={infoTip.accordion1Desc} 
-                            accordion2Desc={infoTip.accordion2Desc} 
-                            accordion3Desc={infoTip.accordion3Desc} 
-                            accordion4Desc={infoTip.accordion4Desc} 
-                            accordion5Desc={infoTip.accordion5Desc} />
-                    )
+                {data && data.map((infoTip, indexTip) => {
+                    if (infoTip.title == "5 Useful Emergency Items for Your Car")
+                        return (
+                            <TipsDescription
+                                key={infoTip}
+                                image={infoTip.image}
+                                title={infoTip.title}
+                                description={infoTip.description}
+                                subheader={infoTip.subheader}
+                                accordion1={infoTip.accordion1}
+                                accordion2={infoTip.accordion2}
+                                accordion3={infoTip.accordion3}
+                                accordion4={infoTip.accordion4}
+                                accordion5={infoTip.accordion5}
+                                accordion1Desc={infoTip.accordion1Desc}
+                                accordion2Desc={infoTip.accordion2Desc}
+                                accordion3Desc={infoTip.accordion3Desc}
+                                accordion4Desc={infoTip.accordion4Desc}
+                                accordion5Desc={infoTip.accordion5Desc} />
+                        )
                 })}
-
-
-
-
             </main>
 
             <footer>
-                <Nav/>
+                <Nav />
             </footer>
         </>
     )

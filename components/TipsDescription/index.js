@@ -58,7 +58,7 @@ export default function TipsDescription({
     return (
         <>
 
-            <main className={styles.tipsContainer}>
+            <div className={styles.tipsContainer}>
                 <h1>{title}</h1>
                 <Image src={image} width={width} height={height} className={styles.tipsImg} />
 
@@ -88,7 +88,7 @@ export default function TipsDescription({
                         </div>
                         <div style={{ display: isShowing1 ? "block" : "none", padding: "5px" }}
                         >
-                            {accordion1Desc}
+                            <p>{accordion1Desc}</p>
                         </div>
                     </div>
 
@@ -144,8 +144,7 @@ export default function TipsDescription({
                         <div className={styles.buttonFlex}>
                             <button className={styles.button}
                                 onClick={toggle5}
-                                type="button"
-                            >
+                                type="button">
                                 <h4>{accordion5}</h4>
                             </button>
                             <p>{isShowing5 ? "-" : "+"}</p>
@@ -158,7 +157,7 @@ export default function TipsDescription({
 
                 </div>
 
-            </main >
+            </div >
 
 
         </>
