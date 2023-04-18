@@ -28,6 +28,7 @@ export const text = {
 
             postRequest: "Post Request",
             message: "Message",
+            findMessage: "Message Taylor",
 
             
         }

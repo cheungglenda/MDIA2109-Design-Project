@@ -6,13 +6,16 @@ import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
 import { text } from '@/data/text/text'
 import { useState } from 'react'
-import { messages } from '@/data/messages'
+import { requests } from '@/data/requests'
+import SearchBar from '@/components/formFields/SearchBar'
+import FindCard from '@/components/FindRequests/FindCard'
+
 
 
 export default function findRequest() {
 
   const [data, setData] = useState([...text.headers])
-  const [data2, setData2] = useState([...messages.users])
+  const [data2, setData2] = useState([...requests.users])
   return (
     <>
       <Head>
@@ -31,11 +34,23 @@ export default function findRequest() {
         })}
       </header>
       <main className={styles.main}>
+        <SearchBar/>
+
         {data2 && data2.map((info2, index2) => {
-          if(info2.userName=="Taylor S.") {
-            return
-          }
-        }) }
+          return (
+            <Link href="./findRequestDetails">
+              <FindCard
+              key={index2}
+              profileImg={info2.profileImg}
+              userName={info2.userName}
+              timeFrame={info2.timeFrame}
+              needs={info2.needs}
+              location={info2.location}
+              />
+            </Link>
+          )
+        }
+        )}
        
       </main>
       <footer>
