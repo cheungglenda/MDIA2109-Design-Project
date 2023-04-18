@@ -53,7 +53,7 @@ export default function Home() {
         <div className={styles.title}>
           <h2>Get Started</h2>
         </div>
-        <div class={styles.quickLinks}>
+        <div className={styles.quickLinks}>
         <Link href="/search"><button>
         <div className={styles.quickInside}>
             <div className={styles.quickEmoji}><span>🤝</span></div>
