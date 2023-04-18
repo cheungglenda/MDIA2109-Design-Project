@@ -6,11 +6,17 @@
 .links {
     display:flex;
     flex-direction:column;
-    margin-top:10em;
 }
 
+.open {
+    background-color: var(--primary-light-spice);
+    align-items:right;
+}
 
 .open:hover {
     cursor:pointer;
 }
 
+.container {
+    background-color:var(--primary-beige);
+}
