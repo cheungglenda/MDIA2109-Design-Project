@@ -6,11 +6,14 @@ import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
 import { text } from '@/data/text/text'
 import { useState } from 'react'
+import { posts } from '@/data/posts'
+import PostCard from '@/components/Posts/PostCard'
 
 
 export default function yourRequests() {
 
     const [data, setData] = useState([...text.headers])
+    const [data2, setData2] = useState([...posts.request])
 
     return (
         <>
@@ -30,16 +33,26 @@ export default function yourRequests() {
                 })}
             </header>
             <main className={styles.main}>
-                SEARCH PAGE
-                <Link href="/requests">Requests</Link>
-                <Link href="/about">About</Link>
-                <Link href="/settings">Settings</Link>
-                <Link href="/messages">Messages</Link>
-                <Link href="/profile">Profile</Link>
-                <Link href="/tips">Tips</Link>
+            {data2 && data2.map((info2, index2) => {
+          return (
+            <Link href="./yourRequestsDetails">
+              <PostCard
+              key={index2}
+              profileImg={info2.profileImg}
+              userName={info2.userName}
+              timeFrame={info2.timeFrame}
+              needs={info2.needs}
+              location={info2.location}
+              />
+            </Link>
+          )
+        }
+        )}
+       
             </main>
             <footer>
-                <Nav />
+                <Nav 
+                srcProfile="/navIcons/ProfileOrange.svg"/>
             </footer>
         </>
     )
