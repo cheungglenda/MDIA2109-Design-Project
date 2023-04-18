@@ -12,6 +12,8 @@ import { useState } from 'react'
 export default function QuizMain() {
 
   const [buttText, setButText] = useState([...text.quiz])
+  const [data2, setData2] = useState([...text.headers])
+
   return (
     <>
       <Head>
@@ -21,7 +23,13 @@ export default function QuizMain() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <HeaderNav />
+        {data2 && data2.map((info, index) => {
+          return (
+            <HeaderNav
+              key={index}
+              headers={info.quizMain} />
+          )
+        })}
       </header>
       <main className={styles.main}>
         <div className={styles.header}>
