@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { text } from '@/data/text/text'
 import { useState } from 'react'
 import HPWTextButton from '../buttons/withText/highpriorityWtext'
+import Link from 'next/link'
 
 
 
@@ -65,9 +66,9 @@ export default function TipsDescription({
                 <div className={styles.buttonContainer}>
                     {buttText && buttText.map((binfo, bindex) => {
                         return (
-                            <HPWTextButton
+                            <Link href="/quizmain"><HPWTextButton
                                 key={bindex}
-                                buttonText={binfo.testKnowledge} />
+                                buttonText={binfo.testKnowledge} /></Link>
                         )
                     })}
                 </div>
