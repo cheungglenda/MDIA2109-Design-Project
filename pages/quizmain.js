@@ -27,8 +27,7 @@ export default function QuizMain() {
         <div className={styles.header}>
           <h1 className={styles.head}>Let's Test Your Knowledge!</h1>
         </div>
-        <Image className={styles.img} src="/logos/logo.png" height={50} width={50}/>
-
+        <Image className={styles.img} src="/logos/logo.png" height={350} width={350}/>
         <div className={styles.btn}>
           {buttText && buttText.map((binfo, bindex) => {
             return (
