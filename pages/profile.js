@@ -51,9 +51,11 @@ export default function Profile() {
           <div className={styles.postButton}>
             {buttText && buttText.map((binfo, bindex) => {
               return (
+                <Link href="./yourRequests">
                 <LPWTextButton
                   key={bindex}
                   buttonText={binfo.viewPosts} />
+                </Link>
               )
             })}
           </div>
