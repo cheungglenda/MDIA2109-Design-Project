@@ -40,7 +40,7 @@ export default function QuizQuestOne() {
   const addScore = (addScore) => {
     if (addScore == "correct"){
       setScore(score + 1)
-    } else {
+    } else if (addScore == "incorrect"){
       setScore(score + 0)
     }
   }
@@ -383,7 +383,7 @@ export default function QuizQuestOne() {
                   correctHeader={info.correctHeader}
                   answer={info.QNone}
                   image={info.incorrectImg} />
-                <a onClick={() => feedbackIncrement("next")} ><QuizNext /></a>
+                <a onClick={() => Results()} ><QuizNext /></a>
               </>
             )
           } else if (count == 5.5 && feedback == "correct") {

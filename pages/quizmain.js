@@ -27,8 +27,8 @@ export default function QuizMain() {
         <div className={styles.header}>
           <h1 className={styles.head}>Let's Test Your Knowledge!</h1>
         </div>
-        <img className={styles.img} src="/logos/logo.png"></img>
-        
+        <Image className={styles.img} src="/logos/logo.png" height={50} width={50}/>
+
         <div className={styles.btn}>
           {buttText && buttText.map((binfo, bindex) => {
             return (
@@ -39,8 +39,8 @@ export default function QuizMain() {
               </Link>
             )
           })}
-           </div>
-           <div className={styles.btn}>
+        </div>
+        <div className={styles.btn}>
           {buttText && buttText.map((binfo, bindex) => {
             return (
               <Link href="/quiztutorial">
@@ -50,8 +50,8 @@ export default function QuizMain() {
               </Link>
             )
           })}
-</div>
-       
+        </div>
+
       </main>
       <footer>
         <Nav />
