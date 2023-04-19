@@ -35,14 +35,14 @@ export default function Home() {
             <div className={styles.achievementDesc}><p>Requests Fulfilled</p></div>
             </div>
           </button></Link>
-          <Link href="/messages"><button className={styles.buttons}>
+          <Link href="/msghistory"><button className={styles.buttons}>
           <div className={styles.inside}>
               <div className={styles.emoji}><span>⏳</span></div>
             <div className={styles.fulfillmentNum}><h1>2</h1></div>
             <div className={styles.achievementDesc}><p>Requests In Progress</p></div>
             </div>
           </button></Link>
-          <Link href="/requests"><button className={styles.buttons}>
+          <Link href="/yourRequests"><button className={styles.buttons}>
           <div className={styles.inside}>
               <div className={styles.emoji}><span>📝</span></div>
             <div className={styles.fulfillmentNum}><h1>2</h1></div>
@@ -54,7 +54,7 @@ export default function Home() {
           <h2>Get Started</h2>
         </div>
         <div className={styles.quickLinks}>
-        <Link href="/search"><button>
+        <Link href="/findRequest"><button>
         <div className={styles.quickInside}>
             <div className={styles.quickEmoji}><span>🤝</span></div>
             <div className={styles.quickTitle}><h2>Help Someone Nearby</h2>
