@@ -51,8 +51,8 @@ export const text = {
             correct: "That was correct!",
             correctHeader: "The correct answer is:",
 
-            incorrectImg: "/quizImages/wrongAnswer.png",
-            correctImg: "/quizImages/rightAnswer.png",
+            incorrectImg: "/quizImages/wrongAnswer.svg",
+            correctImg: "/quizImages/rightAnswer.svg",
             
             q1: "What are some essential emergency supplies to keep in your car?",
             q2: "Why is it important to keep emergency supplies in your car?",

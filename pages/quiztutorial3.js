@@ -44,9 +44,9 @@ export default function QuizTutorialThree() {
         </div>
 
         <div className={styles.content}>
-          <img src="/quizImages/rightAnswer.png"></img>
+          <img src="/quizImages/rightAnswer.svg"></img>
           <h3>This was incorrect!</h3>
-          <img src="/quizImages/wrongAnswer.png"></img>
+          <img src="/quizImages/wrongAnswer.svg"></img>
           <h3>The correct answer was:</h3>
           <div className={styles.btn}>
           {buttText && buttText.map((binfo, bindex) => {
