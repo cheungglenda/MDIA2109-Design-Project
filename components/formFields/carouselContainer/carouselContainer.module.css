@@ -5,3 +5,15 @@
 .padding{
     padding: 8px;
 }
+
+.item{
+    display: flex;
+    flex-direction: column;
+}
+
+.item > p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 60px;
+}
