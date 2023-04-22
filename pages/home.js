@@ -24,15 +24,14 @@ export default function Home() {
       </header>
       <main className={styles.main}>
         <div className={styles.welcomeMsg}>
-          <h2 className={styles.welcome}>👋 Welcome,</h2>
-          <h1 className={styles.name}>{firstName}!</h1>
+          <h1 className={styles.welcome}>👋 Welcome, {firstName}!</h1>
         </div>
         <div className={styles.achievementButtons}>
-          <Link href="/profile"><button className={styles.buttons}>
-            <div className={styles.inside}>
-              <div className={styles.emoji}><span>✔️</span></div>
-            <div className={styles.fulfillmentNum}><h1>30</h1></div>
-            <div className={styles.achievementDesc}><p>Requests Fulfilled</p></div>
+        <Link href="/yourRequests"><button className={styles.buttons}>
+          <div className={styles.inside}>
+              <div className={styles.emoji}><span>📝</span></div>
+            <div className={styles.fulfillmentNum}><h1>2</h1></div>
+            <div className={styles.achievementDesc}><p>Items Requested</p></div>
             </div>
           </button></Link>
           <Link href="/msghistory"><button className={styles.buttons}>
@@ -42,11 +41,11 @@ export default function Home() {
             <div className={styles.achievementDesc}><p>Requests In Progress</p></div>
             </div>
           </button></Link>
-          <Link href="/yourRequests"><button className={styles.buttons}>
-          <div className={styles.inside}>
-              <div className={styles.emoji}><span>📝</span></div>
-            <div className={styles.fulfillmentNum}><h1>2</h1></div>
-            <div className={styles.achievementDesc}><p>Items Requested</p></div>
+          <Link href="/profile"><button className={styles.buttons}>
+            <div className={styles.inside}>
+              <div className={styles.emoji}><span>✔️</span></div>
+            <div className={styles.fulfillmentNum}><h1>30</h1></div>
+            <div className={styles.achievementDesc}><p>Requests Fulfilled</p></div>
             </div>
           </button></Link>
         </div>
