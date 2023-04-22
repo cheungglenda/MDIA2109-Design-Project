@@ -19,6 +19,7 @@ export default function HamburgerPopup() {
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                 {buttonPopup && (
                     <ul className={styles.links}>
+                        <li><Link href="/home">🏠 Home</Link></li>
                         <li><Link href="/settings">⚙️ Settings</Link></li>
                         <li><Link href="/quizresultsall">📝 Quiz Results</Link></li>
                         <li><Link href="/">✖️ Log Out</Link></li>
