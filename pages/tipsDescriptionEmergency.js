@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '@/styles/TipsDescription.module.css'
 import Link from 'next/link'
-import HeaderNav from '@/components/HeaderWithLogo'
+import TipsHeader from '@/components/TipsHeader'
 import SearchBar from '@/components/formFields/SearchBar'
 import TipsDescription from '@/components/TipsDescription'
 import { tips } from '@/data/tips/tips'
@@ -19,9 +19,7 @@ export default function TipsEmergency() {
             <header>
                 {data2 && data2.map((info, index) => {
                     return (
-                        <HeaderNav
-                            key={index}
-                            headers={info.tips} />
+                        <TipsHeader />
                     )
                 })}
             </header>
