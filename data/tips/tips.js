@@ -35,7 +35,7 @@ export const tips = {
             accordion2: "2. Trail Mix",
             accordion2Desc: "Trail mix is a good emergency snack because it is lightweight, non-perishable, and provides a mix of protein, healthy fats, and carbohydrates for sustained energy.",
 
-            accordion3: "3. Beef Jerkey",
+            accordion3: "3. Beef Jerky",
             accordion3Desc: "Beef jerky is a good emergency snack because it is non-perishable, high in protein, and provides a quick and filling source of energy.",
 
             accordion4: "4. Crackers",
