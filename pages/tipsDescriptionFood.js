@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '@/styles/TipsDescription.module.css'
 import Link from 'next/link'
-import HeaderNav from '@/components/HeaderWithLogo'
+import TipsHeader from '@/components/TipsHeader'
 import TipsDescription from '@/components/TipsDescription'
 import { tips } from '@/data/tips/tips'
 import { useState } from 'react'
@@ -18,9 +18,7 @@ export default function TipsFood() {
             <header>
                 {data2 && data2.map((info, index) => {
                     return (
-                        <HeaderNav
-                            key={index}
-                            headers={info.tips} />
+                        <TipsHeader />
                     )
                 })}
             </header>
