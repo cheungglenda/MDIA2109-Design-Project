@@ -1,26 +1,18 @@
-.logo {
-    display:flex;
-    justify-content:center;
-    width:100%;
-}
-
-.logo img {
-    object-fit:cover;
-}
-
 .headerContainer {
-    background-color: var(--primary-light-spice);
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    padding: 1em var(--screen-padding);
+    background: var(--primary-light-spice);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    display:flex;
-    flex-direction:row;
-    align-items: center;
-    width:100%;
+    box-sizing: border-box;
 }
 
 .hamburger {
-    position:absolute;
-    right:1.5em;
+    align-items:right;
+    justify-content:right;
 }
 
 .backIcon img {
