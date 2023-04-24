@@ -347,7 +347,7 @@ export default function QuizQuestOne() {
                   question={info.q5}
                   questionNum={count} />
                 <div className={styles.optionContainer}>
-                  <a onClick={() => feedbackIncrement("add") + feedbackType("incorrect")}>
+                  <a onClick={() => feedbackIncrement("add") + feedbackType("correct") + addScore("correct")}>
                     <QuizButton
                       key={index}
                       option={info.Q5a}
@@ -362,10 +362,10 @@ export default function QuizQuestOne() {
                       key={index}
                       option={info.Q5c} />
                   </a>
-                  <a onClick={() => feedbackIncrement("add") + feedbackType("correct") + addScore("correct")}>
+                  <a onClick={() => feedbackIncrement("add") + feedbackType("incorrect")}>
                     <QuizButton
                       key={index}
-                      option={info.QNone} />
+                      option={info.Q5d} />
                   </a>
                 </div>
               </>
@@ -381,7 +381,7 @@ export default function QuizQuestOne() {
                   feedback={info.incorrect}
                   question={info.q5}
                   correctHeader={info.correctHeader}
-                  answer={info.QNone}
+                  answer={info.Q5a}
                   image={info.incorrectImg} />
                 <a onClick={() => Results()} ><QuizNext /></a>
               </>
@@ -393,7 +393,7 @@ export default function QuizQuestOne() {
                   key={index}
                   feedback={info.correct}
                   question={info.q5}
-                  answer={info.QNone}
+                  answer={info.Q5a}
                   image={info.correctImg} />
                 <a onClick={() => Results()} ><QuizNext /></a>
               </>

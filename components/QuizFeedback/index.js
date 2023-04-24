@@ -19,7 +19,7 @@ export default function QuizFeedback({
                 <div className={styles.buttonContainer}>
                     <p>{answer}</p>
                 </div>
-                <Image src={image} height={300} width={300} />
+                <Image src={image} height={200} width={200} />
             </div>
 
         </>

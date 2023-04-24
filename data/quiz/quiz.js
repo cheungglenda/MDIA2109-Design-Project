@@ -29,9 +29,9 @@ export const quizData = {
         imageWrong: "/quizImages/wrongAnswer.svg"
     },
     {
-        question: "Why is it important to have a plan for emergencies when travelling by car?",
-        options: ["To ensure your saftey and safety to your passengers, To impress your friends with your preparedness skills, To avoid getting lost or running out of gas, None of the above"],
-        answer: "To ensure your safety and safety to your passengers",
+        question: "What is not a good food item to keep in your car in case of emergencies?",
+        options: ["Yogurt cups, Water bottle, Granola bars, Beef jerky"],
+        answer: "Yogurt cups",
         imageCorrect: "/quizImages/rightAnswer.svg",
         imageWrong: "/quizImages/wrongAnswer.svg"
     },
