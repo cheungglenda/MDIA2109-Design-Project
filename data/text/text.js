@@ -22,7 +22,7 @@ export const text = {
             join: "Join Traffic Buddy!",
             home: "Home",
 
-            viewPosts: "View Posts",
+            viewPosts: "View Your Posts",
             editPost: "Edit Post",
             testKnowledge: "Test Your Knowledge",
 

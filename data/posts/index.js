@@ -2,7 +2,7 @@ export const posts = {
     request: [
         {
             profileImg: "/headshots/profile.jpeg",
-            userName: "Jane Doe",
+            userName: "Sarah Williams",
             timeFrame: "ASAP",
             needs: "Water, Blanket",
             location: "Lougheed Highway",
@@ -10,7 +10,7 @@ export const posts = {
         },
         {
             profileImg: "/headshots/profile.jpeg",
-            userName: "Jane Doe",
+            userName: "Sarah Williams",
             timeFrame: "20-30 mins",
             needs: "Water, Food",
             location: "Lougheed Highway", 
