@@ -30,22 +30,19 @@ export default function Home() {
         <Link href="/yourRequests"><button className={styles.buttons}>
           <div className={styles.inside}>
               <div className={styles.emoji}><span>📝</span></div>
-            <div className={styles.fulfillmentNum}><h1>2</h1></div>
             <div className={styles.achievementDesc}><p>Items Requested</p></div>
             </div>
           </button></Link>
           <Link href="/msghistory"><button className={styles.buttons}>
           <div className={styles.inside}>
-              <div className={styles.emoji}><span>⏳</span></div>
-            <div className={styles.fulfillmentNum}><h1>2</h1></div>
-            <div className={styles.achievementDesc}><p>Requests In Progress</p></div>
+              <div className={styles.emoji}><span>💬</span></div>
+            <div className={styles.achievementDesc}><p>Message Overview</p></div>
             </div>
           </button></Link>
           <Link href="/profile"><button className={styles.buttons}>
             <div className={styles.inside}>
-              <div className={styles.emoji}><span>✔️</span></div>
-            <div className={styles.fulfillmentNum}><h1>30</h1></div>
-            <div className={styles.achievementDesc}><p>Requests Fulfilled</p></div>
+              <div className={styles.emoji}><span>👩</span></div>
+            <div className={styles.achievementDesc}><p>Your Summary</p></div>
             </div>
           </button></Link>
         </div>
