@@ -2,13 +2,13 @@
 
 # Group Members Names
 
-Patricia 
-Glenda
-Anika
+- Patricia
+- Glenda
+- Anika
 
 # Description 
 
-Traffic Crisis App. An interactive mobile app that connects users who can provide ncessities with users who are stuck in traffic crisis (ex. being stuck on a highway during a snowstorm) and are in need of necessities: like food, water, insulin, etc. 
+An interactive mobile app that connects users during a traffic crisis who can provide necessities with users who are stuck in traffic crisis (ex. being stuck on a highway during a snowstorm) and are in need of items like food, water, insulin, etc. 
 
 # Key Features 
 
@@ -19,20 +19,20 @@ Earn rewards for helping others out (use rewards for discounts with community pa
 
 # Tools/Technology
 
-Github - remote repository
-Figma - to create the design of the app and test with protoyping 
+- Github - remote repository
+- Figma - to create the design of the app and test with protoyping 
 
 
 ## Coding Language 
 
-
+- JavaScript
 
 
 # Command Line(s)
 
-npm run dev
-npm run test:e2e
---help 
+- npm run dev
+- npm run test:e2e
+- --help 
 
 ## References
 [Multiple Item React Carousel](https://dev.to/rakumairu/how-to-show-multiple-item-in-simple-react-carousel-32dd)
