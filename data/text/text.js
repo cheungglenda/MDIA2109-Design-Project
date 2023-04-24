@@ -58,7 +58,7 @@ export const text = {
             q2: "Why is it important to keep emergency supplies in your car?",
             q3: "What are some tips for staying calm during a crisis like being stuck in traffic for four hours?",
             q4: "What should you do if you become stranded in your car during a winter storm?",
-            q5: "Why is it important to have a plan for emergencies when travelling by car?",
+            q5: "What is not a good food item to keep in your car in case of emergencies?",
 
             dog: "Dog",
             apple: "Apple",
@@ -85,9 +85,10 @@ export const text = {
             Q4b: "Turn off the engine to conserve fuel and prevent carbon monoxide poisoning",
             Q4c: "Keep warm by wrapping yourself in blankets or other warm clothing",
 
-            Q5a: "To ensure your safety to safety to your passengers",
-            Q5b: "To impress your friends with your preparedness skills",
-            Q5c: "To avoid getting lost or running out of gas",
+            Q5a: "Yogurt cups",
+            Q5b: "Water bottle",
+            Q5c: "Granola bars",
+            Q5d: "Beef jerky"
         }
     ]
 }

@@ -1,65 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 576 576" style="enable-background:new 0 0 576 576;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#6C91C2;stroke:#0F0D04;stroke-width:7;stroke-linecap:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-miterlimit:10;}
-	.st2{fill:#FFFFFF;stroke:#373F47;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
-	.st3{fill:#EE4242;stroke:#373F47;stroke-width:6;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:#FDFAE3;stroke-width:12;stroke-linecap:round;stroke-miterlimit:10;}
-	.st5{fill:none;stroke:#FDFAE3;stroke-width:11.9841;stroke-linecap:round;stroke-miterlimit:10;}
-	.st6{fill:none;stroke:#000000;stroke-width:7;stroke-miterlimit:10;}
-	.st7{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
-	.st8{display:none;}
-	.st9{display:inline;fill:#FF8C42;stroke:#0F0D04;stroke-width:7;stroke-linecap:round;stroke-miterlimit:10;}
-	.st10{display:inline;}
-	.st11{display:inline;fill:none;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-miterlimit:10;}
-	.st12{display:inline;fill:#FFFFFF;stroke:#373F47;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
-	.st13{display:inline;fill:#67A960;stroke:#373F47;stroke-width:6;stroke-miterlimit:10;}
-	.st14{display:inline;fill:none;stroke:#FDFAE3;stroke-width:11.9841;stroke-linecap:round;stroke-miterlimit:10;}
-	.st15{display:inline;fill:none;stroke:#000000;stroke-width:7;stroke-miterlimit:10;}
-	.st16{display:inline;fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
-	.st17{display:inline;fill:#67A960;}
-	.st18{display:inline;fill:#EE4242;}
-</style>
-<g id="Wrong_Answer">
-	<circle class="st0" cx="330.5" cy="294.7" r="86.5"/>
-	<circle cx="279.1" cy="296.7" r="7"/>
-	<circle cx="381.5" cy="296.7" r="7"/>
-	<polyline class="st1" points="309.2,378.6 277.6,388.8 274,376.3 	"/>
-	<polyline class="st1" points="367.8,374.6 399.5,384.8 403,372.3 	"/>
-	<line class="st1" x1="228.5" y1="318.5" x2="245.2" y2="314.1"/>
-	<path class="st1" d="M416.2,306c9.2,0,30.3,12.9,11.6,37.5"/>
-	<line class="st2" x1="216.5" y1="278.5" x2="244.5" y2="386.5"/>
-	<circle class="st3" cx="203.5" cy="238.5" r="67.5"/>
-	<line class="st4" x1="177.3" y1="228.2" x2="231.2" y2="251.2"/>
-	<line class="st5" x1="219.2" y1="214" x2="191.3" y2="265.5"/>
-	<path class="st1" d="M229.9,348.8"/>
-	<path class="st1" d="M230.9,347.8"/>
-	<path class="st6" d="M222.5,319.5c0,0-5,1-6,5"/>
-	<path class="st1" d="M216.5,324.5c0,0-2,7,13,6"/>
-	<path class="st7" d="M318.5,318.5c4-6,21-7,24.5-0.5"/>
-</g>
-<g id="Right_Answer_00000067215323844550447850000005010867146016393867_" class="st8">
-	<circle class="st9" cx="326.5" cy="292.7" r="86.5"/>
-	<circle class="st10" cx="275.1" cy="294.7" r="7"/>
-	<circle class="st10" cx="377.5" cy="294.7" r="7"/>
-	<polyline class="st11" points="305.2,376.6 273.6,386.8 270,374.3 	"/>
-	<polyline class="st11" points="363.8,372.6 395.5,382.8 399,370.3 	"/>
-	<line class="st11" x1="224.5" y1="316.5" x2="241.2" y2="312.1"/>
-	<path class="st11" d="M412.2,304c9.2,0,30.3,12.9,11.6,37.5"/>
-	<line class="st12" x1="212.5" y1="276.5" x2="240.5" y2="384.5"/>
-	<circle class="st13" cx="199.5" cy="236.5" r="67.5"/>
-	<path class="st14" d="M227,217l-30.7,37.5c-1.6,1.9-4.5,2.1-6.3,0.4L174,240"/>
-	<path class="st11" d="M225.9,346.8"/>
-	<path class="st11" d="M226.9,345.8"/>
-	<path class="st15" d="M218.5,317.5c0,0-5,1-6,5"/>
-	<path class="st11" d="M212.5,322.5c0,0-2,7,13,6"/>
-	<path class="st16" d="M301.4,316.7c11.5,10.5,35.1,12.2,51.5-1.5"/>
-</g>
-<g id="Layer_2" class="st8">
-	<rect x="377" y="17" class="st17" width="75" height="94"/>
-	<rect x="473" y="17" class="st18" width="74" height="93"/>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Wrong_Answer" data-name="Wrong Answer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 263">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6c91c2;
+        stroke: #0f0d04;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-7 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-4, .cls-8 {
+        stroke-width: 7px;
+      }
+
+      .cls-2 {
+        stroke-width: 11.98px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fdfae3;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-7, .cls-8 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke-width: 12px;
+      }
+
+      .cls-4, .cls-7, .cls-8 {
+        stroke: #000;
+      }
+
+      .cls-5 {
+        fill: #fff;
+        stroke-width: 10px;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: #373f47;
+      }
+
+      .cls-6 {
+        fill: #ee4242;
+        stroke-width: 6px;
+      }
+
+      .cls-7 {
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="210.51" cy="152.66" r="86.5"/>
+  <circle cx="159.11" cy="154.66" r="7"/>
+  <circle cx="261.51" cy="154.66" r="7"/>
+  <polyline class="cls-4" points="189.21 236.56 157.61 246.76 154.01 234.26"/>
+  <polyline class="cls-4" points="247.81 232.56 279.51 242.76 283.01 230.26"/>
+  <line class="cls-4" x1="108.5" y1="176.5" x2="125.15" y2="172.12"/>
+  <path class="cls-4" d="m296.21,163.96c9.2,0,30.3,12.9,11.6,37.5"/>
+  <line class="cls-5" x1="96.53" y1="136.49" x2="124.47" y2="244.51"/>
+  <circle class="cls-6" cx="83.5" cy="96.5" r="67.5"/>
+  <line class="cls-3" x1="57.33" y1="86.23" x2="111.17" y2="109.19"/>
+  <line class="cls-2" x1="99.17" y1="72.03" x2="71.33" y2="123.47"/>
+  <path class="cls-8" d="m102.5,177.5s-5,1-6,5"/>
+  <path class="cls-4" d="m96.5,182.5s-2,7,13,6"/>
+  <path class="cls-7" d="m198.5,176.5c4-6,21-7,24.5-.5"/>
 </svg>
