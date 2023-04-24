@@ -17,7 +17,7 @@ export const requests = {
         },
         {
             profileImg: "/headshots/jane.jpeg",
-            userName: "Jane S.",
+            userName: "Janet L.",
             timeFrame: "30-60mins",
             needs: "Blanket",
             location: "Lougheed Highway"
