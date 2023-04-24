@@ -5,8 +5,7 @@
     align-items:center;
     justify-content:center;
     flex-direction:column;
-    padding-bottom:220px;
-    padding-top:200px;
+    padding-top:5em;
 }
 
 .head {
@@ -54,6 +53,6 @@
 }
 
 .btn {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

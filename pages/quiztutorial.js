@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/QuizTutorial.module.css'
 import Link from 'next/link'
-import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
+import LPWTextButton from '../components/buttons/withText/lowpriorityWtext'
 import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
 import { text } from '@/data/text/text'
@@ -28,14 +28,14 @@ export default function QuizTutorial() {
         <h1 className={styles.head}>Welcome to Traffic Buddy's Quiz!</h1>
         </div>
         <div className={styles.text}>
-          <p className={styles.reg}>This quiz is designed to test your knowledge on a variety of supplies to keep in your can and tips!</p>
-          <h4 className={styles.headFour}>We'll be taking you through a quick tutorial on how to play and what to expect!</h4>
+          <p className={styles.reg}>This quiz is designed to test your knowledge on a variety of supplies to keep in your car in case of emergencies.</p>
+          <h4 className={styles.headFour}>This quick tutorial will show you how to navigate through the quiz.</h4>
         </div>
         <div className={styles.btn}>
         {buttText && buttText.map((binfo, bindex) => {
           return (
               <Link href="/quizmain">
-              <MPWTextButton
+              <LPWTextButton
                 key={bindex}
                 buttonText={binfo.skip} />
                 </Link>
@@ -44,7 +44,7 @@ export default function QuizTutorial() {
           {buttText && buttText.map((binfo, bindex) => {
           return (
               <Link href="/quiztutorial2">
-              <MPWTextButton
+              <LPWTextButton
                 key={bindex}
                 buttonText={binfo.next} />
                 </Link>

@@ -26,9 +26,9 @@ export default function QuizTutorialTwo() {
       <img className={styles.img} src="/logos/logo.png"></img>
       </div>
         <div className={styles.text}>
-          <p className={styles.reg}>To take the quiz, a question will appear and there will be multiple choice options.</p>
-          <p className={styles.reg}>Choose one option that you think is the correct answer.</p>
-          <h3 className={styles.headThree}>Choose the option that has a fruit in it.</h3>
+          <p className={styles.reg}>A question will appear and there will be multiple choices to choose from.</p>
+          <p className={styles.reg}>Select the correct answer.</p>
+          <h3 className={styles.headThree}>Choose the option has a fruit.</h3>
         </div>
         <div className={styles.btn}>
         {buttText && buttText.map((binfo, bindex) => {
