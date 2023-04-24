@@ -11,7 +11,7 @@ export default function QuizCard({
     return (
         <>
             <div className={styles.container}>
-                <Image src="/logos/logo.png" height={109} width={131} />
+                <Image src="/quizImages/car.svg" height={185} width={250} />
                 <p><b>Q{questionNum}: </b>{question}</p>
             </div>
         </>
