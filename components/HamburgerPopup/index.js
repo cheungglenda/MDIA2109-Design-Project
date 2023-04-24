@@ -1,5 +1,5 @@
 import styles from './HamburgerPopup.module.css'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Popup from '@/hooks/hampopup'
 import Link from 'next/link'

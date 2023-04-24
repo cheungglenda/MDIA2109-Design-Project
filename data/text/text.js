@@ -19,7 +19,7 @@ export const text = {
         {
             getStarted: "Get Started",
             logIn: "Log In",
-            join: "Join Traffic Buddy!",
+            join: "Join Traffic Buddy",
             home: "Home",
 
             viewPosts: "View Your Posts",
