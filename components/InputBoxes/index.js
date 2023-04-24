@@ -45,7 +45,7 @@ export default function InputBoxes() {
                 className={styles.logoPic} />
             <h1>Sign Up</h1>
 
-            <div>
+            <div className={styles.inputBox}>
                 <h4>First Name:</h4>
                 <input
                     onChange={(e => setFormData({ ...formData, firstName: e.target.value }))}
@@ -55,7 +55,7 @@ export default function InputBoxes() {
                 />
             </div>
 
-            <div>
+            <div className={styles.inputBox}>
                 <h4>Last Name:</h4>
                 <input
                     onChange={(e => setFormData({ ...formData, lastName: e.target.value }))}
@@ -63,7 +63,7 @@ export default function InputBoxes() {
                     placeholder="Enter Last Name"
                     className={styles.input} />
             </div>
-            <div>
+            <div className={styles.inputBox}>
                 <h4>Email:</h4>
                 <input
                     onChange={(e => setFormData({ ...formData, email: e.target.value }))}
@@ -71,7 +71,7 @@ export default function InputBoxes() {
                     placeholder="Enter Email"
                     className={styles.input} />
             </div>
-            <div>
+            <div className={styles.inputBox}>
                 <h4>Password:</h4>
                 <input
                     type="password"
@@ -79,7 +79,7 @@ export default function InputBoxes() {
                     className={styles.input}
                     onChange={(e => setFormData({ ...formData, password: e.target.value }))} />
             </div>
-            <div>
+            <div className={styles.inputBox}>
                 <h4>Confirm Password:</h4>
                 <input type="password" placeholder="Confirm Password" className={styles.input} />
             </div>

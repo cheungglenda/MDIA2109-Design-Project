@@ -3,13 +3,11 @@
     padding-top:0.5em;
     padding-bottom:0.5em;
     font-family: 'manrope';
+    padding-left:0.75em;
     border-radius:10px;
     width:100%;
 }
 
-.fields {
-    width:100%;
-}
 
 .box {
     width:100%;
@@ -35,8 +33,10 @@
     font-family:'manrope';
 }
 
-.main > h1 {
+.main h1 {
     text-align: center;
+    margin-bottom:0.25em;
+    margin-top:0.25em;
 }
 
 .logoPic {
@@ -67,4 +67,8 @@
 .joinButton a {
     text-decoration:none;
     color: var(--primary-black);
+}
+
+.inputBox h4 {
+    margin-bottom:0.75em;
 }
