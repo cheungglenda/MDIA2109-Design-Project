@@ -47,7 +47,7 @@ export default function Profile() {
             width={250}
             height={250}
           />
-          <h1 className={styles.name}>Jane Doe</h1>
+          <h1 className={styles.name}>Sarah Williams</h1>
           <div className={styles.postButton}>
             {buttText && buttText.map((binfo, bindex) => {
               return (
@@ -61,7 +61,7 @@ export default function Profile() {
           </div>
         </div>
         <div className={styles.text}>
-          <h2 className={styles.title}>Way to lend a helping hand in 2023 so far, Jane 👏</h2>
+          <h2 className={styles.title}>Way to lend a helping hand in 2023 so far, Sarah 👏</h2>
           <p className={styles.description}>Check out your stats on how many requests you’ve fulfilled so far in 2023:</p>
         </div>
         <div className={styles.chartContainer}>
