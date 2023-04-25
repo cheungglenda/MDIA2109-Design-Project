@@ -6,6 +6,9 @@
     justify-content:center;
     flex-direction:column;
     padding-top:300px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 8rem;
 }
 
 .btn {
@@ -19,4 +22,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 1rem;
+}
+
+
+.text {
+    padding-left: 25px;
+    padding-right: 20px;
 }
