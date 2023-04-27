@@ -8,6 +8,7 @@
     margin: 20px;
     background-color: var(--primary-light-blue);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    color: black;
 }
 
 .buttonContainer:hover {
