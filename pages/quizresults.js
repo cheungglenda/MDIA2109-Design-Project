@@ -50,16 +50,16 @@ export default function QuizResults() {
         {data && data.map((info, index) => {
           return (
             <>
-              <Link href="./quizquest1">
+              <Link href="./tips">
                 <HPWTextButton
                   key={index}
-                  buttonText={info.tryAgain} />
+                  buttonText={info.article} />
               </Link>
               <div className={styles.medButtons}>
                 <Link href="./quizmain">
                   <MPWTextButton
                     key={index}
-                    buttonText={info.mainQuiz} />
+                    buttonText={info.tryAgain} />
                 </Link>
                 <Link href="./quizresultsall">
                   <MPWTextButton
