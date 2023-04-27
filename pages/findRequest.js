@@ -8,7 +8,7 @@ import { text } from '@/data/text/text'
 import { useState } from 'react'
 import { requests } from '@/data/requests'
 import SearchBar from '@/components/formFields/SearchBar'
-import FindCard from '@/components/FindRequests/FindCard'
+import FindCard from '@/components/FindRequests/FindCard'  
 
 
 
