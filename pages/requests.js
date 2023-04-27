@@ -43,8 +43,8 @@ export default function Requests() {
 
         <Location />
         <CarouselContainer />
-
-        <div>
+        <CharCount />
+        <div className={styles.whenContainer}>
           <label for="when">When do you need it?</label>
           <select name="when" id="when" className={styles.whenField}>
             <option value="ASAP">ASAP</option>
@@ -53,7 +53,7 @@ export default function Requests() {
             <option value="60+mins">60+mins</option>
           </select>
         </div>
-        <CharCount />
+
         <div className={styles.button}>
 
           {buttText && buttText.map((binfo, bindex) => {
@@ -86,8 +86,8 @@ export default function Requests() {
       </main>
 
       <footer>
-        <Nav 
-        srcRequest="/navIcons/AddOrange.svg"/>
+        <Nav
+          srcRequest="/navIcons/AddOrange.svg" />
       </footer>
     </>
   )

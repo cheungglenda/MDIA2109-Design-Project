@@ -1,10 +1,14 @@
 .main{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .button {
     display: flex;
     justify-content: center;
+    margin-top: 1em;
 }
 
 .whenField {
@@ -14,6 +18,7 @@
     border-radius: 10px;
     background-color: var(--white);
 }
+
 
 .carousel{
     display: flex;
