@@ -46,6 +46,7 @@ export const text = {
             mainQuiz: "Main Quiz",
             seeResults: "See Results",
             moreQuiz: "More Tips and Quizzes",
+            article: "Read the Article",
 
             incorrect: "That was incorrect!",
             correct: "That was correct!",
