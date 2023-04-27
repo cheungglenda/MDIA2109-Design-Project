@@ -14,6 +14,14 @@ export default function LoginInputs() {
     const [name, setName] = useState("");
     const [isActiveOne, setIsActiveOne] = useState(true);
     const [isActiveTwo, setIsActiveTwo] = useState(false);
+    
+    const [password, setPassword] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
+
+    const toggleShowPassword = () => {
+        setShowPassword(!showPassword);
+    };
+ 
 
     const [buttText, setButText] = useState([...text.buttons])
 
@@ -24,6 +32,8 @@ export default function LoginInputs() {
             setIsActiveTwo(true);
         }
     }
+
+    
 
     return (
         <div className={styles.main}>
@@ -50,7 +60,20 @@ export default function LoginInputs() {
             </div>
             <div className={styles.box} style={{ display: isActiveOne ? 'block' : 'none' }}>
                 <h4>Password:</h4>
-                <input type="password" placeholder="Enter Password" className={styles.input} />
+                <div className={styles.passAlign}>
+                <input type={showPassword ? 'text' : 'password'} 
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                 placeholder="Enter Password" className={styles.input} />
+                 <button 
+                 type="button"
+                 onClick={toggleShowPassword}
+                 className={styles.showPassBtn}
+                 >
+                   <img src={showPassword ? "/layoutIcons/hide.png" : "/layoutIcons/show.png"}
+                   />
+                 </button>
+                 </div>
             </div>
             <div className={styles.forgotPW} style={{ display: isActiveOne ? 'block' : 'none' }}>
                 <p>I forgot my password</p>
