@@ -14,7 +14,7 @@ export default function InputBoxes() {
     const [buttText, setButText] = useState([...text.buttons])
 
     const CheckName = (checkUser) => {
-        if(typeof window !== "undefined" && window.localStorage){
+        if(formData.firstName !== null){
             localStorage.setItem("userFirstName", formData.firstName)
             localStorage.setItem("userLastName", formData.lastName)
         }

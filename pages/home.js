@@ -7,7 +7,7 @@ import Nav from '@/components/nav'
 
 export default function Home() {
 
-  const userName = localStorage.getItem("userName")
+  const userFirstName = localStorage.getItem("userFirstName")
 
   return (
     <>
