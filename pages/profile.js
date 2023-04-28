@@ -3,21 +3,27 @@ import Image from 'next/image'
 import styles from '@/styles/Profile.module.css'
 import Link from 'next/link'
 import FulfilledChart from '../components/FulfilledChart'
-import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
 import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
 import { text } from '@/data/text/text'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import LPWTextButton from '@/components/buttons/withText/lowpriorityWtext'
-
-
-
 
 export default function Profile() {
 
   const [data, setData] = useState([...text.headers])
   const [buttText, setButText] = useState([...text.buttons])
 
+  const [firstName, setFirstName] = useState(null);
+  const [lastName, setLastName] = useState(null);
+
+  useEffect(() => {
+    const firstName = localStorage.getItem("userFirstName");
+    setFirstName(firstName);
+    const lastName = localStorage.getItem("userLastName");
+    setLastName(lastName);
+    console.log("ProfilelocalStorage")
+  }, [])
 
   return (
     <>
@@ -47,7 +53,7 @@ export default function Profile() {
             width={250}
             height={250}
           />
-          <h1 className={styles.name}>Sarah Williams</h1>
+          <h1 className={styles.name}>{firstName} {lastName}</h1>
           <div className={styles.postButton}>
             {buttText && buttText.map((binfo, bindex) => {
               return (
@@ -61,8 +67,8 @@ export default function Profile() {
           </div>
         </div>
         <div className={styles.text}>
-          <h2 className={styles.title}>Way to lend a helping hand in 2023 so far, Sarah 👏</h2>
-          <p className={styles.description}>Check out your stats on how many requests you’ve fulfilled so far in 2023:</p>
+          <h2 className={styles.title}>Way to lend a helping hand in 2023 so far, {firstName} 👏</h2>
+          <p className={styles.description}>Check out your stats on how many requests you've fulfilled so far in 2023:</p>
         </div>
         <div className={styles.chartContainer}>
           <FulfilledChart />

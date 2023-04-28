@@ -3,7 +3,6 @@ import Home from '@/pages/home'
 import styles from './InputBoxes.module.css'
 import Nav from '../nav'
 import Image from 'next/image'
-import Link from 'next/link'
 import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
 import { text } from '@/data/text/text'
 import { useRouter } from 'next/router'
@@ -13,6 +12,14 @@ export default function InputBoxes() {
 
     const [buttText, setButText] = useState([...text.buttons])
 
+    const CheckName = () => {
+        if(typeof window !== 'undefined'){
+            localStorage.setItem("userFirstName", formData.firstName);
+            localStorage.setItem("userLastName", formData.lastName);
+            console.log("signuplocalstorage")
+        }
+    }
+
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -21,19 +28,15 @@ export default function InputBoxes() {
 
     })
     const router = useRouter()
-
     const CheckLogin = () => {
-        console.log(formData.firstName)
 
-        if (formData.firstName !== null) {
+        if (formData.firstName !== '') {
             router.push({
-                pathname: './home',
-                query: {
-                    firstName: formData.firstName
-                }
+                pathname: './home'
             })
         }
     }
+
 
     return (
         <div className={styles.main}>
@@ -86,8 +89,7 @@ export default function InputBoxes() {
             <div className={styles.joinButton}>
                 {buttText && buttText.map((binfo, bindex) => {
                     return (
-
-                        <a onClick={() => CheckLogin()}><HPWTextButton
+                        <a onClick={() => CheckName() + CheckLogin()}><HPWTextButton
                             key={bindex}
                             buttonText={binfo.join} /></a>
                     )

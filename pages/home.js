@@ -4,12 +4,18 @@ import HeaderWithLogo from '../components/HeaderWithLogo'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import Nav from '@/components/nav'
-import { useSearchParams } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
 export default function Home() {
 
-  const searchParams = useSearchParams();
-  const firstName = searchParams.get('firstName')
+  const [firstName, setFirstName] = useState(null);
+
+  useEffect(() => {
+    const firstName = localStorage.getItem("userFirstName");
+    setFirstName(firstName);
+    console.log("homelocalStorage")
+  }, [])
+
 
   return (
     <>
