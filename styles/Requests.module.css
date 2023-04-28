@@ -24,7 +24,7 @@
     border-radius: 10px;
     background-color: var(--white);
     padding: 0.5em;
-
+    background-color: white;
 }
 
 .whenField:hover{
