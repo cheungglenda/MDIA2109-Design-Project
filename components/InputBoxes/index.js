@@ -3,7 +3,6 @@ import Home from '@/pages/home'
 import styles from './InputBoxes.module.css'
 import Nav from '../nav'
 import Image from 'next/image'
-import Link from 'next/link'
 import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
 import { text } from '@/data/text/text'
 import { useRouter } from 'next/router'
@@ -15,8 +14,8 @@ export default function InputBoxes() {
 
     const CheckName = (checkUser) => {
         if(formData.firstName !== null){
-            localStorage.setItem("userFirstName", formData.firstName)
-            localStorage.setItem("userLastName", formData.lastName)
+            localStorage.setItem("userFirstName", formData.firstName);
+            localStorage.setItem("userLastName", formData.lastName);
         }
     }
 
@@ -28,13 +27,12 @@ export default function InputBoxes() {
 
     })
     const router = useRouter()
-
     const CheckLogin = () => {
         console.log(formData.firstName)
 
         if (formData.firstName !== null) {
             router.push({
-                pathname: './home',
+                pathname: './home'
             })
         }
     }
