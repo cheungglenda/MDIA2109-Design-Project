@@ -21,10 +21,10 @@ export default function InputBoxes() {
     }
 
     const [formData, setFormData] = useState({
-        firstName: null,
-        lastName: null,
-        email: null,
-        password: null,
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
 
     })
     const router = useRouter()
