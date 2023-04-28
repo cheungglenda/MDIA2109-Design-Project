@@ -30,7 +30,7 @@ export default function InputBoxes() {
     const CheckLogin = () => {
         console.log(formData.firstName)
 
-        if (formData.firstName !== null) {
+        if (formData.firstName !== '') {
             router.push({
                 pathname: './home'
             })
