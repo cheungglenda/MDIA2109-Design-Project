@@ -14,6 +14,12 @@
     box-sizing: border-box;
 }
 
+.title {
+    font-family: 'manrope';
+    margin: .25em;
+    text-align: center;
+}
+
 .backIcon{
     align-items:left;
 }

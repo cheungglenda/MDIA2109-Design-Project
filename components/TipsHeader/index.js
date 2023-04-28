@@ -13,6 +13,7 @@ export default function TipsHeader({
     return (
         <div className={styles.headerContainer}>
             <a onClick={() => router.back()} ><Image src="/navIcons/BackButton.svg" alt="placeholder" width={25} height={20} className={styles.backIcon} /></a>
+            <h1 className={styles.title}>{headers}</h1>
             <div className={styles.rightIcons}>
             <Image 
             src="/navIcons/Text_size.svg"

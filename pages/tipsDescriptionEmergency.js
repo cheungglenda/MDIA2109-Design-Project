@@ -19,7 +19,10 @@ export default function TipsEmergency() {
             <header>
                 {data2 && data2.map((info, index) => {
                     return (
-                        <TipsHeader />
+                        <TipsHeader
+                        key={index}
+                        headers={info.tips}
+                        />
                     )
                 })}
             </header>
