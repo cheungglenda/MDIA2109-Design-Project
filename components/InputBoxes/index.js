@@ -13,7 +13,7 @@ export default function InputBoxes() {
     const [buttText, setButText] = useState([...text.buttons])
 
     const CheckName = (checkUser) => {
-        if(formData.firstName !== null){
+        if(typeof window !== 'undefined'){
             localStorage.setItem("userFirstName", formData.firstName);
             localStorage.setItem("userLastName", formData.lastName);
         }
@@ -89,7 +89,6 @@ export default function InputBoxes() {
             <div className={styles.joinButton}>
                 {buttText && buttText.map((binfo, bindex) => {
                     return (
-
                         <a onClick={() => CheckName() + CheckLogin()}><HPWTextButton
                             key={bindex}
                             buttonText={binfo.join} /></a>
