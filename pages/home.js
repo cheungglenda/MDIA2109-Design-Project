@@ -4,12 +4,10 @@ import HeaderWithLogo from '../components/HeaderWithLogo'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import Nav from '@/components/nav'
-import { useSearchParams } from 'next/navigation'
 
 export default function Home() {
 
-  const searchParams = useSearchParams();
-  const firstName = searchParams.get('firstName')
+  const userName = localStorage.getItem("userName")
 
   return (
     <>
@@ -24,7 +22,7 @@ export default function Home() {
       </header>
       <main className={styles.main}>
         <div className={styles.welcomeMsg}>
-          <h1 className={styles.welcome}>👋 Welcome, {firstName}!</h1>
+          <h1 className={styles.welcome}>👋 Welcome, {userName}!</h1>
         </div>
         <div className={styles.achievementButtons}>
         <Link href="/yourRequests"><button className={styles.buttons}>

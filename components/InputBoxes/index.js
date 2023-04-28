@@ -13,11 +13,18 @@ export default function InputBoxes() {
 
     const [buttText, setButText] = useState([...text.buttons])
 
+    const CheckName = (checkUser) => {
+        if(typeof window !== "undefined" && window.localStorage){
+            localStorage.setItem("userFirstName", formData.firstName)
+            localStorage.setItem("userLastName", formData.lastName)
+        }
+    }
+
     const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        password: '',
+        firstName: null,
+        lastName: null,
+        email: null,
+        password: null,
 
     })
     const router = useRouter()
@@ -28,12 +35,10 @@ export default function InputBoxes() {
         if (formData.firstName !== null) {
             router.push({
                 pathname: './home',
-                query: {
-                    firstName: formData.firstName
-                }
             })
         }
     }
+
 
     return (
         <div className={styles.main}>
@@ -87,7 +92,7 @@ export default function InputBoxes() {
                 {buttText && buttText.map((binfo, bindex) => {
                     return (
 
-                        <a onClick={() => CheckLogin()}><HPWTextButton
+                        <a onClick={() => CheckName() + CheckLogin()}><HPWTextButton
                             key={bindex}
                             buttonText={binfo.join} /></a>
                     )

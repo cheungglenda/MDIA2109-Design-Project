@@ -14,14 +14,13 @@ export default function LoginInputs() {
     const [name, setName] = useState("");
     const [isActiveOne, setIsActiveOne] = useState(true);
     const [isActiveTwo, setIsActiveTwo] = useState(false);
-    
+
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
     const toggleShowPassword = () => {
         setShowPassword(!showPassword);
     };
- 
 
     const [buttText, setButText] = useState([...text.buttons])
 
@@ -33,65 +32,65 @@ export default function LoginInputs() {
         }
     }
 
-    
+
 
     return (
         <div className={styles.main}>
             <div className={styles.logoPic}>
-            <Image
-                src="/logos/wordmarked_logo.png"
-                alt=""
-                width={200}
-                height={200}
-                style={{ display: isActiveOne ? 'block' : 'none' }} />
+                <Image
+                    src="/logos/wordmarked_logo.png"
+                    alt=""
+                    width={200}
+                    height={200}
+                    style={{ display: isActiveOne ? 'block' : 'none' }} />
             </div>
             <div className={styles.box}><h2 style={{ display: isActiveOne ? 'block' : 'none' }}>Login</h2></div>
-        <div className={styles.fields}>
-            <div className={styles.box} style={{ display: isActiveOne ? 'block' : 'none' }}>
-                <h4>Username:</h4>
-                <input
-                    value={name}
-                    onChange={event => setName(event.target.value)}
-                    placeholder="Enter Username"
-                    onKeyDown={passName}
-                    type="text"
-                    className={styles.input}
-                />
-            </div>
-            <div className={styles.box} style={{ display: isActiveOne ? 'block' : 'none' }}>
-                <h4>Password:</h4>
-                <div className={styles.passAlign}>
-                <input type={showPassword ? 'text' : 'password'} 
-                value={password}
-                onChange={(event) => setPassword(event.target.value)}
-                 placeholder="Enter Password" className={styles.input} />
-                 <button 
-                 type="button"
-                 onClick={toggleShowPassword}
-                 className={styles.showPassBtn}
-                 >
-                   <img src={showPassword ? "/layoutIcons/hide.png" : "/layoutIcons/show.png"}
-                   />
-                 </button>
-                 </div>
-            </div>
-            <div className={styles.forgotPW} style={{ display: isActiveOne ? 'block' : 'none' }}>
-                <p>I forgot my password</p>
-            </div>
-            <div className={styles.loginButton} style={{ display: isActiveOne ? 'block' : 'none' }}>
-                {buttText && buttText.map((binfo, bindex) => {
-                    return (
+            <div className={styles.fields}>
+                <div className={styles.box} style={{ display: isActiveOne ? 'block' : 'none' }}>
+                    <h4>Username:</h4>
+                    <input
+                        value={name}
+                        onChange={event => setName(event.target.value)}
+                        placeholder="Enter Username"
+                        onKeyDown={passName}
+                        type="text"
+                        className={styles.input}
+                    />
+                </div>
+                <div className={styles.box} style={{ display: isActiveOne ? 'block' : 'none' }}>
+                    <h4>Password:</h4>
+                    <div className={styles.passAlign}>
+                        <input type={showPassword ? 'text' : 'password'}
+                            value={password}
+                            onChange={(event) => setPassword(event.target.value)}
+                            placeholder="Enter Password" className={styles.input} />
+                        <button
+                            type="button"
+                            onClick={toggleShowPassword}
+                            className={styles.showPassBtn}
+                        >
+                            <img src={showPassword ? "/layoutIcons/hide.png" : "/layoutIcons/show.png"}
+                            />
+                        </button>
+                    </div>
+                </div>
+                <div className={styles.forgotPW} style={{ display: isActiveOne ? 'block' : 'none' }}>
+                    <p>I forgot my password</p>
+                </div>
+                <div className={styles.loginButton} style={{ display: isActiveOne ? 'block' : 'none' }}>
+                    {buttText && buttText.map((binfo, bindex) => {
+                        return (
 
-                        <Link href="/home"><HPWTextButton
-                            key={bindex}
-                            buttonText={binfo.logIn} /></Link>
-                    )
-                })}
+                            <Link href="/home"><HPWTextButton
+                                key={bindex}
+                                buttonText={binfo.logIn} /></Link>
+                        )
+                    })}
+                </div>
+                <div style={{ display: isActiveTwo ? 'block' : 'none' }}>
+                    <Home passName={name} />
+                </div>
             </div>
-            <div style={{ display: isActiveTwo ? 'block' : 'none' }}>
-                <Home passName={name} />
-            </div>
-        </div>
         </div>
     )
 }
