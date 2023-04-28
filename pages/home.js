@@ -4,10 +4,18 @@ import HeaderWithLogo from '../components/HeaderWithLogo'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import Nav from '@/components/nav'
+import { useEffect, useState } from 'react'
 
 export default function Home() {
 
-  const userFirstName = localStorage.getItem("userFirstName")
+  const [firstName, setFirstName] = useState(null);
+
+  useEffect(() => {
+    const firstName = localStorage.getItem("userFirstName");
+    setFirstName(firstName);
+    console.log("homelocalStorage")
+  }, [])
+
 
   return (
     <>
@@ -22,7 +30,7 @@ export default function Home() {
       </header>
       <main className={styles.main}>
         <div className={styles.welcomeMsg}>
-          <h1 className={styles.welcome}>👋 Welcome, {userFirstName}!</h1>
+          <h1 className={styles.welcome}>👋 Welcome, {firstName}!</h1>
         </div>
         <div className={styles.achievementButtons}>
         <Link href="/yourRequests"><button className={styles.buttons}>

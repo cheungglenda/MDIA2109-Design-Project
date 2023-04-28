@@ -12,10 +12,11 @@ export default function InputBoxes() {
 
     const [buttText, setButText] = useState([...text.buttons])
 
-    const CheckName = (checkUser) => {
+    const CheckName = () => {
         if(typeof window !== 'undefined'){
             localStorage.setItem("userFirstName", formData.firstName);
             localStorage.setItem("userLastName", formData.lastName);
+            console.log("signuplocalhost")
         }
     }
 
