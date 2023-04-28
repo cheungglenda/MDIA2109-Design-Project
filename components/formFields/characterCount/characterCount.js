@@ -4,7 +4,7 @@ import styles from './characterCount.module.css'
 export default function CharCount() {
   const [count, setCount] = React.useState(0);
   return (
-    <div>
+    <div className={styles.countContainer}>
           <label for="details">Provide more details:</label>
           <textarea id="details" name="details" rows="4" maxLength={500} className={styles.detailsField} onChange={e => setCount(e.target.value.length)}>
         </textarea>

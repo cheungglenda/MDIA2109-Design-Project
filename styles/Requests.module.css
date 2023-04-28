@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.4em;
 }
 
 .button {
@@ -11,14 +11,25 @@
     margin-top: 1em;
 }
 
+.whenContainer{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .whenField {
     width: 100%;
     border: 1px solid black;
     height: 30px;
     border-radius: 10px;
     background-color: var(--white);
+    padding: 0.5em;
+
 }
 
+.whenField:hover{
+    background-color: var(--white);
+}
 
 .carousel{
     display: flex;
