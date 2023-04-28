@@ -22,7 +22,7 @@ export default function Home() {
       </header>
       <main className={styles.main}>
         <div className={styles.welcomeMsg}>
-          <h1 className={styles.welcome}>👋 Welcome, {userName}!</h1>
+          <h1 className={styles.welcome}>👋 Welcome, {userFirstName}!</h1>
         </div>
         <div className={styles.achievementButtons}>
         <Link href="/yourRequests"><button className={styles.buttons}>
