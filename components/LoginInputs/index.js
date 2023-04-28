@@ -7,8 +7,6 @@ import Link from 'next/link'
 import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
 import { text } from '@/data/text/text'
 
-
-
 export default function LoginInputs() {
 
     const [name, setName] = useState("");
@@ -31,7 +29,6 @@ export default function LoginInputs() {
             setIsActiveTwo(true);
         }
     }
-
 
 
     return (

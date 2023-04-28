@@ -1,16 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Login.module.css'
-import Link from 'next/link'
-import { text } from '@/data/text/text'
-import { useState } from 'react'
 import LoginInputs from '../components/LoginInputs'
 
 
 export default function Login() {
-
-const [data, setData] = useState([...text.headers])
-const [buttText, setButText] = useState([...text.buttons])
 
   return (
     <>

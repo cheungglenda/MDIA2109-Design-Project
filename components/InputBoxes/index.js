@@ -16,7 +16,7 @@ export default function InputBoxes() {
         if(typeof window !== 'undefined'){
             localStorage.setItem("userFirstName", formData.firstName);
             localStorage.setItem("userLastName", formData.lastName);
-            console.log("signuplocalhost")
+            console.log("signuplocalstorage")
         }
     }
 
@@ -29,7 +29,6 @@ export default function InputBoxes() {
     })
     const router = useRouter()
     const CheckLogin = () => {
-        console.log(formData.firstName)
 
         if (formData.firstName !== '') {
             router.push({
