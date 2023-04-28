@@ -55,38 +55,43 @@ const Carousel = (props) => {
     return (
         <div className={styles.carouselcontainer}>
             <label for="items">What do you need?</label>
-            {
-                currentIndex > 0 &&
-                <button onClick={prev} className={styles.leftarrow}>
-                    &lt;
-                </button>
-            }
-            <div className={styles.carouselwrapper}>
-
-                <div
-                    className={styles.carouselcontentwrapper}
-                    onTouchStart={handleTouchStart}
-                    onTouchMove={handleTouchMove}
-                >
-                    <div
-                        className={`${styles.carouselcontent} ${styles.show3}`}
-                        style={{ transform: `translateX(-${currentIndex * (100 / show)}%)` }}
-                    >
-                        {children}
-                    </div>
+            <div className={styles.carouselContent}>
+                <div className={styles.buttonContainer}>
+                    {
+                        currentIndex > 0 &&
+                        <button onClick={prev} className={styles.leftarrow}>
+                            &lt;
+                        </button>
+                    }
                 </div>
 
+                <div className={styles.carouselwrapper}>
 
-            </div>
-            <div className={styles.button}>
+                    <div
+                        className={styles.carouselcontentwrapper}
+                        onTouchStart={handleTouchStart}
+                        onTouchMove={handleTouchMove}
+                    >
+                        <div
+                            className={`${styles.carouselcontent} ${styles.show3}`}
+                            style={{ transform: `translateX(-${currentIndex * (100 / show)}%)` }}
+                        >
+                            {children}
+                        </div>
+                    </div>
 
+
+                </div>
+                <div className={styles.buttonContainer}>
+                    {
+                        currentIndex < (length - 3) &&
+                        <button onClick={next} className={styles.rightarrow}>
+                            &gt;
+                        </button>
+                    }
+                </div>
             </div>
-            {
-                currentIndex < (length - 3) &&
-                <button onClick={next} className={styles.rightarrow}>
-                    &gt;
-                </button>
-            }
+
         </div>
     )
 }

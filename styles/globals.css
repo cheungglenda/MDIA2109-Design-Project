@@ -144,8 +144,9 @@ p{
 label{
   font-size: 20px /*all form labels match font size of H3 text*/; 
   font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
-
 
 html{
   height: 844px;
