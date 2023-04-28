@@ -83,11 +83,11 @@ export default function TipsDescription({
                                 onClick={toggle1}
                                 type="button"
                             >
-                                <h4>{accordion1}</h4>
+                                <h4 className={styles.accordionHeader} style={{ marginBottom: isShowing1 === true ? "0px" : "24px"}}>{accordion1}</h4>
+                                <p>{isShowing1 ? "-" : "+"}</p>
                             </button>
-                            <p>{isShowing1 ? "-" : "+"}</p>
                         </div>
-                        <div style={{ display: isShowing1 ? "block" : "none", padding: "5px" }}
+                        <div className={styles.accordionDescCont} style={{ display: isShowing1 ? "block" : "none", padding: "5px" }}
                         >
                             <p>{accordion1Desc}</p>
                         </div>
@@ -99,13 +99,13 @@ export default function TipsDescription({
                                 onClick={toggle2}
                                 type="button"
                             >
-                                <h4>{accordion2}</h4>
+                                <h4 className={styles.accordionHeader} style={{ marginBottom: isShowing2 === true ? "0px" : "24px"}}>{accordion2}</h4>
+                                <p>{isShowing2 ? "-" : "+"}</p>
                             </button>
-                            <p>{isShowing2 ? "-" : "+"}</p>
                         </div>
-                        <div style={{ display: isShowing2 ? "block" : "none", padding: "5px" }}
+                        <div className={styles.accordionDescCont} style={{ display: isShowing2 ? "block" : "none", padding: "5px" }}
                         >
-                            {accordion2Desc}
+                            <p>{accordion2Desc}</p>
                         </div>
                     </div>
 
@@ -115,13 +115,14 @@ export default function TipsDescription({
                                 onClick={toggle3}
                                 type="button"
                             >
-                                <h4>{accordion3}</h4>
+                                <h4 className={styles.accordionHeader} style={{ marginBottom: isShowing3 === true ? "0px" : "24px"}}>{accordion3}</h4>
+                                <p>{isShowing3 ? "-" : "+"}</p>
                             </button>
-                            <p>{isShowing3 ? "-" : "+"}</p>
+
                         </div>
-                        <div style={{ display: isShowing3 ? "block" : "none", padding: "5px" }}
+                        <div className={styles.accordionDescCont} style={{ display: isShowing3 ? "block" : "none", padding: "5px" }}
                         >
-                            {accordion3Desc}
+                            <p>{accordion3Desc}</p>
                         </div>
                     </div>
 
@@ -131,13 +132,14 @@ export default function TipsDescription({
                                 onClick={toggle4}
                                 type="button"
                             >
-                                <h4>{accordion4}</h4>
+                                <h4 className={styles.accordionHeader} style={{ marginBottom: isShowing4 === true ? "0px" : "24px"}}>{accordion4}</h4>
+                                <p>{isShowing4 ? "-" : "+"}</p>
                             </button>
-                            <p>{isShowing4 ? "-" : "+"}</p>
+
                         </div>
-                        <div style={{ display: isShowing4 ? "block" : "none", padding: "5px" }}
+                        <div className={styles.accordionDescCont} style={{ display: isShowing4 ? "block" : "none", padding: "5px" }}
                         >
-                            {accordion4Desc}
+                            <p>{accordion4Desc}</p>
                         </div>
                     </div>
 
@@ -146,13 +148,14 @@ export default function TipsDescription({
                             <button className={styles.button}
                                 onClick={toggle5}
                                 type="button">
-                                <h4>{accordion5}</h4>
+                                <h4 className={styles.accordionHeader} style={{ marginBottom: isShowing5 === true ? "0px" : "24px"}}>{accordion5}</h4>
+                                <p>{isShowing5 ? "-" : "+"}</p>
                             </button>
-                            <p>{isShowing5 ? "-" : "+"}</p>
+
                         </div>
-                        <div style={{ display: isShowing5 ? "block" : "none", padding: "5px" }}
+                        <div className={styles.accordionDescCont} style={{ display: isShowing5 ? "block" : "none", padding: "5px" }}
                         >
-                            {accordion5Desc}
+                            <p>{accordion5Desc}</p>
                         </div>
                     </div>
 

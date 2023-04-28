@@ -26,7 +26,16 @@
     padding: 4px;
     background: transparent;
     border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.button:hover{
+    cursor: pointer;
+}
+
 
 .toggleContainer{
     border-top: 1px solid var(--primary-charcoal);
@@ -43,3 +52,12 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.accordionDescCont > p{
+    padding-bottom: 0.5em;
+    margin-top: 0px;
+    padding-left: 1.3em;
+}
+
+
+

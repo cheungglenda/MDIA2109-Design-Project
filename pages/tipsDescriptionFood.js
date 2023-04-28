@@ -18,7 +18,10 @@ export default function TipsFood() {
             <header>
                 {data2 && data2.map((info, index) => {
                     return (
-                        <TipsHeader />
+                        <TipsHeader
+                        key={index}
+                        headers={info.tips}
+                        />
                     )
                 })}
             </header>
