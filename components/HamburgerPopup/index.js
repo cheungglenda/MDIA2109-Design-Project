@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Popup from '@/hooks/hampopup'
 import Link from 'next/link'
+import LogOutPopUp from '../LogOut'
 
 
 export default function HamburgerPopup() {
@@ -22,7 +23,7 @@ export default function HamburgerPopup() {
                         <li><Link href="/home">🏠 Home</Link></li>
                         <li><Link href="/settings">⚙️ Settings</Link></li>
                         <li><Link href="/quizresultsall">📝 Quiz Results</Link></li>
-                        <li><Link href="/">✖️ Log Out</Link></li>
+                        <li><LogOutPopUp /></li>
                     </ul>
                     )}
             </Popup>
