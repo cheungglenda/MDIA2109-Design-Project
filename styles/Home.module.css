@@ -34,7 +34,7 @@
 .achievementButtons button {
   background-color:var(--primary-light-blue);
   width:8em;
-  height:12em;
+  height:11em;
   font-family:'manrope', sans-serif;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius:15px;
@@ -60,8 +60,8 @@
 
 .quickLinks {
   display:grid;
-  grid-template-columns: 150px 150px;
-  gap:2em;
+  grid-template-columns: 155px 155px;
+  grid-gap:1em;
   margin:auto;
 }
 
@@ -97,7 +97,7 @@
 
 .achievementDesc p {
   font-size:18px;
-  padding-top:2em;
+  padding-top:1em;
 }
 
 .quickInside {
@@ -123,4 +123,8 @@
   margin-bottom:0;
   font-weight:600;
   font-size:22px;
+}
+
+.main {
+  gap:1em;
 }
