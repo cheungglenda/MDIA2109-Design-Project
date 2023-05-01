@@ -35,11 +35,11 @@ export default function FulfilledChart() {
 
     useEffect(() => {
         setChartData({
-            labels: ["January", "February", "March"],
+            labels: ["January", "February", "March", "April", "May"],
             datasets: [
                 {
                     label: "Requests Fulfilled", 
-                    data: [194, 301, 308, 241, 261, 337, 364, 336, 277, 146, 310, 172],
+                    data: [18, 13, 16, 20, 11],
                     borderColor: 'rgba(108, 145, 194)',
                     backgroundColor: 'rgba(108, 145, 194)'
                 },
