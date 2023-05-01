@@ -34,13 +34,7 @@ export default function ChatNav() {
                     <input type="text" id="details" name="details" maxLength={300} className={styles.detailsField} onChange={e => setCount(e.target.value.length) + setMessage({ ...message, message: e.target.value })}>
                     </input>
                     <div className={styles.messageMedia}>
-                        <div className={styles.messageImages}>
-                            <Image src="/navIcons/ImageIcon.svg" height={30} width={30} />
-                            <Image src="/navIcons/EmojiIcon.svg" height={30} width={30} />
-                        </div>
-                        <div className={styles.count}>
                             <p className={styles.count}>{count}/300</p>
-                        </div>
                     </div>
 
                 </div>

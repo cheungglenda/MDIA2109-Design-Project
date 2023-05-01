@@ -6,6 +6,7 @@
     padding-left:0.75em;
     border-radius:10px;
     width:100%;
+    font-size: 14px;
 }
 
 .box {
@@ -69,5 +70,5 @@
 }
 
 .inputBox h4 {
-    margin-bottom:0.75em;
+    margin-bottom:0.5em;
 }

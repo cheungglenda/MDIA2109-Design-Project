@@ -5,7 +5,8 @@ export default function MessageCard({
     userName,
     time,
     color,
-    message
+    message,
+    number
 
 }) {
     return (
@@ -16,6 +17,7 @@ export default function MessageCard({
                     <div className={styles.timeInfo}>
                         <p>{time} ago</p>
                         <div className={styles.circle} style={{backgroundColor: color }} >
+                            {number}
                         </div>
                     </div >
                 </div>

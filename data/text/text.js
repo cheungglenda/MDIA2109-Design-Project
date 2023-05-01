@@ -1,6 +1,7 @@
 export const text = {
     headers: [
         {
+            home: "Home",
             profile: "Profile",
             tips: "Tips",
             newRequest: "New Request",
