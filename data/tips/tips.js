@@ -1,7 +1,7 @@
 export const tips = {
     card: [
         {
-            image: "/tipsImages/emergencyItems1.jpeg",
+            image: "/tipsImages/emergencyitems1.jpeg",
             title: "5 Useful Emergency Items for Your Car",
             path: "/tipsDescriptionEmergency",
             description: "When it comes to driving, it's always better to be prepared for emergencies on the road. Having the right emergency items in your car can help you handle unexpected situations more easily and safely.",
