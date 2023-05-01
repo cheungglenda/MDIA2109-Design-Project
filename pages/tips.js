@@ -5,7 +5,7 @@ import HeaderNav from '@/components/HeaderNav'
 import SearchBar from '@/components/formFields/SearchBar'
 import TipsCard from '@/components/TipsCard'
 import { tips } from '@/data/tips/tips'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { text } from '@/data/text/text'
 import Nav from '@/components/nav'
 
@@ -13,6 +13,13 @@ export default function Tips() {
 
   const [data, setData] = useState([...tips.card])
   const [data2, setData2] = useState([...text.headers])
+
+  const [searchTerm, setSearchTerm] = useState(null);
+
+  useEffect(() => {
+    const searchTerm = localStorage.getItem("searchTerm");
+    setSearchTerm(searchTerm);
+  })
 
   return (
     <>
@@ -30,6 +37,7 @@ export default function Tips() {
         <SearchBar />
 
         {data && data.map((info, index) => {
+          if (info.title.includes(searchTerm))
           return (
       
               <TipsCard
