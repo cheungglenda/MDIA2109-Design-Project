@@ -1,12 +1,15 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import HeaderWithLogo from '../components/HeaderWithLogo'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import Nav from '@/components/nav'
 import { useEffect, useState } from 'react'
+import { text } from '@/data/text/text'
+import HeaderNav from '@/components/HeaderNav'
+
 
 export default function Home() {
+
+  const [data, setData] = useState([...text.headers])
 
   const [firstName, setFirstName] = useState(null);
 
@@ -25,8 +28,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <header>
-      <HeaderWithLogo />
+        {data && data.map((info, index) => {
+          return (
+            <HeaderNav
+              key={index}
+              headers={info.home} />
+          )
+        })}
+
       </header>
       <main className={styles.main}>
         <div className={styles.welcomeMsg}>

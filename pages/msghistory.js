@@ -45,6 +45,7 @@ export default function MessageHistory() {
                 time={info2.time}
                 color={info2.color}
                 message={info2.message.slice(-1)}
+                number={info2.number}
               />
             </Link>
           )

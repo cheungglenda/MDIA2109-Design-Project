@@ -1,4 +1,4 @@
-.navContainer{
+.navContainer {
     height: auto;
     width: 100%;
     display: flex;
@@ -11,39 +11,37 @@
     box-sizing: border-box;
 }
 
-.messageFeatures{
+.messageFeatures {
     width: 75%;
     height: 5em;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 0.5em;
 }
 
-.messageFeatures > input{
+.messageFeatures>input {
     border: 1px solid var(--primary-charcoal);
-    padding-top:0.5em;
-    padding-bottom:0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     font-family: 'manrope';
-    border-radius:10px;
-    width:100%;
-    margin:auto;
-    padding-left:1em;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    padding-left: 1em;
 }
 
-.sendButton{
+.sendButton {
     width: 25%;
     height: auto;
 }
 
-.messageImages{
+
+.messageMedia {
     display: flex;
     flex-direction: row;
-    gap: 3em;
+    justify-content: right;
 }
 
-.messageMedia{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.count {
+    margin: 0px;
 }

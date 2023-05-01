@@ -1,7 +1,7 @@
 export const tips = {
     card: [
         {
-            image: "/tipsImages/emergencyItems.jpeg",
+            image: "/tipsImages/emergencyItems1.jpeg",
             title: "5 Useful Emergency Items for Your Car",
             path: "/tipsDescriptionEmergency",
             description: "When it comes to driving, it's always better to be prepared for emergencies on the road. Having the right emergency items in your car can help you handle unexpected situations more easily and safely.",
@@ -23,7 +23,7 @@ export const tips = {
             accordion5Desc: "Keeping water and snacks in your car can help you stay hydrated and nourished during long drives, unexpected delays or emergencies.",
         },
         {
-            image: "/tipsImages/foodsincar.jpeg",
+            image: "/tipsImages/foodsincar1.jpeg",
             title: "What Foods Should be Kept in the Car",
             path: "/tipsDescriptionFood",
             description: "When it comes to keeping food in your car, it's important to choose items that are non-perishable and won't spoil or go bad easily. Here are some foods that are great to keep in your car for a quick snack or emergency situation",
