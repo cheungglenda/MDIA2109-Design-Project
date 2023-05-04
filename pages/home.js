@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Nav from '@/components/nav'
 import { useEffect, useState } from 'react'
 import { text } from '@/data/text/text'
-import HeaderNav from '@/components/HeaderNav'
+import HeaderWithLogo from '@/components/HeaderWithLogo'
 
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
       <header>
         {data && data.map((info, index) => {
           return (
-            <HeaderNav
+            <HeaderWithLogo
               key={index}
               headers={info.home} />
           )

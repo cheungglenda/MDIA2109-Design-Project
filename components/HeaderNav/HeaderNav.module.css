@@ -23,6 +23,10 @@
     object-fit:contain;
 }
 
+.backIcon:hover {
+    cursor:pointer;
+}
+
 .title {
     font-family: 'manrope';
     margin: .25em;
