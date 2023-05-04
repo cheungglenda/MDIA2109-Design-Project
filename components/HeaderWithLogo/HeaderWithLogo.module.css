@@ -18,3 +18,7 @@
 .backIcon img {
     object-fit: cover;
 }
+
+.title {
+    margin-right:4.7em;
+}
