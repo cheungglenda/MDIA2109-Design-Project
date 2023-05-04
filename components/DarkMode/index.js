@@ -18,7 +18,7 @@ export default function DarkMode() {
     }, [isDarkMode]);
 
     return (
-        <div>
+        <div className={styles.darkButton}>
             <button  onClick={handleToggleDarkMode}>
                 {isDarkMode ? 'Turn Off' : 'Turn On'}
             </button>
