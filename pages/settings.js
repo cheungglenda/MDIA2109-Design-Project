@@ -1,12 +1,15 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
 import styles from '@/styles/Settings.module.css'
 import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
 import DarkMode from '@/components/DarkMode'
+import { text } from '@/data/text/text'
+import { useEffect, useState } from 'react'
 import TextToggle from '@/components/TextSize'
 
 export default function Settings() {
+  const [data, setData] = useState([...text.headers])
 
   var copyright = process.env.NEXT_PUBLIC_COPYRIGHT
 
@@ -19,7 +22,13 @@ export default function Settings() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <HeaderNav />
+      {data && data.map((info, index) => {
+          return (
+            <HeaderNav
+              key={index}
+              headers={info.settings} />
+          )
+        })}
       </header>
       <main className={styles.main}>
         <div>
@@ -43,7 +52,8 @@ export default function Settings() {
         <hr className={styles.line} />
         <div>
           <h2>Account</h2>
-          <h4>Quiz Results Summary</h4>
+          <h4><Link href="/profile">Profile</Link></h4>
+          <h4><Link href="/quizresultsall">Quiz Results Summary</Link></h4>
         </div>
         <hr className={styles.line} />
         <div>
