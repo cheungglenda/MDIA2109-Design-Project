@@ -39,7 +39,6 @@
 
 .toggleContainer{
     border-top: 1px solid var(--primary-charcoal);
-    border-bottom: 1px solid var(--primary-charcoal);
     margin-top: -1px;
 
 }
