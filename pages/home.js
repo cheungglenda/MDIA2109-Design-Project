@@ -81,7 +81,7 @@ export default function Home() {
         </div></div></button></Link>
         <Link href="/quizmain"><button> <div className={styles.quickInside}>
             <div className={styles.quickEmoji}><span>🧠</span></div>
-            <div className={styles.quickTitle}><h2>Tip's<br />Quizzes</h2>
+            <div className={styles.quickTitle}><h2>Test<br />Your<br />Knowledge</h2>
         </div></div></button></Link>
         <Link href="/tips"><button><div className={styles.quickInside}>
             <div className={styles.quickEmoji}><span>💡</span></div>
