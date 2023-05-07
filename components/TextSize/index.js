@@ -5,46 +5,28 @@ export default function TextToggle() {
     const [textSizeChange, setTextSizeChange] = useState('text-small')
     const [openOverlay, setOpenOverlay] = useState(false)
 
-    const handleClick = (size) => {
+    const handleClick = (event) => {
+        const size = event.target.value
         setTextSizeChange(size)
-        setOpenOverlay(false)
+        document.body.style.fontSize = size
     }
 
     const handleToggle = () => {
         setOpenOverlay(!openOverlay)
     }
     return (
-        <div className={styles.relative}>
-            <button 
-            onClick={handleToggle}
-            className={styles.first}
-            >
-                Text Size
-            </button>
-            {openOverlay && (
-                <div className={styles.second}>
-                    <button
-                    onClick={() => handleClick('text-small')}
-                    className={styles.third}
-                    >
-                        Small
-                    </button>
-                    <button 
-                    onClick={() => handleClick('text-medium')}
-                    className={styles.fourth}
-                    >
-                        Medium
-                    </button>
-                    <button 
-                    onClick={() => handleClick('text-large')}
-                    className={styles.fifth}
-                    >
-                        Large
-                    </button>
-                    </div>
-            )}
-        
-        </div>
+      <div className={styles.relative}>
+        <label htmlFor="text-size-select" className={styles.first}>
+        </label>
+        <select 
+        id="text-size-select"
+        onChange={handleClick}
+        className={styles.second}>
+            <option value="text-small">Small</option>
+            <option value="text-medium">Medium</option>
+            <option value="text-large">Large</option>
+        </select>
+      </div>
     )
 
 }

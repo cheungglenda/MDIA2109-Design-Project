@@ -31,7 +31,7 @@ export default function Settings() {
         })}
       </header>
       <main className={styles.main}>
-        <div>
+        <div className={styles.content}>
           <h2 className={styles.header}>General</h2>
           <div className={styles.row}>
             <p>Dark Mode</p>
@@ -44,19 +44,19 @@ export default function Settings() {
           <p>Language</p>
         </div>
         <hr className={styles.line} />
-        <div>
+        <div className={styles.content}>
           <h2 className={styles.header}>About</h2>
           <p>About Traffic Buddy</p>
           <p>Website FAQ</p>
         </div>
         <hr className={styles.line} />
-        <div>
+        <div className={styles.content}>
           <h2 className={styles.header}>Account</h2>
           <p><Link href="/profile">Profile</Link></p>
           <p><Link href="/quizresultsall">Quiz Results Summary</Link></p>
         </div>
         <hr className={styles.line} />
-        <div>
+        <div className={styles.content}>
           <h2 className={styles.header}>Privacy</h2>
           <p>Terms and Conditions</p>
           <p>Privacy Policy</p>
