@@ -20,6 +20,7 @@ export const text = {
         {
             getStarted: "Get Started",
             logIn: "Log In",
+            resetPW: "Reset My Password",
             join: "Join Traffic Buddy",
             home: "Home",
 
