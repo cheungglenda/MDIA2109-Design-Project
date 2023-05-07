@@ -1,6 +1,7 @@
 
 import Head from 'next/head'
 import styles from '@/styles/ErrorPage.module.css'
+import Image from 'next/image'
 
 export default function ErrorPage() {
 return (
@@ -12,6 +13,7 @@ return (
         <link rel="icon" href="/favicon.ico" />
 </Head>
 <div className={styles.content}>
+<Image className={styles.img} src="/logos/logo.png" height={200} width={235} />
     <h1 className={styles.header}>404</h1>
     <h2 className={styles.subheader}>Page Not Found</h2>
     <p>Hold tight while we construct this page!</p>
