@@ -7,6 +7,7 @@ import DarkMode from '@/components/DarkMode'
 import { text } from '@/data/text/text'
 import { useEffect, useState } from 'react'
 import TextToggle from '@/components/TextSize'
+import LanguageToggle from '@/components/Language'
 
 export default function Settings() {
   const [data, setData] = useState([...text.headers])
@@ -31,36 +32,39 @@ export default function Settings() {
         })}
       </header>
       <main className={styles.main}>
-        <div>
-          <h2>General</h2>
+        <div className={styles.content}>
+          <h2 className={styles.header}>General</h2>
           <div className={styles.row}>
-            <h4>Dark Mode</h4>
+            <p>Dark Mode</p>
             <DarkMode />
           </div>
           <div className={styles.row}>
-            <h4>Text Size</h4>
+            <p>Text Size</p>
             <TextToggle />
           </div>
-          <h4>Language</h4>
+          <div className={styles.row}>
+          <p>Language</p>
+          <LanguageToggle/>
+          </div>
         </div>
         <hr className={styles.line} />
-        <div>
-          <h2>About</h2>
-          <h4>About Traffic Buddy</h4>
-          <h4>Website FAQ</h4>
+        <div className={styles.content}>
+          <h2 className={styles.header}>About</h2>
+          <p>About Traffic Buddy</p>
+          <p>Website FAQ</p>
         </div>
         <hr className={styles.line} />
-        <div>
-          <h2>Account</h2>
-          <h4><Link href="/profile">Profile</Link></h4>
-          <h4><Link href="/quizresultsall">Quiz Results Summary</Link></h4>
+        <div className={styles.content}>
+          <h2 className={styles.header}>Account</h2>
+          <p><Link href="/profile">Profile</Link></p>
+          <p><Link href="/quizresultsall">Quiz Results Summary</Link></p>
         </div>
         <hr className={styles.line} />
-        <div>
-          <h2>Privacy</h2>
-          <h4>Terms and Conditions</h4>
-          <h4>Privacy Policy</h4>
-          <h4>Report a Bug</h4>
+        <div className={styles.content}>
+          <h2 className={styles.header}>Privacy</h2>
+          <p>Terms and Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Report a Bug</p>
         </div>
         <div>
           {copyright}

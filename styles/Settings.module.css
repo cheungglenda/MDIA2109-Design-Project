@@ -14,3 +14,9 @@
 .main h4:hover {
     cursor:pointer;
 }
+
+.header {
+    font-size: var(--primary-h2-font);
+    font-weight: bold;
+} 
+
