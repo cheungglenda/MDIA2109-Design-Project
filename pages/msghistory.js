@@ -18,6 +18,10 @@ export default function MessageHistory() {
   const [searchTerm, setSearchTerm] = useState(null);
 
   useEffect(() => {
+    localStorage.setItem("searchTerm", "");
+  }, [])
+
+  useEffect(() => {
     const searchTerm = localStorage.getItem("searchTerm");
     setSearchTerm(searchTerm);
   })
