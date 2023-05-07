@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Home from '@/pages/home'
-import styles from './LoginInputs.module.css'
+import styles from './ForgotPWInputs.module.css'
 import Nav from '../nav'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -41,7 +41,10 @@ export default function LoginInputs() {
                     height={200}
                     style={{ display: isActiveOne ? 'block' : 'none' }} />
             </div>
-            <div className={styles.box}><h2 style={{ display: isActiveOne ? 'block' : 'none' }}>Login</h2></div>
+            <div className={styles.box}>
+                <h2 style={{ display: isActiveOne ? 'block' : 'none' }}>Forgot My Password</h2>
+                <p style={{ display: isActiveOne ? 'block' : 'none' }}>Input your username below and we'll send a secure password reset link to the associated email.</p>
+            </div>
             <div className={styles.fields}>
                 <div className={styles.box} style={{ display: isActiveOne ? 'block' : 'none' }}>
                     <h4>Username:</h4>
@@ -54,33 +57,13 @@ export default function LoginInputs() {
                         className={styles.input}
                     />
                 </div>
-                <div className={styles.box} style={{ display: isActiveOne ? 'block' : 'none' }}>
-                    <h4>Password:</h4>
-                    <div className={styles.passAlign}>
-                        <input type={showPassword ? 'text' : 'password'}
-                            value={password}
-                            onChange={(event) => setPassword(event.target.value)}
-                            placeholder="Enter Password" className={styles.input} />
-                        <button
-                            type="button"
-                            onClick={toggleShowPassword}
-                            className={styles.showPassBtn}
-                        >
-                            <img src={showPassword ? "/layoutIcons/hide.png" : "/layoutIcons/show.png"}
-                            />
-                        </button>
-                    </div>
-                </div>
-                <div className={styles.forgotPW} style={{ display: isActiveOne ? 'block' : 'none' }}>
-                    <p><Link href="/forgotPW">I forgot my password</Link></p>
-                </div>
-                <div className={styles.loginButton} style={{ display: isActiveOne ? 'block' : 'none' }}>
+                <div className={styles.resetButton} style={{ display: isActiveOne ? 'block' : 'none' }}>
                     {buttText && buttText.map((binfo, bindex) => {
                         return (
 
                             <Link href="/home"><HPWTextButton
                                 key={bindex}
-                                buttonText={binfo.logIn} /></Link>
+                                buttonText={binfo.resetPW} /></Link>
                         )
                     })}
                 </div>
