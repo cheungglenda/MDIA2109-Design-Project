@@ -1,5 +1,6 @@
 
 import Head from 'next/head'
+import styles from '@/styles/ErrorPage.module.css'
 
 export default function ErrorPage() {
 return (
@@ -10,13 +11,11 @@ return (
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 </Head>
-<div>
-    <h1>404- Page not found</h1>
-    <p>This page could not be found. Please sit tight as we fix the issue</p>
+<div className={styles.content}>
+    <h1 className={styles.header}>404</h1>
+    <h2 className={styles.subheader}>Page Not Found</h2>
+    <p>Hold tight while we construct this page!</p>
 </div>
-
-
-
 
 </>
 

@@ -1,0 +1,15 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+}
+
+.header {
+    font-size: 70px;
+}
+
+.subheader{
+    margin-top: -2rem;
+}
