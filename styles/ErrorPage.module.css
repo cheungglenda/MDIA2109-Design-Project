@@ -7,14 +7,12 @@
 }
 
 .header {
-    font-size: 70px;
-    margin-top: -3rem;
+    font-size: 80px;
+    margin-top: 10rem;
+ 
 }
 
 .subheader{
-    margin-top: -2rem;
+    margin-top: -3rem;
 }
 
-.img{
-    margin-top: 4rem;
-}

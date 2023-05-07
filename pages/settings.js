@@ -32,7 +32,7 @@ export default function Settings() {
         })}
       </header>
       <main className={styles.main}>
-        <div className={styles.content}>
+        <div className={styles.contentFirst}>
           <h2 className={styles.header}>General</h2>
           <div className={styles.row}>
             <p>Dark Mode</p>

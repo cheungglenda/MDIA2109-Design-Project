@@ -20,3 +20,11 @@
     font-weight: bold;
 } 
 
+.content {
+    margin-bottom: -1.5rem;
+    margin-top: -1.5rem;
+}
+
+.contentFirst {
+    margin-bottom: -1.5rem;
+}
