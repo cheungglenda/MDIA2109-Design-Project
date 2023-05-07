@@ -20,6 +20,10 @@ export default function findRequest() {
   const [searchTerm, setSearchTerm] = useState(null);
 
   useEffect(() => {
+    localStorage.setItem("searchTerm", "");
+  }, [])
+
+  useEffect(() => {
     const searchTerm = localStorage.getItem("searchTerm");
     setSearchTerm(searchTerm);
   })

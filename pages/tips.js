@@ -17,6 +17,10 @@ export default function Tips() {
   const [searchTerm, setSearchTerm] = useState(null);
 
   useEffect(() => {
+    localStorage.setItem("searchTerm", "");
+  }, [])
+
+  useEffect(() => {
     const searchTerm = localStorage.getItem("searchTerm");
     setSearchTerm(searchTerm);
   })

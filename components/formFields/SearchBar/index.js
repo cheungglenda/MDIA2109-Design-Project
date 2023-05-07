@@ -26,6 +26,7 @@ export default function SearchBar() {
         if(typeof window !== 'undefined'){
             localStorage.setItem("searchTerm", searchData.searchTerm);
         }
+
     }
 
 
