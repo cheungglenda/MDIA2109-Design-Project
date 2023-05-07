@@ -42,7 +42,7 @@
 
 
 .successContainer{
-    border: 5px solid var(--primary-charcoal);
+    border: 1px solid var(--primary-charcoal);
     background-color: var(--primary-white);
     padding: 1em;
     border-radius: 10px;
