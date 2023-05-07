@@ -30,7 +30,7 @@ export const text = {
             postRequest: "Post Request",
             message: "Message",
             findMessage: "Message Taylor",
-
+            errorPage: "Go Back to Home Page",
             
         }
 
