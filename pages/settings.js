@@ -7,6 +7,7 @@ import DarkMode from '@/components/DarkMode'
 import { text } from '@/data/text/text'
 import { useEffect, useState } from 'react'
 import TextToggle from '@/components/TextSize'
+import LanguageToggle from '@/components/Language'
 
 export default function Settings() {
   const [data, setData] = useState([...text.headers])
@@ -41,7 +42,10 @@ export default function Settings() {
             <p>Text Size</p>
             <TextToggle />
           </div>
+          <div className={styles.row}>
           <p>Language</p>
+          <LanguageToggle/>
+          </div>
         </div>
         <hr className={styles.line} />
         <div className={styles.content}>
