@@ -10,6 +10,7 @@ import CarouselContainer from '@/components/formFields/carouselContainer'
 import { text } from '@/data/text/text'
 import { useState } from 'react'
 import MPWTextButton from '@/components/buttons/withText/medpriorityWtext'
+import LPWTextButton from '../components/buttons/withText/lowpriorityWtext'
 import Link from 'next/link'
 
 export default function Requests() {
@@ -70,10 +71,19 @@ export default function Requests() {
         <div className={styles.successContainer} style={{ display: showDisplay ? 'block' : 'none' }}>
           <h1>Success!</h1>
           <h2>Your post is now live and ready to be fulfilled.</h2>
-          <div className={styles.button}>
+          <div className={styles.firstBtn}>
             {buttText && buttText.map((binfo, bindex) => {
               return (
                 <Link href="/home"><MPWTextButton
+                  key={bindex}
+                  buttonText={binfo.cta} /></Link>
+              )
+            })}
+          </div>
+          <div className={styles.secBtn}>
+            {buttText && buttText.map((binfo, bindex) => {
+              return (
+                <Link href="/home"><LPWTextButton
                   key={bindex}
                   buttonText={binfo.home} /></Link>
               )

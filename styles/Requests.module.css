@@ -55,3 +55,16 @@
 .successContainer > h1{
     text-align: center;
 }
+
+
+.firstBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.secBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: -1em;
+}
