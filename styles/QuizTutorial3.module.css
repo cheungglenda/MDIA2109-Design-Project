@@ -16,6 +16,11 @@
     padding: none;
 }
 
+.finishBtn {
+   display: flex;
+   justify-content: center;
+}
+
 .content{
     display: flex;
     flex-direction: column;
