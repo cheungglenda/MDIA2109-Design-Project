@@ -74,7 +74,7 @@ export default function Requests() {
           <div className={styles.firstBtn}>
             {buttText && buttText.map((binfo, bindex) => {
               return (
-                <Link href="/home"><MPWTextButton
+                <Link href="/msghistory"><MPWTextButton
                   key={bindex}
                   buttonText={binfo.cta} /></Link>
               )
