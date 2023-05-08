@@ -32,6 +32,7 @@ export const text = {
             message: "Message",
             findMessage: "Message Taylor",
             errorPage: "Go Back to Home Page",
+            cta: "Check Messages",
             
         }
 
