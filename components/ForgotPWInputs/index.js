@@ -1,24 +1,16 @@
 import { useState } from 'react'
 import Home from '@/pages/home'
 import styles from './ForgotPWInputs.module.css'
-import Nav from '../nav'
 import Image from 'next/image'
 import Link from 'next/link'
-import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
 import { text } from '@/data/text/text'
+import PWResetPopup from '../PWResetPopup'
 
 export default function LoginInputs() {
 
     const [name, setName] = useState("");
     const [isActiveOne, setIsActiveOne] = useState(true);
     const [isActiveTwo, setIsActiveTwo] = useState(false);
-
-    const [password, setPassword] = useState('');
-    const [showPassword, setShowPassword] = useState(false);
-
-    const toggleShowPassword = () => {
-        setShowPassword(!showPassword);
-    };
 
     const [buttText, setButText] = useState([...text.buttons])
 
@@ -43,7 +35,7 @@ export default function LoginInputs() {
             </div>
             <div className={styles.box}>
                 <h2 style={{ display: isActiveOne ? 'block' : 'none' }}>Forgot My Password</h2>
-                <p style={{ display: isActiveOne ? 'block' : 'none' }}>Input your username below and we'll send a secure password reset link to the associated email.</p>
+                <p style={{ display: isActiveOne ? 'block' : 'none' }}>Input your username below and we'll send a secure password reset link to the associated email within an hour.</p>
             </div>
             <div className={styles.fields}>
                 <div className={styles.box} style={{ display: isActiveOne ? 'block' : 'none' }}>
@@ -61,9 +53,7 @@ export default function LoginInputs() {
                     {buttText && buttText.map((binfo, bindex) => {
                         return (
 
-                            <Link href="/home"><HPWTextButton
-                                key={bindex}
-                                buttonText={binfo.resetPW} /></Link>
+                            <PWResetPopup />
                         )
                     })}
                 </div>

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Home from '@/pages/home'
 import styles from './LoginInputs.module.css'
-import Nav from '../nav'
 import Image from 'next/image'
 import Link from 'next/link'
 import HPWTextButton from '@/components/buttons/withText/highpriorityWtext'
@@ -72,7 +71,7 @@ export default function LoginInputs() {
                     </div>
                 </div>
                 <div className={styles.forgotPW} style={{ display: isActiveOne ? 'block' : 'none' }}>
-                    <p><Link href="/forgotPW">I forgot my password</Link></p>
+                    <p><Link href="/forgotpw">I forgot my password</Link></p>
                 </div>
                 <div className={styles.loginButton} style={{ display: isActiveOne ? 'block' : 'none' }}>
                     {buttText && buttText.map((binfo, bindex) => {
