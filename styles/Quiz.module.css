@@ -9,6 +9,7 @@
 .header {
     display: flex;
     text-align: center;
+    flex-direction: column;
 }
 
 .head {
@@ -19,6 +20,7 @@
     font-weight: var(--primary-bold);
     word-break: break-all;
     text-align: center;
+    margin-top: -0.5rem;
 }
 
 .img {
