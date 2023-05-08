@@ -71,7 +71,7 @@ export default function Requests() {
         <div className={styles.successContainer} style={{ display: showDisplay ? 'block' : 'none' }}>
           <h1>Success!</h1>
           <h2>Your post is now live and ready to be fulfilled.</h2>
-          <div className={styles.button}>
+          <div className={styles.firstBtn}>
             {buttText && buttText.map((binfo, bindex) => {
               return (
                 <Link href="/home"><MPWTextButton
@@ -80,7 +80,7 @@ export default function Requests() {
               )
             })}
           </div>
-          <div className={styles.button}>
+          <div className={styles.secBtn}>
             {buttText && buttText.map((binfo, bindex) => {
               return (
                 <Link href="/home"><LPWTextButton
