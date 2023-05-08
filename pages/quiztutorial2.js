@@ -22,13 +22,10 @@ export default function QuizTutorialTwo() {
         <HeaderNav />
       </header>
       <main className={styles.main}>
-      <div className={styles.navImg}>
-      <img className={styles.img} src="/logos/logo.png"></img>
-      </div>
         <div className={styles.text}>
           <p className={styles.reg}>A question will appear and there will be multiple choices to choose from.</p>
           <p className={styles.reg}>Select the correct answer.</p>
-          <h3 className={styles.headThree}>Choose the option has a fruit.</h3>
+          <h3 className={styles.headThree}>Choose the option that is a fruit.</h3>
         </div>
         <div className={styles.btn}>
         {buttText && buttText.map((binfo, bindex) => {
