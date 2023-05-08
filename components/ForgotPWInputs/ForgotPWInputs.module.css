@@ -17,7 +17,7 @@
 }
 
 .resetButton {
-    padding-left:3em;
+    padding-left:2.4em;
     padding-top:3em;
 }
 
@@ -29,6 +29,10 @@
     padding-left: 0.75em;
     border-radius: 10px;
     width: 100%;
+}
+
+.box h4 {
+    margin-bottom: 0.75em;
 }
 
 .box {
