@@ -63,11 +63,11 @@ export default function QuizTutorialThree() {
           </div>
           <div>
             <p>Now you're ready to play the quiz!</p>
-            <div className={styles.btn}>
+            <div className={styles.finishBtn}>
           {buttText && buttText.map((binfo, bindex) => {
           return (
               <Link href="/quizmain">
-              <HPWTextButton
+              <MPWTextButton
                 key={bindex}
                 buttonText={binfo.finish} />
                 </Link>
