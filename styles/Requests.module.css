@@ -20,15 +20,11 @@
 .whenField {
     width: 100%;
     border: 1px solid black;
-    height: 30px;
+    height: auto;
     border-radius: 10px;
     background-color: var(--white);
     padding: 0.5em;
     background-color: white;
-}
-
-.whenField:hover{
-    background-color: var(--white);
 }
 
 .carousel{

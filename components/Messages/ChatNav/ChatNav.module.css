@@ -13,21 +13,22 @@
 
 .messageFeatures {
     width: 75%;
-    height: 5em;
+    height: auto;
     display: flex;
-    flex-direction: column-reverse;
-    gap: 0.5em;
+    flex-direction: column;
 }
 
 .messageFeatures>input {
     border: 1px solid var(--primary-charcoal);
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     font-family: 'manrope';
     border-radius: 10px;
     width: 100%;
-    margin: auto;
+    margin: .25em auto;
+    font-size: 16px;
     padding-left: 1em;
+
 }
 
 .sendButton {

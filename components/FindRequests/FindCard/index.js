@@ -10,30 +10,28 @@ export default function FindCard({
 }) {
     return (
         <>
-        <div className={styles.container}>
-            <div className={styles.img}>
-            <Image src={profileImg} height={50} width={50} className={styles.imagePic} />
-            </div>
-            <div className={styles.content}>
-            <div className={styles.displayInfo}>
-            <h4 className={styles.name}>{userName}</h4>
-            <div className={styles.timeInfo}>
-                <h4>{timeFrame}</h4>
-            </div>
-            </div>
-            <div className={styles.requests}>
-                <div className={styles.textAlign}>
-                <p className={styles.text}>Needs:</p>
-                <p>{needs}</p>
+            <div className={styles.container}>
+                <div className={styles.img}>
+                    <Image src={profileImg} height={75} width={75} className={styles.imagePic} />
                 </div>
-                <div className={styles.textAlign}>
-                <p className={styles.text}>Location:</p> 
-                <p>{location}</p>
+                <div className={styles.content}>
+                    <div className={styles.displayInfo}>
+                        <h4 className={styles.name}><b>{userName}</b></h4>
+                        <h4><b>{timeFrame}</b></h4>
+                    </div>
+                    <div className={styles.requests}>
+                        <div className={styles.textAlign}>
+                            <p className={styles.text}>Needs:</p>
+                            <p>{needs}</p>
+                        </div>
+                        <div className={styles.textAlign}>
+                            <p className={styles.text}>Location:</p>
+                            <p>{location}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-        </div>
-        
+
         </>
     )
 }

@@ -7,7 +7,7 @@
 
 .detailsField{
     width: 100%;
-    height: auto;
+    height: 6em;
     border: 1px solid black;
     border-radius: 10px;
     background-color: var(--white);

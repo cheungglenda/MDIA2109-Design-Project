@@ -9,6 +9,7 @@
   --primary-beige: #FDFAE3;
   --primary-silverLakeBlue: #85B1EC;
   --primary-charcoal: #373F47;
+  --primary-light-grey: #959698;
   --primary-light-spice: #FFD89E;
   --primary-light-blue: #C5D5EA;
 
@@ -18,7 +19,7 @@
   --screen-padding: 20px;
 
 
-  --primary-regular-font: 16px; /*Replace all css using this with the H1 font elements listed below. When complete, then delete this*/
+  --primary-regular-font: 16px;
   --primary-h1-font: 24px;
   --primary-h2-font: 22px;
   --primary-h3-font: 20px;
@@ -202,4 +203,16 @@ width: 100%;
 a{
   text-decoration: none;
   color: inherit;
+}
+
+select{
+  font-size: var(--primary-regular-font);
+  background-color: var(--primary-white);
+  border: 1px solid var(--primary-black)
+  
+}
+
+select > option{
+background: var(--primary-white);
+font-size: 16px;
 }

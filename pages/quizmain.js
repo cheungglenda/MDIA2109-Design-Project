@@ -33,7 +33,7 @@ export default function QuizMain() {
       </header>
       <main className={styles.main}>
         <div className={styles.header}>
-          <h4>How well do you know your tips for safe driving/emergency items and food?</h4>
+          <h4><b>How well do you know your tips for: <br/>Safe Driving and Emergency Items?</b></h4>
           <h1 className={styles.head}>Test Your Knowledge!</h1>
         </div>
         <Image className={styles.img} src="/logos/logo.png" height={250} width={350}/>

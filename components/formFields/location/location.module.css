@@ -18,6 +18,8 @@ flex-direction: column;
     height: 30px;
     border-radius: 10px;
     border: 1px solid black;
+    font-family: Manrope;
+    padding: 1em;
 }
 
 .locationImg{
