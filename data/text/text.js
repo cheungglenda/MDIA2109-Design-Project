@@ -47,6 +47,7 @@ export const text = {
             tryAgain: "Try Again",
             finish: "Finish",
             mainQuiz: "Main Quiz",
+            tutorial: "Tutorial",
             seeResults: "See Results",
             moreQuiz: "More Tips and Quizzes",
             article: "Read the Article",

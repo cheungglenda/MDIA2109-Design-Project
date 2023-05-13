@@ -20,7 +20,7 @@ export default function pwPopup() {
                         <div className={styles.title}>Password Reset Link Sent</div>
                         <div className={styles.desc}>A reset link has been sent to your email.</div>
                         <div className={styles.buttons}>
-                        <button><Link href="/">Return Home</Link></button>
+                        <button><Link href="/login">Log In</Link></button>
                     </div></div>
                     )}
             </Popup>

@@ -11,6 +11,10 @@
     color: black;
 }
 
+.buttonContainer > p{
+    font-size: 16px;
+}
+
 .buttonContainer:hover {
     background-color: var(--primary-silverLakeBlue);
     cursor:pointer;

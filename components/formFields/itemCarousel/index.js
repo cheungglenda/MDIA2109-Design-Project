@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './itemCarousel.module.css'
+import Image from 'next/image'
 
 const Carousel = (props) => {
     const { children, show } = props
@@ -60,7 +61,7 @@ const Carousel = (props) => {
                     {
                         currentIndex > 0 &&
                         <button onClick={prev} className={styles.leftarrow}>
-                            &lt;
+                            <Image src="/layoutIcons/Larrow.svg" width={15} height={15} />
                         </button>
                     }
                 </div>
@@ -86,7 +87,7 @@ const Carousel = (props) => {
                     {
                         currentIndex < (length - 3) &&
                         <button onClick={next} className={styles.rightarrow}>
-                            &gt;
+                            <Image src="/layoutIcons/Rarrow.svg" width={15} height={15} />
                         </button>
                     }
                 </div>

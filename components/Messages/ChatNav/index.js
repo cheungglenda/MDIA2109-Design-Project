@@ -31,11 +31,12 @@ export default function ChatNav() {
         <>
             <div className={styles.navContainer}>
                 <div className={styles.messageFeatures}>
+                    <div className={styles.messageMedia}>
+                        <p className={styles.count}>{count}/300</p>
+                    </div>
                     <input type="text" id="details" name="details" maxLength={300} className={styles.detailsField} onChange={e => setCount(e.target.value.length) + setMessage({ ...message, message: e.target.value })}>
                     </input>
-                    <div className={styles.messageMedia}>
-                            <p className={styles.count}>{count}/300</p>
-                    </div>
+
 
                 </div>
                 <div className={styles.sendButton}>

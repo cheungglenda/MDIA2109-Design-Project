@@ -1,44 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-.resultContainer {
-    background-color:var(--primary-light-spice);
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
-    text-align:left;
-    border-radius: 10px;
-    padding-left:1em;
-    width:100%;
-}
-
-.resultContainer p {
-    text-align:right;
-    padding-right:1em;
-}
-
-.resultContainer h3 {
-    font-size:18px;
-    font-weight:400;
-}
-
-.text {
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-
-}
-
-.btn {
-    display: flex;
-    justify-content: center;
-}
-
-.img {
-    display: flex;
-}
-
-.img img {
-    object-fit:cover;
-}
-
 .main {
     display: flex;
     flex-direction: column;

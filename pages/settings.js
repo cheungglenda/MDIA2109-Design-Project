@@ -5,7 +5,7 @@ import Nav from '@/components/nav'
 import HeaderNav from '@/components/HeaderNav'
 import DarkMode from '@/components/DarkMode'
 import { text } from '@/data/text/text'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import TextToggle from '@/components/TextSize'
 import LanguageToggle from '@/components/Language'
 
@@ -23,7 +23,7 @@ export default function Settings() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-      {data && data.map((info, index) => {
+        {data && data.map((info, index) => {
           return (
             <HeaderNav
               key={index}
@@ -31,6 +31,7 @@ export default function Settings() {
           )
         })}
       </header>
+
       <main className={styles.main}>
         <div className={styles.contentFirst}>
           <h2 className={styles.header}>General</h2>
@@ -43,8 +44,8 @@ export default function Settings() {
             <TextToggle />
           </div>
           <div className={styles.row}>
-          <p>Language</p>
-          <LanguageToggle/>
+            <p>Language</p>
+            <LanguageToggle />
           </div>
         </div>
         <hr className={styles.line} />
@@ -60,14 +61,12 @@ export default function Settings() {
           <p><Link href="/quizresultsall">Quiz Results Summary</Link></p>
         </div>
         <hr className={styles.line} />
-        <div className={styles.content}>
+        <div className={styles.contentPrivacy}>
           <h2 className={styles.header}>Privacy</h2>
           <p>Terms and Conditions</p>
           <p>Privacy Policy</p>
           <p>Report a Bug</p>
-        </div>
-        <div>
-          {copyright}
+          <p className={styles.copyright}>{copyright}</p>
         </div>
       </main>
       <footer>

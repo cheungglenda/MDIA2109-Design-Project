@@ -43,7 +43,6 @@ export default function SearchBar() {
                     onChange={(e => setSearchData({ ...searchData, searchTerm: e.target.value }))}>
                     </input>
 
-                    <Image src="/formImages/filterIcon.svg" height={25} width={25} className={styles.filterImg} onClick={() => changeValue("currentLocation")} />
                 </div>
 
 

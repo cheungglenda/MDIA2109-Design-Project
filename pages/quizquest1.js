@@ -9,6 +9,7 @@ import QuizButton from '@/components/buttons/QuizButtons'
 import QuizFeedback from '@/components/QuizFeedback'
 import QuizNext from '@/components/QuizNext'
 import { useRouter } from 'next/router'
+import LPWTextButton from '@/components/buttons/withText/lowpriorityWtext'
 
 export default function QuizQuestOne() {
 
@@ -38,9 +39,9 @@ export default function QuizQuestOne() {
   }
 
   const addScore = (addScore) => {
-    if (addScore == "correct"){
+    if (addScore == "correct") {
       setScore(score + 1)
-    } else if (addScore == "incorrect"){
+    } else if (addScore == "incorrect") {
       setScore(score + 0)
     }
   }
@@ -49,7 +50,7 @@ export default function QuizQuestOne() {
     console.log(score)
     console.log(count)
 
-    if(count == 5.5){
+    if (count == 5.5) {
       router.push({
         pathname: './quizresults',
         query: {
@@ -383,7 +384,11 @@ export default function QuizQuestOne() {
                   correctHeader={info.correctHeader}
                   answer={info.Q5a}
                   image={info.incorrectImg} />
-                <a onClick={() => Results()} ><QuizNext /></a>
+                <a onClick={() => Results()} >
+                  <LPWTextButton
+                    key={index}
+                    buttonText={info.finish} />
+                </a>
               </>
             )
           } else if (count == 5.5 && feedback == "correct") {
@@ -395,7 +400,11 @@ export default function QuizQuestOne() {
                   question={info.q5}
                   answer={info.Q5a}
                   image={info.correctImg} />
-                <a onClick={() => Results()} ><QuizNext /></a>
+                <a onClick={() => Results()} >
+                  <LPWTextButton
+                    key={index}
+                    buttonText={info.finish} />
+                </a>
               </>
             )
           }

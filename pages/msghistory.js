@@ -51,17 +51,21 @@ export default function MessageHistory() {
         {data2 && data2.map((info2, index2) => {
           if (info2.userName.includes(searchTerm) || info2.time.includes(searchTerm) || info2.message.includes(searchTerm) || info2.number.includes(searchTerm))
             return (
-              <Link href="./messages">
-                <MessageCard
-                  key={index2}
-                  userName={info2.userName}
-                  time={info2.time}
-                  color={info2.color}
-                  message={info2.message.slice(-1)}
-                  number={info2.number}
-                />
-              </Link>
-            )
+              <>
+                <Link href="./messages">
+                  <MessageCard
+                    key={index2}
+                    userName={info2.userName}
+                    time={info2.time}
+                    color={info2.color}
+                    message={info2.message.slice(-1)}
+                    number={info2.number}
+
+                  />
+
+                </Link>
+
+              </>)
         })}
 
         <div className={styles.endMsg}>
