@@ -38,14 +38,26 @@
 
 
 .successContainer{
+    transform: translate(-50%, -50%);
+    position:fixed;
+    background-color:white;
+    border: 1px solid black;
+    top:50%;
+    left:50%;
+    text-align:center;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding-top:2em;
+    padding-bottom:2em;
+    padding-left:1em;
+    padding-right:1em;
+    z-index:10;
+    max-width:80%;
     border: 1px solid var(--primary-charcoal);
     background-color: var(--primary-white);
-    padding: 1em;
+    padding: 0.75em;
     border-radius: 10px;
-    position: absolute;
-    top: 26%;
     z-index: 1;
-    margin-right: 20px;
 }
 
 .successContainer > h1{
@@ -53,9 +65,15 @@
 }
 
 
+.successContainer > h3 {
+    font-weight:300;
+    font-size:16px;
+}
+
 .firstBtn {
     display: flex;
     justify-content: center;
+    flex-direction:row;
     margin-top: 1em;
 }
 
