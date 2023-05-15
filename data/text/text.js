@@ -49,7 +49,7 @@ export const text = {
             mainQuiz: "Main Quiz",
             tutorial: "Tutorial",
             seeResults: "See Results",
-            moreQuiz: "More Tips and Quizzes",
+            moreQuiz: "More Tips & Quizzes",
             article: "Read the Article",
 
             incorrect: "That was incorrect!",
