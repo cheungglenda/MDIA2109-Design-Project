@@ -3,7 +3,7 @@
     height: auto;
     width: 100%;
     border-radius: var(--border-radius);
-    padding: 1em;
+    padding: 0em 1em;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -13,8 +13,11 @@
 
 
 .img {
-    margin-top: 2.5rem;
-    margin-right: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-right: 1em;
 }
 .container:hover{
     background-color: var(--primary-pumpkin);
@@ -23,21 +26,13 @@
 .displayInfo{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 
 .displayInfo > h4{
-    margin: 0px;
+    margin: 0.75em 0em 1em 0em;
 }
 
-.timeInfo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5em;
-    font-weight: bold;
-}
 
 .text{
     font-weight: bold;

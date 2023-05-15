@@ -13,14 +13,12 @@ export default function PostCard({
         <>
             <div className={styles.container}>
                 <div className={styles.img}>
-                    <Image src={profileImg} height={50} width={50} className={styles.imagePic} />
+                    <Image src={profileImg} height={75} width={75} className={styles.imagePic} />
                 </div>
                 <div className={styles.content}>
                     <div className={styles.displayInfo}>
-                        <h4 className={styles.name}>{firstName} {lastName}</h4>
-                        <div className={styles.timeInfo}>
-                            <h4>{timeFrame}</h4>
-                        </div>
+                        <h4 className={styles.name}><b>{firstName} {lastName}</b></h4>
+                            <h4><b>{timeFrame}</b></h4>
                     </div>
                     <div className={styles.requests}>
                         <div className={styles.textAlign}>
