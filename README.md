@@ -8,13 +8,14 @@
 
 # Description 
 
-An interactive mobile app that connects users during a traffic crisis who can provide necessities with users who are stuck in traffic crisis (ex. being stuck on a highway during a snowstorm) and are in need of items like food, water, insulin, etc. 
+An interactive mobile app that connects users during a traffic crisis who can provide necessities with users who are stuck in traffic crisis (ex. being stuck on a highway during a snowstorm) and are in need of items like food, water, medicine etc.
 
 # Key Features 
 
-Map that pins requests near you
-Form to fill out if you want to make a request (food/water/medication, supplies(baby, pads))
-Earn rewards for helping others out (use rewards for discounts with community partners)
+- Form to fill out if you want to make a request (food, water, medication, etc)
+- Messaging function to connect users (requesters and gifters) together
+- Popular tips blog page provides safe driving tips for drivers
+- Quiz page that tests the user's knowledge of the popular tips articles
 
 
 # Tools/Technology
@@ -30,11 +31,17 @@ Earn rewards for helping others out (use rewards for discounts with community pa
 
 # Command Line(s)
 
+## Running the code on Local Host
 - npm run dev
-- npm run test:e2e
-- --help 
 
-## References
+## React Chartjs Installation
+- npm i react-chartjs-2
+
+
+
+# References
 [Multiple Item React Carousel](https://dev.to/rakumairu/how-to-show-multiple-item-in-simple-react-carousel-32dd)
 [Tips Description page Toggle](https://codesandbox.io/s/pg3xv?file=/components/accordion.js)
-
+[Environmental Variables](https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables)
+[React Charts](https://react-chartjs-2.js.org/examples)
+[Local Storage documentation](https://www.atatus.com/blog/what-is-javascript-localstorage-a-complete-guide-for-beginners/)
